@@ -1,20 +1,4 @@
 /* Wrapper */
-    .wrapper {
-        height: 100vh; 
-        overflow-y: auto;
-        overflow-x: hidden;
-        perspective: 10px;
-     }
-
-     header {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        transform-style: preserve-3d;
-        z-index: -1;
-     }
      .background, .foreground{
         position: absolute;
         height: 100%;
@@ -43,80 +27,46 @@
 
 /* Navigation Bar */
     .navBarParent {
-        height: 112px;
+        height: 9%;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         background-color: #95cada;
         box-sizing: border-box;
-        margin-top: -10px ;
+        margin-top: -10px;
         margin-left: -50px;
-        margin-right: -50px;
-        padding-right: 30px;
-        padding-left: 30px;
-        padding-bottom: 25px;
-        padding-top: 25px;
+        margin-right: -16px;
+        padding-right: 575px;
     }
         .childFont {
             font-family: "Market Deco ,sans-serif";
-            color: white;
-            font-size: 10px;
-            padding-right: 30px;
-            margin-top: 12px;
+        color: white;
+        font-size: 10px;
+        padding-right: -10px;
+        margin-top: 16px;
         }
-
-
-
-
+        .logo{
+           
+            margin-left: 28px;
+        }
+        #logo{
+            height: 300%;
+        }
 /* Main Picture */
 
-.logo{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    margin-left: -18px;
-    margin-top: -104px;
-}
 
-#logo{
-    height: 380%;
-    margin-top: -13px;
-    margin-left: -348px;
-}
+
 
 .mainpicture{
     margin-top: -77px;
 }
 
-/* Footer */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border_box;
+/*
+@media only screen and (max-width: 1474px) {
+    #logo{
+        height: 290%;
+    margin-top: 3px;
+    margin-left: -37px;
+    }
 }
-.container{
-    max-width: 1270px;
-    background-color: #95cada;
-    margin:auto;
-}
-.row{
-    display:flex;
-    flex-wrap:wrap;
-}
-.footer{
-    background-color: white;
-}
-.footer-col{
-    width: 25%;
-    padding: 0 15px;
-}
-.footer-col h4{
-    font-size: 18px;
-    color:white;
-    margin-bottom:25px;
-}
-.ARR{
-    font-size: 18px;
-    color:white;
-}
+*/
