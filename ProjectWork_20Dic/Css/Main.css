@@ -8,7 +8,26 @@
         margin-top: -115px;
      }
 
+h1{
+    font-family: DejaVu Sans Mono, monospace !important;
+    font-size: 263% !important;
+}    
+.form-control{
+    background-color: white !important;
+}
 
+.btn-primary{
+    background-color:#95cada !important;
+    border-color: #447685 !important;
+    color:#447685 !important;
+}
+
+.btn:hover{
+    background-color: #447685 !important;
+    border-color: #447685 !important;
+    color:beige !important;
+
+}
 /* Body */
     body {
         background-color: aliceblue;
@@ -27,8 +46,7 @@
 
 /* Navigation Bar */
     .navBarParent {
-        margin-top: -8px;
-        height: 7%;
+        height: 10%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -37,8 +55,8 @@
         .childFont {
         color: white;
         font-size: 50%;
-        padding-right: -10px;
-        margin-top: 1%;
+        margin-top: 1.5%;
+        margin-right: 6%;
         }
         .logo{
            
@@ -57,17 +75,6 @@
     height: 80%;
 }
 
-/*
-@media only screen and (max-width: 1474px) {
-    #logo{
-        height: 290%;
-    margin-top: 3px;
-    margin-left: -37px;
-    }
-}
-*/
-
-
 .search{
     padding-top: 19px;
 }
@@ -79,4 +86,21 @@
     text-align: center;
     background-color: #95cada;
 }
+
+#cercaRicetta{
+    margin-top: 1%;
+}
+
+
+@media (min-width: 800px) AND (max-width: 1120px) {
+    h1{
+        font-size: 295% !important;
+    }
+    .navBarParent{
+    }
+    .childFont{
+        
+        margin-right: 3%;
+    }
+    }
 
