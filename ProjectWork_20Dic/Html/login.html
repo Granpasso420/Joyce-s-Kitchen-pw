@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Log In</title>
+
+    
+
+    <link type="text/css" rel="stylesheet"  href="../Css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet"  href="../Css/login.css">
+
+
+
+    
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  <style type="text/css" id="operaUserStyle"></style>
+</head>
+<body class="text-center">
+    
+    <main class="form-signin w-100 m-auto">
+      <form action="reserved" method="GET" th:object="${user}"></form>
+        <img class="mb-4" src="../Images/logo.png" alt="" width="200">
+        <h1 class="h3 mb-3 fw-normal">Log In</h1>
+    <div class="loginwidth">
+        <div class="form-floating">
+          <input type="text" class="form-control" name="user" id="user" th:value="${name}" placeholder="Inserire username" required />
+          <label for="floatingInput">Nome Utente</label>
+        </div>
+        <br>
+        <div class="form-floating">
+          <input type="password" class="form-control"  placeholder="Password"name="password" th:value="${password}" id="password" required>
+          <label for="floatingPassword">Password</label>
+        </div>
+    
+        <br>
+        
+        <button class="w-100 btn btn-lg btn-primary" type="submit" th:value="Login">Entra</button>
+        </div>
+        <p class="mt-5 mb-3 text-muted">©2022</p>
+      </form>
+    
+    </main>
+    
+        
+    </form>
+    </body>
+
+    </html>
