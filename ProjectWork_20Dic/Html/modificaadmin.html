@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Riservata</title>
+
+    <link type="text/css" rel="stylesheet"  href="../Css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet"  href="../Css/riservata.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <div class="mod">
+        <h1 class="h3 mb-3 fw-normal">Area Riservata</h1>
+        <br>
+    <div>  
+        <a th:href="@{add}"><button type="button" class="btn btn-primary btn-lg bgblue" th:value="Aggiungi">Aggiungi</button></a>
+    </div>
+        <br>
+        <table class="table">
+            <thead>
+                <tr >
+                    <th scope="col">Nome Ricette</th>
+                    <th scope="col">Utente</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                 <tr th:each="r : ${recipes}">
+                    <th scope="row"></th>
+                    <td th:text="${r.recipe_name}"></td>
+                    <td th:text="${r.user.user}"></td>
+                    <td><a th:href="@{modify(id=${r.id_recipe})}"><button type="button" class="btn btn-primary bgblue">Modifica</button></a>
+                        <a th:href="@{reserved/delete(id=${r.id_recipe})}"><button type="button" class="btn btn-primary bgred">Elimina</button></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</body>
+</html>
+
+
+    
