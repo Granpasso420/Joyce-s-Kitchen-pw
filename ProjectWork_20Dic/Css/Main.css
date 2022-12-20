@@ -4,8 +4,6 @@
         overflow-y: auto;
         overflow-x: hidden;
         perspective: 10px;
-        
-        
      }
 
      header {
@@ -64,6 +62,7 @@
             color: white;
             font-size: 10px;
             padding-right: 30px;
+            margin-top: 12px;
         }
 
 
@@ -80,7 +79,9 @@
 }
 
 #logo{
-    height: 180px;
+    height: 380%;
+    margin-top: -13px;
+    margin-left: -348px;
 }
 
 .mainpicture{
