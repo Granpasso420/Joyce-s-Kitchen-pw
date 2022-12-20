@@ -1,6 +1,5 @@
 package it.corso.service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,18 +14,12 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	UserDao dao;
 	
-	List<User> users = new ArrayList<>();
-	
-	@Override
-	public void getUsers() {
-		users = (List<User>) dao.findAll();
-	}
 	
 	@Override
 	public boolean checkUser(User user) {
-		
+		List<User> users = (List<User>) dao.findAll();
 		for(User u : users) {
-			if(u.getName() == user.getName() && u.getPassword() == user.getPassword()) {
+			if(u.getUser().equals(user.getUser()) && u.getPassword().equals(user.getPassword())) {
 				return true;
 			}
 		}

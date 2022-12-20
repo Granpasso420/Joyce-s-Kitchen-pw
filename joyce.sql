@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Dic 19, 2022 alle 18:02
+-- Creato il: Dic 20, 2022 alle 09:38
 -- Versione del server: 10.4.25-MariaDB
 -- Versione PHP: 8.1.10
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `joyce`
 --
+CREATE DATABASE IF NOT EXISTS `joyce` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `joyce`;
 
 -- --------------------------------------------------------
 
@@ -29,7 +31,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `difficulty` (
   `id_difficulty` int(11) NOT NULL,
-  `description` varchar(20) DEFAULT NULL
+  `description` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -49,13 +51,13 @@ INSERT INTO `difficulty` (`id_difficulty`, `description`) VALUES
 
 CREATE TABLE `recipes` (
   `id_recipe` int(11) NOT NULL,
-  `recipe_name` varchar(50) DEFAULT NULL,
-  `author` int(11) DEFAULT NULL,
-  `description` text DEFAULT NULL,
-  `difficulty` int(11) DEFAULT NULL,
-  `time` varchar(50) DEFAULT NULL,
-  `category` int(11) DEFAULT NULL,
-  `suitable_for` int(11) DEFAULT NULL
+  `recipe_name` varchar(50) NOT NULL,
+  `author` int(11) NOT NULL,
+  `description` text NOT NULL,
+  `difficulty` int(11) NOT NULL,
+  `time` varchar(50) NOT NULL,
+  `category` int(11) NOT NULL,
+  `suitable_for` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -86,7 +88,7 @@ INSERT INTO `recipe_category` (`id_category`, `description`) VALUES
 
 CREATE TABLE `suitable_for` (
   `id_suitable_for` int(11) NOT NULL,
-  `description` varchar(50) DEFAULT NULL
+  `description` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -106,9 +108,9 @@ INSERT INTO `suitable_for` (`id_suitable_for`, `description`) VALUES
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
-  `user` varchar(50) DEFAULT NULL,
-  `mail` varchar(50) DEFAULT NULL,
-  `password` varchar(50) DEFAULT NULL
+  `user` varchar(50) NOT NULL,
+  `mail` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -126,7 +128,7 @@ INSERT INTO `users` (`id`, `user`, `mail`, `password`) VALUES
 
 CREATE TABLE `user_type` (
   `id` int(11) NOT NULL,
-  `description` varchar(20) DEFAULT NULL
+  `description` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --

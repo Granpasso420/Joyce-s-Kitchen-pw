@@ -33,7 +33,7 @@ public class loginController {
 			@RequestParam("password") String password)
 	{
 		User user = new User();
-		user.setName(u);
+		user.setUser(u);
 		user.setPassword(password);
 		
 		if(service.checkUser(user)) {

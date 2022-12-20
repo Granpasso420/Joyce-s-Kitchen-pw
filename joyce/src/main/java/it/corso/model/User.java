@@ -1,10 +1,16 @@
 package it.corso.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Pattern;
 
@@ -18,7 +24,7 @@ public class User {
 	
 	@Pattern(regexp = "[a-zA-Z\\s]{1,50}", message = "{error.charnotallowed}")
 	@Column(name = "user", length = 50, nullable = false)
-	private String name;
+	private String user;
 	
 	@Pattern(regexp = "[a-zA-Z0-9\\s]+@[a-zA-Z\\s]+.[a-zA-Z\\s]+", message = "{error.charnotallowed}")
 	@Column(name = "mail", length = 50, nullable = false)
@@ -28,6 +34,9 @@ public class User {
 	@Column(name = "password", length = 50, nullable = false)
 	private String password;
 	
+	@OneToMany(mappedBy = "users", cascade = CascadeType.REFRESH, 
+			fetch = FetchType.EAGER, orphanRemoval = true)   
+	private List<Recipe> recipes = new ArrayList<>(); 
 	
 	
 	public int getId() {
@@ -38,12 +47,12 @@ public class User {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getUser() {
+		return user;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setUser(String user) {
+		this.user = user;
 	}
 
 	public String getMail() {
@@ -60,6 +69,14 @@ public class User {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public List<Recipe> getRecipes() {
+		return recipes;
+	}
+
+	public void setRecipes(List<Recipe> recipes) {
+		this.recipes = recipes;
 	}
 	
 	
