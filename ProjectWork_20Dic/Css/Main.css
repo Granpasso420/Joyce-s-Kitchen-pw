@@ -36,16 +36,17 @@
     }
         .childFont {
         color: white;
-        font-size: 80%;
+        font-size: 70%;
         padding-right: -10px;
-        margin-top: 5px;
+        margin-top: 0px;
+        margin-right: 9%;
         }
         .logo{
            
             margin-left: 28px;
         }
         #logo{
-            height: 300%;
+            height: 212px;
         }
 /* Main Picture */
 
@@ -53,7 +54,10 @@
 
 
 .mainpicture{
-    margin-top: -77px;
+    width: 99%;
+    margin-top: 115px;
+    object-fit: cover;
+    height: 50%;
 }
 
 /*
