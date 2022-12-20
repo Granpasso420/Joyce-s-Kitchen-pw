@@ -4,6 +4,8 @@
         overflow-y: auto;
         overflow-x: hidden;
         perspective: 10px;
+        
+        
      }
 
      header {
@@ -21,6 +23,7 @@
         width: 100%;
         object-fit: cover;
         z-index: -1;
+        margin-top: -115px;
      }
 
 
@@ -42,6 +45,7 @@
 
 /* Navigation Bar */
     .navBarParent {
+        height: 112px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -62,9 +66,23 @@
             padding-right: 30px;
         }
 
-        #logo{
-            width: 30%;
-            position: relative;
-        }
+
+
 
 /* Main Picture */
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: -18px;
+    margin-top: -104px;
+}
+
+#logo{
+    height: 180px;
+}
+
+.mainpicture{
+    margin-top: -77px;
+}
