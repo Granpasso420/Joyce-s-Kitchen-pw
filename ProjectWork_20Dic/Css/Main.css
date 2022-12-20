@@ -39,7 +39,6 @@
         font-size: 50%;
         padding-right: -10px;
         margin-top: 1%;
-        margin-right: 9%;
         }
         .logo{
            
@@ -55,7 +54,7 @@
     width: 100%;
     margin-top: 115px;
     object-fit: cover;
-    height: 50%;
+    height: 80%;
 }
 
 /*
@@ -69,40 +68,12 @@
 */
 
 
-
-/* Footer */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border_box;
+.search{
+    padding-top: 19px;
 }
-.container{
-    max-width: 1270px;
+
+.cerca{
+    display: flex;
+    flex-direction: column;
     background-color: #95cada;
-    margin:auto;
-}
-.row{
-    display:flex;
-    flex-wrap:wrap;
-}
-.footer{
-    background-color: white;
-    position: absolute;
-    bottom: -57px;
-    left: 0;
-    width: 100%;
-}
-.footer-col{
-    width: 25%;
-    padding: 0 15px;
-}
-.footer-col h4{
-    font-size: 18px;
-    color:white;
-    margin-bottom:25px;
-}
-.ARR{
-    font-size: 18px;
-    color:white;
 }
