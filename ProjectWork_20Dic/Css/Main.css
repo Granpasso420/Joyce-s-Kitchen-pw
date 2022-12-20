@@ -55,36 +55,16 @@
         padding-bottom: 25px;
         padding-top: 25px;
     }
-
-        .childHome{
-            padding-right: 30px;
-            
-            
-        }
-        .childChiSiamo{
-            padding-right: 30px;
-            
-        }
-        .childRivista{
-            padding-right: 30px;
-           
-        }
-        .childRicette{
-            padding-right: 30px;
-            
-        }
-        .childContatti{
-            padding-right: 30px;
-           
-        }
-        .childLogIn{
-            padding-right: 30px;
-            
-        }
         .childFont {
             font-family: "Market Deco ,sans-serif";
             color: white;
             font-size: 10px;
+            padding-right: 30px;
+        }
+
+        #logo{
+            width: 30%;
+            position: relative;
         }
 
 /* Main Picture */
