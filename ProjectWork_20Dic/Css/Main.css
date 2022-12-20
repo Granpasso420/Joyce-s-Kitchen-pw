@@ -70,8 +70,11 @@
 }
 */
 
+.news {
+    background-color: #95cada;
+}
 
-+}
+
 
 /* Footer */
 
@@ -109,3 +112,4 @@
     font-size: 18px;
     color:white;
 }
+
