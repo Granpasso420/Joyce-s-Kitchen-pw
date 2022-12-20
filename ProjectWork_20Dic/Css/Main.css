@@ -69,3 +69,43 @@
     }
 }
 */
+
+
++}
+
+/* Footer */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border_box;
+}
+.container{
+    max-width: 1270px;
+    background-color: #95cada;
+    margin:auto;
+}
+.row{
+    display:flex;
+    flex-wrap:wrap;
+}
+.footer{
+    background-color: white;
+    position: absolute;
+    bottom: -57px;
+    left: 0;
+    width: 100%;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color:white;
+    margin-bottom:25px;
+}
+.ARR{
+    font-size: 18px;
+    color:white;
+}
