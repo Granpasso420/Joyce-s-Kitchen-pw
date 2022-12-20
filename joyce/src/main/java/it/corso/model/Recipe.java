@@ -8,7 +8,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.validation.Valid;
 import javax.validation.constraints.Pattern;
@@ -38,24 +37,24 @@ public class Recipe {
 	// FOTO
 	
 	@Valid
-	@OneToOne(cascade = CascadeType.REFRESH) 
+	@ManyToOne(cascade = CascadeType.REFRESH) 
 	@JoinColumn(name = "suitable_for", referencedColumnName = "id_suitable_for") 
 	private SuitableFor suitablefor;
 	
 	@Valid
-	@OneToOne(cascade = CascadeType.REFRESH) 
+	@ManyToOne(cascade = CascadeType.REFRESH) 
 	@JoinColumn(name = "difficulty", referencedColumnName = "id_difficulty") 
 	private Difficulty difficulty;
 	
 	@Valid
-	@OneToOne(cascade = CascadeType.REFRESH) 
+	@ManyToOne(cascade = CascadeType.REFRESH) 
 	@JoinColumn(name = "category", referencedColumnName = "id_category") 
 	private RecipeCategory recipecategory;
 	
 	
 	@ManyToOne (cascade = CascadeType.REFRESH) 
 	@JoinColumn(name="author", referencedColumnName = "id")
-	private User users;
+	private User user;
 
 	public int getId_recipe() {
 		return id_recipe;
@@ -120,11 +119,11 @@ public class Recipe {
 	}
 
 	public User getUser() {
-		return users;
+		return user;
 	}
 
 	public void setUser(User user) {
-		this.users = user;
+		this.user = user;
 	}
 
 	

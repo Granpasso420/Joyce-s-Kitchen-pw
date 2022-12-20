@@ -34,7 +34,7 @@ public class User {
 	@Column(name = "password", length = 50, nullable = false)
 	private String password;
 	
-	@OneToMany(mappedBy = "users", cascade = CascadeType.REFRESH, 
+	@OneToMany(mappedBy = "user", cascade = CascadeType.REFRESH, 
 			fetch = FetchType.EAGER, orphanRemoval = true)   
 	private List<Recipe> recipes = new ArrayList<>(); 
 	
