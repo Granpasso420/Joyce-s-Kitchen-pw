@@ -1,3 +1,13 @@
 #banner {
     background: url(../Images/pasta.jpg) !important;
 }
+
+.fotoIngredienti{
+    display: flex;
+}
+
+#fotoprincipale{
+    width: 50%;
+    object-fit: cover;
+    max-height: 91%;
+}
