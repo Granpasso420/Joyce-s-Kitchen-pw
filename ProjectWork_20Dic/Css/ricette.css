@@ -7,7 +7,7 @@
 body {
     min-height: 1000px;
 }
-.banner {
+#bannerprimi {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -15,6 +15,26 @@ body {
     justify-content: center;
     align-items: center;
     background: url(../Images/pasta.jpg);
+    background-size: cover;
+}
+#bannerdolci {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../Images/torta.jpg);
+    background-size: cover;
+}
+#bannersecondi {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../Images/bistecca.jpg);
     background-size: cover;
 }
 .banner .content {
@@ -73,11 +93,16 @@ header .navBar li {
     list-style: none;
     margin-left: 30px;
 }
+
 header .navBar li a {
     text-decoration: none;
     color: rgb(46, 19, 19);
     font-weight: 300;
 }
+
+
+
+
 header.sticky{
     background-color: #fff;
     padding: 10px 100px;
