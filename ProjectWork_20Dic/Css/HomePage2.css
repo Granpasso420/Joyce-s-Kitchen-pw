@@ -240,6 +240,15 @@ section {
     padding-left: 119px;
 }
 
+#lastRecipe{
+    max-width: 97%;
+    margin-left: -10%;
+}
+
+#ultimaUscita{
+    background:#f5b7b7;
+}
+
 /*   Footer */
 footer * {
     box-sizing: border-box;
