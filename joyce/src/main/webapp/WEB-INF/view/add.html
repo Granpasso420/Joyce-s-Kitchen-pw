@@ -6,17 +6,18 @@
 		<input type="button" value="Admin" id="admin"/>
 		<h1 th:text="${title}"></h1>
 		
-		<form name="fadd" id="fadd" method="POST" th:object="${recipe}" th:action="@{add/adding}">
-			<p>Name <input type="text" name="recipe_name" required/></p>
-			<p>Description <input type="text" name="description" required/></p>
-			<p>Time <input type="text" name="time" required/></p>
+		<form name="fadd" id="fadd" method="POST" th:object="${recipe}">
+			<p>Name <input type="text" th:field="*{recipe_name}" required/></p>
+			<p>Ingredients <input type="text" th:field="*{ingredients}" required/></p>
+			<p>Process <input type="text" th:field="*{process}" required/></p>
+			<p>Time <input type="text" th:field="*{time}" required/></p>
 			<!-- Sezione aggiuntiva -->
 			<!--
 				<p>Suitable for <input name="suitablefor.description" required/></p>
 				<p>Difficulty <input name="difficulty.description" required/></p>
 				<p>Recipe Category<input name="recipecategory.description" required/></p>
 			-->
-			<p>Author <input th:value="${author}" disabled/></p>
+			
 			<input type="submit" th:value="Aggiungi"/>
 		</form>
 	</body>
