@@ -74,6 +74,26 @@ body {
     letter-spacing: 5px;
 }
 
+.buttonStrange {
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    filter: blur(0px);
+    font-family: 'backToTheFuture';
+}
+
+.buttonStrange:hover {
+    transform: scale(1.1);
+    letter-spacing: 0.5px;
+}
+
 header {
     position: fixed;
     top: 0;
