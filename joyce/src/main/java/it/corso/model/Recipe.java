@@ -31,8 +31,12 @@ public class Recipe implements Serializable{
 	private String recipe_name;
 	
 	@Pattern(regexp = "[a-zA-Z\\s'.]", message = "{error.charnotallowed}")
-	@Column(name = "description", nullable = false)
-	private String description;
+	@Column(name = "ingredients", nullable = false)
+	private String ingredients;
+	
+	@Pattern(regexp = "[a-zA-Z\\s'.]", message = "{error.charnotallowed}")
+	@Column(name = "process", nullable = false)
+	private String process;
 	
 	
 	@Pattern(regexp = "[a-zA-Z\\s]{1,50}", message = "{error.charnotallowed}")
@@ -110,16 +114,26 @@ public class Recipe implements Serializable{
 //		this.recipecategory = recipecategory;
 //	}
 
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
+	
 
 	public User getUser() {
 		return user;
+	}
+
+	public String getIngredients() {
+		return ingredients;
+	}
+
+	public void setIngredients(String ingredients) {
+		this.ingredients = ingredients;
+	}
+
+	public String getProcess() {
+		return process;
+	}
+
+	public void setProcess(String process) {
+		this.process = process;
 	}
 
 	public void setUser(User user) {
