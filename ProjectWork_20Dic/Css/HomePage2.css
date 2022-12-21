@@ -165,9 +165,9 @@ header.sticky .navBar li a {
 
     .homeButton:hover {
         transform: scale(1.1);
-        padding: 40px 20px;
-        background: rgb(252, 252, 255);
-        color: #ff0157;
+        padding: 38px 20px;
+        background: cadetblue;
+        color: rgb(226, 239, 239);
         
     }
 
@@ -188,8 +188,8 @@ header.sticky .navBar li a {
     .ricetteButton:hover {
         transform: scale(1.1);
         padding: 40px 8px;
-        background: rgb(252, 252, 255);
-        color: #ff0157;
+        background: cadetblue;
+        color: rgb(226, 239, 239);
         
     }
 
@@ -210,8 +210,8 @@ header.sticky .navBar li a {
     .chiSiamoButton:hover {
         transform: scale(1.1);
         padding: 40px 2px;
-        background: rgb(252, 252, 255);
-        color: #ff0157;
+        background: cadetblue;
+        color: rgb(226, 239, 239);
         
     }
 
@@ -231,9 +231,31 @@ header.sticky .navBar li a {
 
     .rivistaButton:hover {
         transform: scale(1.1);
-        padding: 40px 10px;
-        background: rgb(252, 252, 255);
-        color: #ff0157;
+        padding: 35px 10px;
+        background: cadetblue;
+        color: rgb(226, 239, 239);
+        
+    }
+
+    .adminButton {
+        font-size: 1em;
+        color: #fff;
+        background: #ff015600;
+        display: inline-block;
+        padding: 16px 4px;
+        margin-top: 20px;
+        border-radius: 100%;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        transition: 0.5s;
+    }
+
+    .adminButton:hover {
+        transform: scale(1.1);
+        padding: 30px 10px;
+        background: cadetblue;
+        color: rgb(226, 239, 239);
         
     }
 
