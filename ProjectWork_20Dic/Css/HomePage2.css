@@ -72,6 +72,12 @@ body {
 .mainButton:hover {
     transform: scale(1.1);
     letter-spacing: 5px;
+    color: #fff;
+}
+
+#buttonStrange:hover{
+    transform: scale(1.3);
+    padding: 15px 35px;
 }
 
 .buttonStrange {
