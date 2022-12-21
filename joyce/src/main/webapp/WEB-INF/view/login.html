@@ -6,10 +6,10 @@
 		<input type="button" value="Admin" id="admin"/>
 		<h1 th:text="${title}"></h1>
 		
-		<form action="login/check" method="POST" th:object="${user}">
-			<input type="text" name="user" id="user" placeholder="Inserire username" required/>
-			<input type="password" name="password" id="password" required/>
-			<input type="submit" th:text="Login" />
+		<form action="reserved" method="GET" th:object="${user}">
+			<input type="text" name="user" id="user" th:value="${name}" placeholder="Inserire username" required />
+			<input type="password" name="password" th:value="${password}" id="password" required />
+			<input type="submit" th:value="Login" />
 		</form>
 	</body>
 </html>

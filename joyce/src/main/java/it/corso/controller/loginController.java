@@ -1,47 +1,32 @@
 package it.corso.controller;
 
+import javax.servlet.http.HttpSession;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import it.corso.model.User;
-import it.corso.service.UserService;
+
 
 @Controller
 @RequestMapping("/login")
 public class loginController {
-
-	@Autowired
-	UserService service;
 	
 	@GetMapping
-	public String getPage(Model model) {
+	public String getPage(Model model,HttpSession session) {
 		
 		model.addAttribute("title", "Login");
-		
+		if(session.getAttribute("user") == null) {
+			model.addAttribute("name", "");
+			model.addAttribute("password", "");
+		}else {
+			User user = (User) session.getAttribute("user");
+			model.addAttribute("name", user.getUser());
+			model.addAttribute("password", user.getPassword());
+		}
 		return "login";
 	}
 	
-	@PostMapping("/check")
-	public String check(
-			@RequestParam("user") String u,
-			@RequestParam("password") String password)
-	{
-		User user = new User();
-		user.setUser(u);
-		user.setPassword(password);
-		
-		if(service.checkUser(user)) {
-			return "redirect:/reserved";
-		}else {
-			return "login";
-		}
-		
-		
-	}
 }

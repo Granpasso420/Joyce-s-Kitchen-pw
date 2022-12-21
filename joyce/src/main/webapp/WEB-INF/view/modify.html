@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head th:replace="../template/base-template :: headFragment"></head>
+	<body>
+		<a th:href="@{/}"><button>Home</button></a>
+		<input type="button" value="Admin" id="admin"/>
+		<h1 th:text="${title}"></h1>
+
+	</body>
+</html>

@@ -27,14 +27,14 @@ public class User {
 	private String user;
 	
 	@Pattern(regexp = "[a-zA-Z0-9\\s]+@[a-zA-Z\\s]+.[a-zA-Z\\s]+", message = "{error.charnotallowed}")
-	@Column(name = "mail", length = 50, nullable = false)
+	@Column(name = "mail", length = 50, nullable = true)
 	private String mail;
 	
 	@Pattern(regexp = "[a-zA-Z\\!]{1,50}", message = "{error.charnotallowed}")
 	@Column(name = "password", length = 50, nullable = false)
 	private String password;
 	
-	@OneToMany(mappedBy = "users", cascade = CascadeType.REFRESH, 
+	@OneToMany(mappedBy = "user", cascade = CascadeType.MERGE, 
 			fetch = FetchType.EAGER, orphanRemoval = true)   
 	private List<Recipe> recipes = new ArrayList<>(); 
 	
@@ -70,14 +70,14 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
-	public List<Recipe> getRecipes() {
-		return recipes;
-	}
-
-	public void setRecipes(List<Recipe> recipes) {
-		this.recipes = recipes;
-	}
+//
+//	public List<Recipe> getRecipes() {
+//		return recipes;
+//	}
+//
+//	public void setRecipes(List<Recipe> recipes) {
+//		this.recipes = recipes;
+//	}
 	
 	
 }
