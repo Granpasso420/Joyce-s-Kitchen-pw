@@ -9,7 +9,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import javax.validation.Valid;
 import javax.validation.constraints.Pattern;
 
 @Entity
@@ -33,26 +32,24 @@ public class Recipe {
 	@Column(name = "time", length = 50, nullable = false)
 	private String time;
 	
-	
 	// FOTO
 	
-	@Valid
-	@ManyToOne(cascade = CascadeType.REFRESH) 
-	@JoinColumn(name = "suitable_for", referencedColumnName = "id_suitable_for") 
-	private SuitableFor suitablefor;
+//	@Valid
+//	@ManyToOne(cascade = CascadeType.REFRESH) 
+//	@JoinColumn(name = "suitable_for", referencedColumnName = "id_suitable_for") 
+//	private SuitableFor suitablefor;
+//	
+//	@Valid
+//	@ManyToOne(cascade = CascadeType.REFRESH) 
+//	@JoinColumn(name = "difficulty", referencedColumnName = "id_difficulty") 
+//	private Difficulty difficulty;
+//	
+//	@Valid
+//	@ManyToOne(cascade = CascadeType.REFRESH) 
+//	@JoinColumn(name = "category", referencedColumnName = "id_category") 
+//	private RecipeCategory recipecategory;
 	
-	@Valid
-	@ManyToOne(cascade = CascadeType.REFRESH) 
-	@JoinColumn(name = "difficulty", referencedColumnName = "id_difficulty") 
-	private Difficulty difficulty;
-	
-	@Valid
-	@ManyToOne(cascade = CascadeType.REFRESH) 
-	@JoinColumn(name = "category", referencedColumnName = "id_category") 
-	private RecipeCategory recipecategory;
-	
-	
-	@ManyToOne (cascade = CascadeType.REFRESH) 
+	@ManyToOne (cascade = CascadeType.REFRESH)
 	@JoinColumn(name="author", referencedColumnName = "id")
 	private User user;
 
@@ -72,10 +69,6 @@ public class Recipe {
 		this.recipe_name = recipe_name;
 	}
 
-
-
-	
-
 	public String getTime() {
 		return time;
 	}
@@ -86,29 +79,29 @@ public class Recipe {
 
 	
 
-	public SuitableFor getSuitablefor() {
-		return suitablefor;
-	}
-
-	public void setSuitablefor(SuitableFor suitablefor) {
-		this.suitablefor = suitablefor;
-	}
-
-	public Difficulty getDifficulty() {
-		return difficulty;
-	}
-
-	public void setDifficulty(Difficulty difficulty) {
-		this.difficulty = difficulty;
-	}
-
-	public RecipeCategory getRecipecategory() {
-		return recipecategory;
-	}
-
-	public void setRecipecategory(RecipeCategory recipecategory) {
-		this.recipecategory = recipecategory;
-	}
+//	public SuitableFor getSuitablefor() {
+//		return suitablefor;
+//	}
+//
+//	public void setSuitablefor(SuitableFor suitablefor) {
+//		this.suitablefor = suitablefor;
+//	}
+//
+//	public Difficulty getDifficulty() {
+//		return difficulty;
+//	}
+//
+//	public void setDifficulty(Difficulty difficulty) {
+//		this.difficulty = difficulty;
+//	}
+//
+//	public RecipeCategory getRecipecategory() {
+//		return recipecategory;
+//	}
+//
+//	public void setRecipecategory(RecipeCategory recipecategory) {
+//		this.recipecategory = recipecategory;
+//	}
 
 	public String getDescription() {
 		return description;

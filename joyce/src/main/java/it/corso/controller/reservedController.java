@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import it.corso.model.Recipe;
 import it.corso.model.User;
@@ -22,36 +23,41 @@ public class reservedController {
 	UserService userService;
 	@Autowired
 	RecipeService recipeService;
+	@Autowired
+	HttpSession session;
 	
 	@GetMapping
 	public String getPage(
 			Model model,
-			@ModelAttribute("user") User user,
-			HttpSession session)
+			@ModelAttribute("user") User user)
 	{
 
-		
-		if(userService.checkUser(user) || userService.checkUser((User) session.getAttribute("user")))
-		{
-			if(session.getAttribute("user") == null) {
-				session.setAttribute("user", user);
+		try {
+			if(userService.checkUser(user) || userService.checkUser((User) session.getAttribute("user")))
+			{
+
+				//List<Recipe> recipes = recipeService.getRecipes();
+				model.addAttribute("title", "Area Riservata");
+				model.addAttribute("recipes", recipeService.getRecipes());
+				
+				return "reserved";
+			}else {
+				return "redirect:/login";
 			}
-			//List<Recipe> recipes = recipeService.getRecipes();
-			model.addAttribute("title", "Area Riservata");
-			model.addAttribute("recipes", recipeService.getRecipes());
-			
-			return "reserved";
-		}else {
+		}
+		catch (Exception e) {
 			return "redirect:/login";
 		}
 	}
 	
 	@GetMapping("/delete")
 	public String deleteRecipe(
-			@ModelAttribute("recipe") Recipe recipe)
+			@RequestParam("id") int id)
 	{
+		Recipe recipe = recipeService.getRecipeById(id);
 		recipeService.deleteRecipe(recipe);
 		return "redirect:/reserved";
 	}
 
+	
 }
