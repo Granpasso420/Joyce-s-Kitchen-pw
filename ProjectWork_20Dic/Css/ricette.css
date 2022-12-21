@@ -27,16 +27,7 @@ body {
     background: url(../Images/torta.jpg);
     background-size: cover;
 }
-#bannersecondi {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(../Images/bistecca.jpg);
-    background-size: cover;
-}
+
 .banner .content {
     max-width: 900px;
     text-align: center;
@@ -108,6 +99,7 @@ header.sticky{
     padding: 10px 100px;
     box-shadow: 0 5px 20px rgba(0,0,0,0,0.05);
 }
+
 header.sticky .navBar li a {
     color: black;
 }

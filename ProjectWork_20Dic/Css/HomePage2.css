@@ -84,17 +84,21 @@ header .navBar li {
     list-style: none;
     margin-left: 30px;
 }
-header .navBar {
-    text-decoration: none;
-    color: rgb(46, 19, 19);
-    font-weight: 300;
-}
 
 header.sec li a {
     text-decoration: none;
     color: white;
     font-weight: 300;
 }
+
+header .navBar {
+    text-decoration: none;
+    color: rgb(46, 19, 19);
+    font-weight: 300;
+}
+
+
+
 header.sticky{
     background-color: #fff;
     padding: 10px 100px;
