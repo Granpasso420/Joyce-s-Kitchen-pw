@@ -16,11 +16,11 @@ import it.corso.model.User;
 public class RecipeServiceImpl implements RecipeService{
 
 	@Autowired
-	RecipeDao recipeDao;
+	private RecipeDao recipeDao;
 	@Autowired
-	UserDao userDao;
+	private UserDao userDao;
 	@Autowired
-	HttpSession session;
+	private HttpSession session;
 	
 	@Override
 	public List<Recipe> getRecipes() {
@@ -45,5 +45,20 @@ public class RecipeServiceImpl implements RecipeService{
 		userDao.save((User) session.getAttribute("user"));
 		recipeDao.save(recipe);
 	}
+
+	@Override
+	public void modifyRecipe(Recipe recipe) {
+		
+		// salvo il record presente nel database in oldR
+		Recipe oldR = getRecipeById(recipe.getId_recipe());
+		deleteRecipe(oldR);
+		//setto oldR con i nuovi valori messi dall'utente e salvati in recipe
+		oldR.setId_recipe(recipe.getId_recipe());
+		oldR.setRecipe_name(recipe.getRecipe_name());
+		oldR.setDescription(recipe.getDescription());
+		oldR.setTime(recipe.getTime());
+		
+		recipeDao.save(oldR);
+	} 
 
 }

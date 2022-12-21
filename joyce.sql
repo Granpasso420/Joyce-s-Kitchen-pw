@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Dic 20, 2022 alle 09:38
+-- Creato il: Dic 21, 2022 alle 14:27
 -- Versione del server: 10.4.25-MariaDB
 -- Versione PHP: 8.1.10
 
@@ -52,13 +52,23 @@ INSERT INTO `difficulty` (`id_difficulty`, `description`) VALUES
 CREATE TABLE `recipes` (
   `id_recipe` int(11) NOT NULL,
   `recipe_name` varchar(50) NOT NULL,
-  `author` int(11) NOT NULL,
+  `author` int(11) DEFAULT NULL,
   `description` text NOT NULL,
-  `difficulty` int(11) NOT NULL,
+  `difficulty` int(11) DEFAULT NULL,
   `time` varchar(50) NOT NULL,
-  `category` int(11) NOT NULL,
-  `suitable_for` int(11) NOT NULL
+  `category` int(11) DEFAULT NULL,
+  `suitable_for` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dump dei dati per la tabella `recipes`
+--
+
+INSERT INTO `recipes` (`id_recipe`, `recipe_name`, `author`, `description`, `difficulty`, `time`, `category`, `suitable_for`) VALUES
+(25, 'Giorgio', 1, 'Fallo a pezzi e cucinalo, 180 gradi, forno ventilato', NULL, '2 ore', NULL, NULL),
+(29, 'Giorgio', 1, 'Fallo a pezzi e cucinalo, 180 gradi, forno ventilato', NULL, '2 ore', NULL, NULL),
+(35, 'Giorgio', 1, 'Fallo a pezzi e cucinalo, 180 gradi, forno ventilato', NULL, '2 ore', NULL, NULL),
+(37, 'Giorgio', 1, 'Fallo a pezzi e cucinalo, 180 gradi, forno ventilato', NULL, '2 ore', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -109,7 +119,7 @@ INSERT INTO `suitable_for` (`id_suitable_for`, `description`) VALUES
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `user` varchar(50) NOT NULL,
-  `mail` varchar(50) NOT NULL,
+  `mail` varchar(50) DEFAULT NULL,
   `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -118,7 +128,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `user`, `mail`, `password`) VALUES
-(1, 'user', 'user@ciao.it', 'user');
+(1, 'user', NULL, 'user');
 
 -- --------------------------------------------------------
 
@@ -197,7 +207,7 @@ ALTER TABLE `difficulty`
 -- AUTO_INCREMENT per la tabella `recipes`
 --
 ALTER TABLE `recipes`
-  MODIFY `id_recipe` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_recipe` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT per la tabella `recipe_category`
@@ -215,7 +225,7 @@ ALTER TABLE `suitable_for`
 -- AUTO_INCREMENT per la tabella `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT per la tabella `user_type`

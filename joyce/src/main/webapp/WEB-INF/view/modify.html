@@ -6,5 +6,19 @@
 		<input type="button" value="Admin" id="admin"/>
 		<h1 th:text="${title}"></h1>
 
+			<p>Author <input th:value="${r.user.user}" disabled/></p>
+			<p>Recipe ID <input th:value="${r.id_recipe}" disabled/></p>
+			<form name="fmod" id="fmod" method="POST" th:object="${recipe}" th:action="@{modify/modifying(id=${r.id_recipe})}">
+			<p>Name <input type="text" name="recipe_name" th:value="${r.recipe_name}" required/></p>
+			<p>Description <input type="text" name="description" th:value="${r.description}" required/></p>
+			<p>Time <input type="text" name="time" th:value="${r.time}" required/></p>
+			<!-- Sezione aggiuntiva -->
+			<!--
+				<p>Suitable for <input name="suitablefor.description" required/></p>
+				<p>Difficulty <input name="difficulty.description" required/></p>
+				<p>Recipe Category<input name="recipecategory.description" required/></p>
+			-->
+			<input type="submit" th:value="Modifica"/>
+		</form>
 	</body>
 </html>

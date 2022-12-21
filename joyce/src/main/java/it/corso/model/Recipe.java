@@ -1,5 +1,7 @@
 package it.corso.model;
 
+import java.io.Serializable;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,7 +15,12 @@ import javax.validation.constraints.Pattern;
 
 @Entity
 @Table (name="recipes")
-public class Recipe {
+public class Recipe implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
