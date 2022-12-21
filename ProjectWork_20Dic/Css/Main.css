@@ -1,0 +1,101 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/* Body */
+    body {
+        background-color: aliceblue;
+    }
+
+
+
+/* Navigation Bar */
+    .navBarParent {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #95cada;
+        box-sizing: border-box;
+        margin-top: -10px ;
+        margin-left: -8px;
+        margin-right: -8px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+
+        .childFont {
+            font-family: "Market Deco ,sans-serif";
+            font-size: 20px;
+        }
+    
+    .logIn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+         .childLogIn {
+            margin-left: 100px;
+        }
+
+        
+
+/* Main Picture */
+        .mainPicture {
+            display: flex;
+            justify-content: center;
+        }
+        
+          h1 {
+            position: relative;
+          }
+
+          .test-menu{
+            color: white;
+            display: flex;
+            position: relative;
+            padding: 8px;
+          }
+          .test-menu span {
+            position: relative;
+          }
+          
+
+          .test-menu:hover {
+            color: #95cada;
+            cursor: pointer;
+
+          }
+          .test-menu::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            transform: scaleY(0);
+            background-color: #f7fdff;
+            transition: transform 0.2s ease-out, width 0.2s ease-out 0.2s;
+          }
+          .test-menu:hover::before {
+            transform: scaleY(1);
+            width: 100%;
+          }
+
+
+
+          
+/*
+          .h1Anim {
+            font-family: "Market Deco ,sans-serif";
+            color: rgb(255, 255, 255);
+            z-index: 10;
+            
+          }
+          .h1Anim:hover {
+            color: rgb(255, 0, 0);
+            z-index: 10;
+            transition: all 0.3s;
+          }
+*/         
+
