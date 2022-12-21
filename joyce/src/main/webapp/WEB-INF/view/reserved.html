@@ -4,5 +4,16 @@
 	<body>
 		<a th:href="@{/}"><button>Home</button></a>
 		<h1 th:text="${title}"></h1>
+		<a th:href="@{add}"><input type="button" th:value="'Aggiungi'"></a>
+		<table>
+			<tr th:each="r : ${recipes}">
+				<td>img</td>
+				<td th:text="${r.recipe_name}"></td>
+				<!-- <td th:text="${r.recipecategory.description}"></td> -->
+				<td th:text="${r.user.user}"></td>
+				<td><a th:href="@{modify(id=${r.id_recipe})}"><input type="button" th:value="'Modifica'"></a></td>
+				<td><a th:href="@{reserved/delete(id=${r.id_recipe})}"><input type="button" th:value="Elimina"></a></td>
+			</tr>
+		</table>
 	</body>
 </html>

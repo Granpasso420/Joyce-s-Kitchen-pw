@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head th:replace="../template/base-template :: headFragment"></head>
+	<body>
+		<a th:href="@{/}"><button>Home</button></a>
+		<input type="button" value="Admin" id="admin"/>
+		<h1 th:text="${title}"></h1>
+		
+		<form name="fadd" id="fadd" method="POST" th:object="${recipe}" th:action="@{add/adding}">
+			<p>Name <input type="text" name="recipe_name" required/></p>
+			<p>Description <input type="text" name="description" required/></p>
+			<p>Time <input type="text" name="time" required/></p>
+			<!-- Sezione aggiuntiva -->
+			<!--
+				<p>Suitable for <input name="suitablefor.description" required/></p>
+				<p>Difficulty <input name="difficulty.description" required/></p>
+				<p>Recipe Category<input name="recipecategory.description" required/></p>
+			-->
+			<p>Author <input th:value="${author}" disabled/></p>
+			<input type="submit" th:value="Aggiungi"/>
+		</form>
+	</body>
+</html>
