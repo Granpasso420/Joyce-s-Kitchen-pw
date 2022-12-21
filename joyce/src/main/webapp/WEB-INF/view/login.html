@@ -1,15 +1,47 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-	<head th:replace="../template/base-template :: headFragment"></head>
-	<body>
-		<a th:href="@{/}"><button>Home</button></a>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--<head  th:replace="../template/base-template :: headFragment">-->
+    
+    <!--  <link type="text/css" rel="stylesheet"  th:href="@{static/css/bootstrap.min.css}">-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link type="text/css" rel="stylesheet"  th:href="@{static/css/login.css}">
+    <link href="signin.css" rel="stylesheet">
+    
+  <style type="text/css" id="operaUserStyle"></style>
+</head>
+
+<body class="text-center">
+    
+    	<!--  <a th:href="@{/}"><button>Home</button></a>
 		<input type="button" value="Admin" id="admin"/>
-		<h1 th:text="${title}"></h1>
-		
-		<form action="reserved" method="GET" th:object="${user}">
-			<input type="text" name="user" id="user" th:value="${name}" placeholder="Inserire username" required />
-			<input type="password" name="password" th:value="${password}" id="password" required />
-			<input type="submit" th:value="Login" />
-		</form>
-	</body>
-</html>
+		<h1 th:text=></h1>-->
+    
+    <main class="form-signin w-100 m-auto">
+      <form action="reserved" method="GET" th:object="${user}">
+        <img class="mb-4" th:src="@{static/images/Logo.png}" alt="" width="200">
+        <h1 th:text="${title}" class="h3 mb-3 fw-normal"></h1>
+    <div class="loginwidth">
+        <div class="form-floating">
+          <input type="text" class="form-control" name="user" id="user" th:value="${name}" placeholder="Inserire username" required />
+          <label for="floatingInput">Nome Utente</label>
+        </div>
+        <br>
+        <div class="form-floating">
+          <input type="password" class="form-control"  placeholder="Password" name="password" th:value="${password}" id="password" required>
+          <label for="floatingPassword">Password</label>
+        </div>
+    
+        <br>
+       
+        <button class="w-100 btn btn-lg btn-primary" type="submit" th:value="Login">Entra</button>
+        </div>
+        <p class="mt-5 mb-3 text-muted">©2022</p>
+      </form>
+    
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </body>
+
+    </html>

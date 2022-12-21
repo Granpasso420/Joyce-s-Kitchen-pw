@@ -55,7 +55,8 @@ public class RecipeServiceImpl implements RecipeService{
 		//setto oldR con i nuovi valori messi dall'utente e salvati in recipe
 		oldR.setId_recipe(recipe.getId_recipe());
 		oldR.setRecipe_name(recipe.getRecipe_name());
-		oldR.setDescription(recipe.getDescription());
+		oldR.setIngredients(recipe.getIngredients());
+		oldR.setProcess(recipe.getProcess());
 		oldR.setTime(recipe.getTime());
 		
 		recipeDao.save(oldR);
