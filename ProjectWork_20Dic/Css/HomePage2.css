@@ -341,6 +341,10 @@ footer.container{
     text-decoration: underline;
   }
 
+  .foot{
+    background-color: cadetblue;
+  }
+  
   .brand{
     display: block;
     font-size: 1.8em;
