@@ -1,26 +1,16 @@
 package it.corso.model;
 
-import java.io.Serializable;
-
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.Pattern;
 
 @Entity
 @Table (name="recipes")
-public class Recipe implements Serializable{
-
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+public class Recipe{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -59,10 +49,10 @@ public class Recipe implements Serializable{
 //	@ManyToOne(cascade = CascadeType.REFRESH) 
 //	@JoinColumn(name = "category", referencedColumnName = "id_category") 
 //	private RecipeCategory recipecategory;
-	
-	@ManyToOne (cascade = CascadeType.REFRESH)
-	@JoinColumn(name="author", referencedColumnName = "id")
-	private User user;
+//
+//	@ManyToOne (cascade = CascadeType.REFRESH)
+//	@JoinColumn(name="author", referencedColumnName = "id")
+//	private User user;
 
 	public int getId_recipe() {
 		return id_recipe;
@@ -116,9 +106,9 @@ public class Recipe implements Serializable{
 
 	
 
-	public User getUser() {
-		return user;
-	}
+//	public User getUser() {
+//		return user;
+//	}
 
 	public String getIngredients() {
 		return ingredients;
@@ -136,9 +126,9 @@ public class Recipe implements Serializable{
 		this.process = process;
 	}
 
-	public void setUser(User user) {
-		this.user = user;
-	}
+//	public void setUser(User user) {
+//		this.user = user;
+//	}
 
 	
 
