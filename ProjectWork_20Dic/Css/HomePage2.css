@@ -4,6 +4,14 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+h2{
+    font-family: Candara,sans-serif;
+}
+
+h3{
+    font-family: Candara,sans-serif;
+}
 body {
     min-height: 1000px;
 }
@@ -35,7 +43,6 @@ body {
 .banner .content h2 {
     font-size: 5em;
     color: #fff;
-    font-family: sans-serif;
 }
 
 .banner .content p {
@@ -161,7 +168,6 @@ section {
 .titleChiSiamo {
     color: #111;
     font-weight:300;
-    font-family: sans-serif;
 }
 .row.col50.tvImg {
     position: relative;
@@ -194,7 +200,7 @@ section {
 }
 
 #cercaScritta{
-    font-size: 27px;
+    font-size: 34px;
     color: white;
     margin-bottom: 10px;
 }
