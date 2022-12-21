@@ -166,3 +166,82 @@ section {
     height: 100%;
     object-fit: cover;
 }
+
+#search-bar{
+    background: cadetblue;
+    min-height: 0;
+}
+
+.searchbar{
+    border: white;
+    text-align: center;
+    height: 38px;
+    border-radius: 3px;
+}
+
+.form1{
+    display: block;
+}
+
+#cercaScritta{
+    font-size: 27px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#ricette-recenti{
+    background: #ff0157;
+}
+
+
+#ultima-ricetta{
+    margin-top: -32%;
+    margin-bottom: 5%;
+    margin-left: 68%;
+    margin-right: 6%;
+    background-color: white;
+    box-shadow: 10px 11px 10px rgba(0, 0, 0, 0.5);
+}
+
+#ultima-scritta{
+    margin-top: -18%;
+    color:#ec5051;
+    font-weight: bold;
+    text-shadow: 2px 0 rgb(255, 255, 255), 0 1px white, 1px 0 white, 0 -1px white;
+
+}
+
+.ultime-im{
+    width: 57%;
+    object-fit: cover;
+    height: 325px;
+    /* margin-top: 1%; */
+    margin-left: -30%;
+}
+
+.ultime-div{
+    padding: 7%;
+}
+
+
+.ultime-titolo{
+    margin-left: -40%;
+    font-size: 51px;
+    color: #95cada;
+    margin-top: 1%;
+}
+
+.ultime-descrizione{
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    margin-top: 3%;
+}
+
+.ultime-bottone{
+    text-align: center;
+    /* width: 1%; */
+    width: 43%;
+}
