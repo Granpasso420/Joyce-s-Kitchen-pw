@@ -54,9 +54,19 @@ public class reservedController {
 	public String deleteRecipe(
 			@RequestParam("id") int id)
 	{
-		Recipe recipe = recipeService.getRecipeById(id);
-		recipeService.deleteRecipe(recipe);
-		return "redirect:/reserved";
+		try {
+			if(userService.checkUser((User) session.getAttribute("user")))
+			{
+				Recipe recipe = recipeService.getRecipeById(id);
+				recipeService.deleteRecipe(recipe);
+				return "redirect:/reserved";
+			}else {
+				return "redirect:/login";
+			}
+		}
+		catch (Exception e) {
+			return "redirect:/login";
+		}
 	}
 
 	

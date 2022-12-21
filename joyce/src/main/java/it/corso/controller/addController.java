@@ -48,11 +48,21 @@ public class addController {
 	@PostMapping("/adding")
 	public String addingRecipe(@ModelAttribute("recipe") Recipe recipe) {
 		
-		User user = (User) session.getAttribute("user");
-		recipe.setUser(user);
-		recipeService.addRecipe(recipe);
+		try {
+			if(userService.checkUser((User) session.getAttribute("user")))
+			{
+				User user = (User) session.getAttribute("user");
+				recipe.setUser(user);
+				recipeService.addRecipe(recipe);
+				return "redirect:/reserved";
+			}else {
+				return "redirect:/login";
+			}
+		}
+		catch (Exception e) {
+			return "redirect:/login";
+		}
 		
-		return "redirect:/reserved";
 	}
 	
 }

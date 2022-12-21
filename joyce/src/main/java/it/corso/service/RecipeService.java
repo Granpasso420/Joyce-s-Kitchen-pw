@@ -13,4 +13,6 @@ public interface RecipeService {
 	Recipe getRecipeById(int id);
 	
 	void addRecipe(Recipe recipe);
+	
+	void modifyRecipe(Recipe recipe);
 }
