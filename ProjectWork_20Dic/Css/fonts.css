@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'backToTheFuture';
+    src: url(../Fonts/BTTF.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'vintageWheel';
+    src: url(../Fonts/VintageWheel.ttf);
+    font-weight: normal;
+    font-style: normal;
+}

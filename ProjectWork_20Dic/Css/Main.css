@@ -1,106 +1,101 @@
-/* Wrapper */
-     .background, .foreground{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        z-index: -1;
-        margin-top: -115px;
-     }
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
-h1{
-    font-family: DejaVu Sans Mono, monospace !important;
-    font-size: 263% !important;
-}    
-.form-control{
-    background-color: white !important;
-}
-
-.btn-primary{
-    background-color:#95cada !important;
-    border-color: #447685 !important;
-    color:#447685 !important;
-}
-
-.btn:hover{
-    background-color: #447685 !important;
-    border-color: #447685 !important;
-    color:beige !important;
-
-}
 /* Body */
     body {
         background-color: aliceblue;
     }
 
-    .background {
-        transform: translateZ(-10px), scale(2);
-    }
-
-    .foreground {
-        transform: translateZ(-5px),  scale(2);
-    }
-        
-
 
 
 /* Navigation Bar */
     .navBarParent {
-        height: 10%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         background-color: #95cada;
+        box-sizing: border-box;
+        margin-top: -10px ;
+        margin-left: -8px;
+        margin-right: -8px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 25px;
+        padding-top: 25px;
     }
+
         .childFont {
-        color: white;
-        font-size: 50%;
-        margin-top: 1.5%;
-        margin-right: 6%;
+            font-family: "Market Deco ,sans-serif";
+            font-size: 20px;
         }
-        .logo{
-           
-            margin-left: 28px;
-        }
-        #logo{
-            height: 212px;
+    
+    .logIn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+         .childLogIn {
+            margin-left: 100px;
         }
 
+        
 
 /* Main Picture */
-.mainpicture{
-    width: 100%;
-    margin-top: 115px;
-    object-fit: cover;
-    height: 80%;
-}
-
-.search{
-    padding-top: 19px;
-}
-
-.cerca{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: #95cada;
-}
-
-#cercaRicetta{
-    margin-top: 1%;
-}
-
-
-@media (min-width: 800px) AND (max-width: 1120px) {
-    h1{
-        font-size: 295% !important;
-    }
-    .navBarParent{
-    }
-    .childFont{
+        .mainPicture {
+            display: flex;
+            justify-content: center;
+        }
         
-        margin-right: 3%;
-    }
-    }
+          h1 {
+            position: relative;
+          }
+
+          .test-menu{
+            color: white;
+            display: flex;
+            position: relative;
+            padding: 8px;
+          }
+          .test-menu span {
+            position: relative;
+          }
+          
+
+          .test-menu:hover {
+            color: #95cada;
+            cursor: pointer;
+
+          }
+          .test-menu::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            transform: scaleY(0);
+            background-color: #f7fdff;
+            transition: transform 0.2s ease-out, width 0.2s ease-out 0.2s;
+          }
+          .test-menu:hover::before {
+            transform: scaleY(1);
+            width: 100%;
+          }
+
+
+
+          
+/*
+          .h1Anim {
+            font-family: "Market Deco ,sans-serif";
+            color: rgb(255, 255, 255);
+            z-index: 10;
+            
+          }
+          .h1Anim:hover {
+            color: rgb(255, 0, 0);
+            z-index: 10;
+            transition: all 0.3s;
+          }
+*/         
 
