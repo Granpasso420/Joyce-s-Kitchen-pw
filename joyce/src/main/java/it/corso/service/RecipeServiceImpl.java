@@ -42,7 +42,6 @@ public class RecipeServiceImpl implements RecipeService{
 	@Override
 	public void addRecipe(Recipe recipe) {
 		
-		userDao.save((User) session.getAttribute("user"));
 		recipeDao.save(recipe);
 	}
 
