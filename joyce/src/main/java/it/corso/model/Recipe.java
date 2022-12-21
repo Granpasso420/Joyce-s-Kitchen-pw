@@ -1,5 +1,7 @@
 package it.corso.model;
 
+import java.io.Serializable;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,7 +15,12 @@ import javax.validation.constraints.Pattern;
 
 @Entity
 @Table (name="recipes")
-public class Recipe {
+public class Recipe implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,8 +31,12 @@ public class Recipe {
 	private String recipe_name;
 	
 	@Pattern(regexp = "[a-zA-Z\\s'.]", message = "{error.charnotallowed}")
-	@Column(name = "description", nullable = false)
-	private String description;
+	@Column(name = "ingredients", nullable = false)
+	private String ingredients;
+	
+	@Pattern(regexp = "[a-zA-Z\\s'.]", message = "{error.charnotallowed}")
+	@Column(name = "process", nullable = false)
+	private String process;
 	
 	
 	@Pattern(regexp = "[a-zA-Z\\s]{1,50}", message = "{error.charnotallowed}")
@@ -103,16 +114,26 @@ public class Recipe {
 //		this.recipecategory = recipecategory;
 //	}
 
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
+	
 
 	public User getUser() {
 		return user;
+	}
+
+	public String getIngredients() {
+		return ingredients;
+	}
+
+	public void setIngredients(String ingredients) {
+		this.ingredients = ingredients;
+	}
+
+	public String getProcess() {
+		return process;
+	}
+
+	public void setProcess(String process) {
+		this.process = process;
 	}
 
 	public void setUser(User user) {

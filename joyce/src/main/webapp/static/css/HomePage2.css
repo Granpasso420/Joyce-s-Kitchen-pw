@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h2{
+    font-family: Candara,sans-serif;
+}
+
+h3{
+    font-family: Candara,sans-serif;
+}
+body {
+    min-height: 1000px;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../Images/cibo.jpeg);
+    background-size: cover;
+}
+
+#bannersecondi {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../Images/bistecca.jpg);
+    background-size: cover;
+}
+.banner .content {
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2 {
+    font-size: 5em;
+    color: #fff;
+}
+
+.banner .content p {
+    font-size: 1em;
+    color:rgb(255, 248, 253);
+}
+
+.mainButton {
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    filter: blur(0px);
+    font-family: 'backToTheFuture';
+}
+
+.mainButton:hover {
+    transform: scale(1.1);
+    letter-spacing: 5px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    height: 12%;
+}
+
+header .navBar{
+    position: relative;
+    display: flex;
+}
+header .navBar li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header.sec li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+
+header .navBar li a {
+    text-decoration: none;
+    color: rgb(46, 19, 19);
+    font-weight: 300;
+}
+
+
+header.sticky{
+    background-color: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0,0.05);
+    height: 12%;
+}
+header.sticky .navBar li a {
+    color: black;
+}
+
+.homeButton {
+    font-size: 1em;
+    color: #fff;
+    background: #ff015600;
+    display: inline-block;
+    padding: 16px 4px;
+    margin-top: 20px;
+    border-radius: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.homeButton:hover {
+    transform: scale(1.1);
+    padding: 35px 15px;
+    background: rgb(252, 252, 255);
+    color: #ff0157;
+    
+}
+
+.logo {
+    margin-top: 72px;
+    margin-left: -10px;
+    height: 150px;
+}
+
+.logo:hover {
+    height: 170px;
+    transform: rotate(-5deg);
+    transition: 0.5s ease-in, 0.5s ease-out;
+}
+
+
+
+
+section {
+    padding: 100px;
+}
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row.col50 {
+    position: relative;
+    width: 48%
+}
+.titleChiSiamo {
+    color: #111;
+    font-weight:300;
+}
+.row.col50.tvImg {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+.row.col50.tvImg img {
+    position: absolute;
+    top: 0;
+    let: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#search-bar{
+    background: cadetblue;
+    min-height: 0;
+}
+
+.searchbar{
+    border: white;
+    text-align: center;
+    height: 38px;
+    border-radius: 3px;
+}
+
+.form1{
+    display: block;
+}
+
+#cercaScritta{
+    font-size: 34px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.ultime-div{
+    padding: 7%;
+}
+
+
+.ultime-descrizione{
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    margin-top: 3%;
+}
+
+.ultime-bottone{
+    text-align: center;
+    /* width: 1%; */
+    width: 43%;
+}
+
+
+.video{
+    display: flex;
+}
+
+#iframe{
+    height: 104%;
+    padding-top: 38px;
+    width: 102%;
+    /* margin-right: 69px; */
+    padding-left: 119px;
+}
+
+/*   Footer */
+footer * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer {
+    color: black;
+    background: #121315;
+}
+
+footer p {
+    color: #ccc;
+    max-width: 25em;
+    font-size: 0.9em;
+    line-height: 23px;
+}
+
+footer a {
+    color: aqua;
+    text-decoration: none;
+}
+
+footer h4{
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+footer.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+
+}
+
+.footer1{
+    position: relative;
+    background:
+    url(R.png)
+    no-repeat center;
+    background-size: cover;
+}
+
+.footer1::before{
+    content: '';
+    background: rgba(0,0,0,0,0.08);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.footer1.container{
+    position: relative;
+}
+
+.footer1 .footer-top .container,
+ .footer1 .col2,
+  .footer1 .footer-bottom .container,
+  .footer2 .container,
+  .footer3 .container {
+    display: flex;
+    justify-content:space-between;
+    gap: 2em;
+  }
+
+  .footer1 .footer-bottom .container {
+    padding: 1em 2em;
+    align-items: center;
+  }
+
+  .footer1 .menu li {
+    margin-bottom: 0.6em;
+  }
+
+  .footer1 .menu a:hover {
+    text-decoration: underline;
+  }
+
+  .foot{
+    background-color: cadetblue;
+  }
+
+  .brand{
+    display: block;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 1em;
+  }

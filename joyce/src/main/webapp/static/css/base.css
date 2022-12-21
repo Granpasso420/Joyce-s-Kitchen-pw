@@ -1,0 +1,32 @@
+.navbar{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+                  Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff7eb;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    border-color:transparent;
+    
+    
+    
+}
+
+ #logo{
+    position: relative;
+    top: -143px;
+    right: -46px;
+
+ }
+
+.navbar2{
+        padding: 40px;
+        background: #95cada;
+}
+
+a.navBar:hover {
+    color:red;
+}

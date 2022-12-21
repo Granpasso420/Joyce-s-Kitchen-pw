@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'vintageWheel';
+    src: url(../Fonts/Vintage\ Wheel\ Free\ Trial-82ce.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Body and Container */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.container {
+    background-color: rgb(39, 39, 39);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Shapes */
+.squareL {
+    position: absolute;
+    background-color: #d94b4b;
+    height: 250px;
+    width: 250px;;
+    border-radius: 65px;
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    transform: scaleX(1.8) rotate(45deg);
+}
+.squareS {
+    position: absolute;
+    background-color: #95cada;
+    height: 228px;
+    width: 228px;;
+    border-radius: 50px;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    transform: scaleX(1.8) rotate(45deg);
+    
+}
+.joyce {
+    position: absolute;
+    font-family: 'vintageWheel';
+    color: antiquewhite;
+    margin-bottom: 190px;
+    margin-left: 30px;
+    font-size: 80px;
+    transform: rotate(-6deg);
+    text-shadow: 3.5px 3.5px 0 rgb(94, 94, 94),
+                 6px 6px 0 rgb(94, 94, 94);
+}
+
+/* Letters */
+.letterK {
+    position: absolute;
+    font-size: 20px;
+    letter-spacing: 35px;
+    margin: 12px 0 0 18px;
+    color: #d94b4b;
+    margin: 165px 358px 0 0;
+    font-family: sans-serif;
+}
+.letterI {
+    position: absolute;
+    font-size: 20px;
+    letter-spacing: 35px;
+    margin: 12px 0 0 18px;
+    color: #d94b4b;
+    margin: 165px 227px 0 0;
+    font-family: sans-serif;
+}
+.letterT {
+    position: absolute;
+    font-size: 20px;
+    letter-spacing: 35px;
+    margin: 12px 0 0 18px;
+    color: #d94b4b;
+    margin: 165px 98px 0 0;
+    font-family: sans-serif;
+}
+.letterC {
+    position: absolute;
+    font-size: 20px;
+    letter-spacing: 35px;
+    margin: 12px 0 0 18px;
+    color: #d94b4b;
+    margin: 165px -33px 0 0;
+    font-family: sans-serif;
+}
+.letterH {
+    position: absolute;
+    font-size: 20px;
+    letter-spacing: 35px;
+    margin: 12px 0 0 18px;
+    color: #d94b4b;
+    margin: 165px -163px 0 0;
+    font-family: sans-serif;
+}
+.letterE {
+    position: absolute;
+    font-size: 20px;
+    letter-spacing: 35px;
+    margin: 12px 0 0 18px;
+    color: #d94b4b;
+    margin: 165px -293px 0 0;
+    font-family: sans-serif;
+}
+.letterN {
+    position: absolute;
+    font-size: 20px;
+    letter-spacing: 35px;
+    margin: 12px 0 0 18px;
+    color: #d94b4b;
+    margin: 165px -423px 0 0;
+    font-family: sans-serif;
+}
+
+/* Circles */
+.circles {
+    position: absolute;
+    background-color: antiquewhite;
+    height: 56px;
+    width: 56px;;
+    border-radius: 100%;
+    margin: 163px 392px 0 0;
+    box-shadow: 3.5px 3.5px 0 0 rgb(94, 94, 94), /* shadow K */
+                65px 0 0 0 antiquewhite, /* circle I */
+                68.5px 3.5px 0 0 rgb(94, 94, 94),
+                
+                130px 0 0 0 antiquewhite, /* circle T */
+                133.5px 3.5px 0 0 rgb(94, 94, 94),
+
+                195px 0 0 0 antiquewhite, /* circle C */
+                198.5px 3.5px 0 0 rgb(94, 94, 94),
+
+                260px 0 0 0 antiquewhite, /* circle H */
+                263.5px 3.5px 0 0 rgb(94, 94, 94),
+
+                325px 0 0 0 antiquewhite, /* circle E */
+                328.5px 3.5px 0 0 rgb(94, 94, 94),
+
+                390px 0 0 0 antiquewhite, /* circle N */
+                393.5px 3.5px 0 0 rgb(94, 94, 94);
+}
+
+/* Blur Animation */
+@keyframes blurAnimation {
+    00%  {filter: blur(30px)}
+    10% {filter: blur(40px)}
+    20% {filter: blur(50px)}
+    30% {filter: blur(65px)}
+    40% {filter: blur(75px)}
+    50% {filter: blur(80px)}
+    60% {filter: blur(75px)}
+    70% {filter: blur(65px)}
+    80% {filter: blur(50px)}
+    90% {filter: blur(40px)}
+    100% {filter: blur(30px)}
+}
+
+.squareLBlur {
+    position: absolute;
+    background-color: #dc4343;
+    height: 250px;
+    width: 250px;;
+    border-radius: 65px;
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    transform: scaleX(1.8) rotate(45deg);
+    filter: blur(30px);
+    animation-name: blurAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}

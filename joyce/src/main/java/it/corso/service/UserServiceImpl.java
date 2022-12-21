@@ -23,6 +23,7 @@ public class UserServiceImpl implements UserService {
 		List<User> users = (List<User>) dao.findAll();
 		for(User u : users) {
 			if(u.getUser().equals(user.getUser()) && u.getPassword().equals(user.getPassword())) {
+				user.setId(u.getId());
 				if(session.getAttribute("user") == null || user.getId() != ((User) session.getAttribute("user")).getId()) {
 					session.setAttribute("user", user);
 				}

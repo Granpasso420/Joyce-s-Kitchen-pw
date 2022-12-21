@@ -1,0 +1,19 @@
+.mod{
+    margin-left: 350px ;
+    margin-right: 200px ;
+}
+
+.bgred{
+    background-color: #ec5051;
+    border-color: #ec5051;
+}
+
+.bgred:hover {
+    background-color: red !important;
+    border-color: red !important;
+}
+
+.bgblue {
+    background-color: #95cada;
+    border-color: #95cada;
+}

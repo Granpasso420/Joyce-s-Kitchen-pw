@@ -1,0 +1,41 @@
+#banner {
+    position: relative;
+    width: 100%;
+    min-height: 79vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: cadetblue;
+    background-size: cover;
+}
+
+.fotoRivista{
+    background: cadetblue;
+    width: 100%;
+    height: 600px
+}
+
+.banner .content {
+    margin-top: 8%;}
+
+
+.rivista{
+    margin-left: -46%;
+    width: 142%;
+}
+
+#testoRivista{
+    /* justify-content: center; */
+    /* text-align: center; */
+    margin-top: 5%;
+    margin-left: 1%;
+}
+
+#promoRivista{
+    margin-top: 40px;
+    margin-right: 40%;
+}
+
+#decoration{
+    background: url(../Images/chcked.jpg);
+}
