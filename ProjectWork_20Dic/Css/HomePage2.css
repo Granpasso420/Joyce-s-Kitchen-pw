@@ -256,6 +256,19 @@ section {
     width: 43%;
 }
 
+
+.video{
+    display: flex;
+}
+
+#iframe{
+    height: 104%;
+    padding-top: 38px;
+    width: 102%;
+    /* margin-right: 69px; */
+    padding-left: 119px;
+}
+
 /*   Footer */
 footer * {
     box-sizing: border-box;
