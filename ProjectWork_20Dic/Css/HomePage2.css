@@ -30,16 +30,7 @@ body {
     background-size: cover;
 }
 
-#bannersecondi {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(../Images/bistecca.jpg);
-    background-size: cover;
-}
+
 .banner .content {
     max-width: 900px;
     text-align: center;
@@ -93,6 +84,8 @@ header {
     transition: 0.5s;
     height: 12%;
 }
+
+
 
 header .navBar{
     position: relative;
