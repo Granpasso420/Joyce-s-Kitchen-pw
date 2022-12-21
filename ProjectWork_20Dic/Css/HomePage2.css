@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../Images/header1.jpg);
+    background: url(../Images/cibo.jpeg);
     background-size: cover;
 }
 
@@ -84,11 +84,21 @@ header .navBar li {
     list-style: none;
     margin-left: 30px;
 }
-header .navBar li a {
+
+header.sec li a {
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-weight: 300;
 }
+
+
+header .navBar li a {
+    text-decoration: none;
+    color: rgb(46, 19, 19);
+    font-weight: 300;
+}
+
+
 header.sticky{
     background-color: #fff;
     padding: 10px 100px;
@@ -166,3 +176,178 @@ section {
     height: 100%;
     object-fit: cover;
 }
+
+#search-bar{
+    background: cadetblue;
+    min-height: 0;
+}
+
+.searchbar{
+    border: white;
+    text-align: center;
+    height: 38px;
+    border-radius: 3px;
+}
+
+.form1{
+    display: block;
+}
+
+#cercaScritta{
+    font-size: 27px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#ricette-recenti{
+    background: #ff0157;
+}
+
+
+#ultima-ricetta{
+    margin-top: -32%;
+    margin-bottom: 5%;
+    margin-left: 68%;
+    margin-right: 6%;
+    background-color: white;
+    box-shadow: 10px 11px 10px rgba(0, 0, 0, 0.5);
+}
+
+#ultima-scritta{
+    margin-top: -18%;
+    color:#ec5051;
+    font-weight: bold;
+    text-shadow: 2px 0 rgb(255, 255, 255), 0 1px white, 1px 0 white, 0 -1px white;
+
+}
+
+.ultime-im{
+    width: 57%;
+    object-fit: cover;
+    height: 325px;
+    /* margin-top: 1%; */
+    margin-left: -30%;
+}
+
+.ultime-div{
+    padding: 7%;
+}
+
+
+.ultime-titolo{
+    margin-left: -40%;
+    font-size: 51px;
+    color: #95cada;
+    margin-top: 1%;
+}
+
+.ultime-descrizione{
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    margin-top: 3%;
+}
+
+.ultime-bottone{
+    text-align: center;
+    /* width: 1%; */
+    width: 43%;
+}
+
+/*   Footer */
+footer * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer {
+    color: black;
+    background: #121315;
+}
+
+footer p {
+    color: #ccc;
+    max-width: 25em;
+    font-size: 0.9em;
+    line-height: 23px;
+}
+
+footer a {
+    color: aqua;
+    text-decoration: none;
+}
+
+footer h4{
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+footer.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+
+}
+
+.footer1{
+    position: relative;
+    background:
+    url(R.png)
+    no-repeat center;
+    background-size: cover;
+}
+
+.footer1::before{
+    content: '';
+    background: rgba(0,0,0,0,0.08);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.footer1.container{
+    position: relative;
+}
+
+.footer1 .footer-top .container,
+ .footer1 .col2,
+  .footer1 .footer-bottom .container,
+  .footer2 .container,
+  .footer3 .container {
+    display: flex;
+    justify-content:space-between;
+    gap: 2em;
+  }
+
+  .footer1 .footer-bottom .container {
+    padding: 1em 2em;
+    align-items: center;
+  }
+
+  .footer1 .menu li {
+    margin-bottom: 0.6em;
+  }
+
+  .footer1 .menu a:hover {
+    text-decoration: underline;
+  }
+
+  .foot{
+    background-color: cadetblue;
+  }
+
+  .brand{
+    display: block;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
