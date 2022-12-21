@@ -1,4 +1,4 @@
-.banner {
+#banner {
     position: relative;
     width: 100%;
     min-height: 79vh;
@@ -20,8 +20,8 @@
 
 
 .rivista{
-    margin-left: 17%;
-    width: 81%;
+    margin-left: -46%;
+    width: 142%;
 }
 
 #testoRivista{
@@ -33,4 +33,9 @@
 
 #promoRivista{
     margin-top: 40px;
+    margin-right: 40%;
+}
+
+#decoration{
+    background: url(../Images/chcked.jpg);
 }
