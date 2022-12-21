@@ -12,10 +12,6 @@ h2{
 h3{
     font-family: Candara,sans-serif;
 }
-
-h4{
-    font-family: Candara,sans-serif;
-}
 body {
     min-height: 1000px;
 }
@@ -72,12 +68,6 @@ body {
 .mainButton:hover {
     transform: scale(1.1);
     letter-spacing: 5px;
-    color: #fff;
-}
-
-#buttonStrange:hover{
-    transform: scale(1.3);
-    padding: 15px 35px;
 }
 
 header {
@@ -153,7 +143,6 @@ header.sticky .navBar li a {
     margin-top: 72px;
     margin-left: -10px;
     height: 150px;
-    transition: 0.5s;
 }
 
 .logo:hover {
@@ -251,21 +240,11 @@ section {
     padding-left: 119px;
 }
 
-#lastRecipe{
-    max-width: 97%;
-    margin-left: -10%;
-}
-
-#ultimaUscita{
-    background:#f5b7b7;
-}
-
 /*   Footer */
 
 .foot{
     font-family: sans-serif;
-    list-style: none;
-    list-style-type:none;
+    
 }
 
 
