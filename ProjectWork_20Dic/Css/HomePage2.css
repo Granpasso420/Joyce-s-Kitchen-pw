@@ -86,7 +86,7 @@ header .navBar li {
 }
 header .navBar li a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(46, 19, 19);
     font-weight: 300;
 }
 header.sticky{
