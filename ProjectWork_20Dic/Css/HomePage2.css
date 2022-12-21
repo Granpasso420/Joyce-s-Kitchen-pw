@@ -91,12 +91,12 @@ header.sec li a {
     font-weight: 300;
 }
 
-header .navBar {
+
+header .navBar li a {
     text-decoration: none;
     color: rgb(46, 19, 19);
     font-weight: 300;
 }
-
 
 
 header.sticky{
@@ -344,7 +344,7 @@ footer.container{
   .foot{
     background-color: cadetblue;
   }
-  
+
   .brand{
     display: block;
     font-size: 1.8em;
