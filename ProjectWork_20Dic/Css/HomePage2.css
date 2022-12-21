@@ -153,6 +153,7 @@ header.sticky .navBar li a {
     margin-top: 72px;
     margin-left: -10px;
     height: 150px;
+    transition: 0.5s;
 }
 
 .logo:hover {
