@@ -153,7 +153,7 @@ header.sticky .navBar li a {
     font-size:360%;
     /*font-family: 'vintageWheel';*/
     text-align: center;
-    color: #97cbdb;
+    color: cadetblue;
     margin-top: -10%;
     margin-bottom: 6%;
 }
@@ -168,6 +168,7 @@ header.sticky .navBar li a {
     /* opacity: 0.8; */
     background-image: radial-gradient(#ffffff -4px, #f5b7b7 2.5px);
     background-size: 20px 20px;
+    padding-bottom: 55px;
 }
 
 .coloreTesto{
@@ -243,7 +244,7 @@ section {
 }
 
 .shadow{
-    text-shadow: 4px 4px 3px black;
+    text-shadow: 4px 2px 0px rgb(0 0 0 / 70%);
     box-shadow: 0px 0px 0px !important;
 }
 
@@ -251,6 +252,7 @@ section {
     text-align: center;
     /* width: 1%; */
     width: 43%;
+    margin-top: 31px;
 }
 
 
