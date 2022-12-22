@@ -29,7 +29,7 @@ public class Recipe{
 	private String process;
 	
 	@Pattern(regexp = "[a-zA-Z]{1,50}", message = "{error.charnotallowed}")
-	@Column(name = "category", length = 50, nullable = true) 
+	@Column(name = "category", length = 50, nullable = false) 
 	private String recipecategory;
 	
 	@Pattern(regexp = "[a-zA-Z\\s]{1,50}", message = "{error.charnotallowed}")
@@ -37,7 +37,7 @@ public class Recipe{
 	private String time;
 	
 	@Pattern(regexp = "[a-zA-Z]{1,50}", message = "{error.charnotallowed}")
-	@Column(name = "difficulty", length = 50, nullable = true) 
+	@Column(name = "difficulty", length = 50, nullable = false) 
 	private String difficulty;
 	// FOTO
 	

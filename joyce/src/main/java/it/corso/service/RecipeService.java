@@ -5,7 +5,9 @@ import java.util.List;
 import it.corso.model.Recipe;
 
 public interface RecipeService {
-
+	
+	public List<Recipe> getList(String categoria);
+	
 	List<Recipe> getRecipes();
 	
 	void deleteRecipe(Recipe recipe);

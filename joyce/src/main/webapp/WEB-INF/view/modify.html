@@ -7,22 +7,21 @@
 		<h1 th:text="${title}"></h1>
 
 			<form name="fmod" id="fmod" method="POST" th:object="${recipe}">
-				<p>Name <input type="text" th:field="*{recipe_name}" th:value="${recipe.recipe_name}" required/></p>
-				<p>Ingredients <input type="text" th:field="*{ingredients}" th:value="${recipe.ingredients}" required/></p>
-				<p>Process <input type="text" th:field="*{process}" th:value="${recipe.process}" required/></p>
-				<p>Time <input type="text" th:field="*{time}" th:value="${recipe.time}" required/></p>
+				<input type="hidden" th:field="*{id_recipe}"/>
+				<p>Name <input type="text" th:field="*{recipe_name}" required/></p>
+				<p>Ingredients <input type="text" th:field="*{ingredients}" required/></p>
+				<p>Process <input type="text" th:field="*{process}" required/></p>
+				<p>Time <input type="text" th:field="*{time}" required/></p>
 				
 				<p><label for="formFile" class="form-label">Categoria</label>
-			            <select th:field="*{recipecategory}" th:value="${recipe.recipecategory}" required>
-			            	<option value="0" selected disabled>Scegli</option>
+			            <select th:field="*{recipecategory}" required>
 			            	<option value="primo">Primo</option>
 			            	<option value="secondo">Secondo</option>
 			            	<option value="dolce">Dolce</option>
 			            </select>
 		            
 					<label for="formFile" class="form-label">Difficoltà</label>
-			            <select th:field="*{difficulty}" th:value="${recipe.difficulty}" required>
-			            	<option value="0" selected disabled>Scegli</option>
+			            <select th:field="*{difficulty}" required>
 			            	<option value="facile">Facile</option>
 			            	<option value="media">Media</option>
 			            	<option value="difficile">Difficile</option>
