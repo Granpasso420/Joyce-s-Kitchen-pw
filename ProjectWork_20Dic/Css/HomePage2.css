@@ -282,114 +282,94 @@ p {
     padding-left: 119px;
 }
 
-/* Cosa SSSSWAG */
 
-.cardProva{
-    position: relative;
-    width: 600px;
-    height: 350px;
-    background: none;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-    transition: 0.5s;
+/*briciole di pane*/
+.panegrande{
+    padding-top: 27px !important;
+    padding-left: 39px;
 }
 
-.cardProva .circle{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    overflow: hidden;
+#freccia{
+    margin-top: 7px;
+    margin-right: 4px;
+    margin-left: -14px;
 }
-
-.cardProva .circle::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:#ff0157;
-    clip-path: circle(120 px at center);
-    transition: 0.5s;
-}
-
-.cardProva:hover .circle:before{
-    background: cadetblue;
-    clip-path: circle(400 px at center);
+.pane{
+    display: flex;}
     
+
+.iconepane{
+    background-color: #f5b7b7;
+    padding: 9px;
+    border-radius: 131px;
+    object-fit: cover;
+    height: 40px;
+    transition: 0.2s;
 }
 
-.cardProva img{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 300px;
-    pointer-events: none;
-    transition: 0.5s;
-    border-radius: 100%;
+.iconepane:hover{
+    padding: 0px;
+    transition: 0.2s;
+    box-shadow: 1px 1px 2px #f5b7b7, 0 0 25px #f5b7b7, 0 0 5px #f8f9fa;
 }
 
-.cardProva:hover img{
-    left: 75%;
-    height: 300px;
-
+.panepane{
+    object-fit: cover;
+    height: 40px;
+    transition: 0.2s;
+    margin-right: 19px;
 }
 
-.cardProva .content{
-    position:relative;
-    width: 50%;
-    left: 20%;
-    padding: 20px 20px 20px 40px;
-    transition: 0.5s;
-    opacity: 0;
-    visibility: absolute;
+
+.distanzapane{
+    margin-right: 19px;
+}
+/*   NEWSLETTER   */
+
+#newsletter {
+    font-family: sans-serif;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #f5b7b7;
 }
 
-.cardProva:hover .content{
-    left: 0;
-    opacity: 1;
-    visibility: absolute;
-
+.newsletter {
+    text-align: center;
 }
 
-.cardProva .content h2{
-    color:#fff;
+.newsletter p {
+    margin-top: 5px;
+}
+
+#newsmailform{
+    border: white;
+    text-align: center;
+    height: 38px;
+    width: 500px;
+    border-radius: 3px;
+}
+
+.newsButton {
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
     text-transform: uppercase;
-    font-size: 2em;
-    line-height: 1em;
-    margin-bottom: 5px;
-
-}
-
-.cardProva .content p{
-    color: #fff;
-}
-
-.cardProva .content p {
-    color: #fff;
-}
-
-.cardProva .content a{
-    position: relative;
-    color: #ff0157;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background: #fff;
-    color:#111;
-    margin-top: 10px;
-    display:inline-block;
     text-decoration: none;
-    font-weight: 700;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    filter: blur(0px);
+    font-family: 'backToTheFuture';
 }
-/*   Footer */
 
-  
+.newsButton:hover {
+    transform: scale(1.1);
+    letter-spacing: 5px;
+}
+
+/*   Footer */
 
 .foot{
     font-family: sans-serif;
@@ -423,11 +403,7 @@ footer {
     text-shadow: black 15px 2px 30px;
     text-decoration: none;
 }
-
-  
  
-  
-  
 footer p {
     color: #ccc;
     max-width: 25em;
@@ -512,18 +488,23 @@ footer.container{
 
   .footlist {
     list-style-type: none;
+    padding-right: 80px;
+    color: aliceblue;
   }
 
   .footlist a {
     text-decoration: none;
-    color: white;
+    color: aliceblue;
+  }
+
+  .footlist p {
+    color: aliceblue;
   }
 
   .copyright p {
     margin-left: auto;
     margin-right: auto;
   }
-
 
   @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
@@ -545,7 +526,6 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Poppins", sans-serif;
-  place-items: center;
 }
 
 .wrapper {

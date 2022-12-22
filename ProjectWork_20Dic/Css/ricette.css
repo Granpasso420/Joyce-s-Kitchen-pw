@@ -8,7 +8,7 @@
 #bannersecondi {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 79vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@
 #bannerprimi {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 79vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@
 #bannerdolci {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 79vh;
     display: flex;
     justify-content: center;
     align-items: center;

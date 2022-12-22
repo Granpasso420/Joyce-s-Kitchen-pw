@@ -18,7 +18,7 @@
 		<input type="button" value="Admin" id="admin"/>
 		<h1 th:text="${title}"></h1>-->
     </header>
-     <form name="fadd" id="fadd" method="POST" th:object="${recipe}">
+     <form name="fadd" id="fadd" method="POST" th:object="${recipe}" enctype="multipart/form-data">
     <div class="mod">
         <h1 class="h3 mb-3 fw-normal">Aggiungi nuova ricetta</h1>
         <br>

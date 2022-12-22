@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Dic 21, 2022 alle 16:45
+-- Creato il: Dic 22, 2022 alle 15:22
 -- Versione del server: 10.4.25-MariaDB
 -- Versione PHP: 8.1.10
 
@@ -20,28 +20,38 @@ SET time_zone = "+00:00";
 --
 -- Database: `joyce`
 --
-CREATE DATABASE IF NOT EXISTS `joyce` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `joyce`;
 
 -- --------------------------------------------------------
 
 --
--- Struttura della tabella `difficulty`
+-- Struttura stand-in per le viste `dolci`
+-- (Vedi sotto per la vista effettiva)
 --
+CREATE TABLE `dolci` (
+`id_recipe` int(11)
+,`recipe_name` varchar(50)
+,`ingredients` text
+,`process` text
+,`time` varchar(50)
+,`category` varchar(50)
+,`difficulty` varchar(50)
+);
 
-CREATE TABLE `difficulty` (
-  `id_difficulty` int(11) NOT NULL,
-  `description` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+-- --------------------------------------------------------
 
 --
--- Dump dei dati per la tabella `difficulty`
+-- Struttura stand-in per le viste `primi`
+-- (Vedi sotto per la vista effettiva)
 --
-
-INSERT INTO `difficulty` (`id_difficulty`, `description`) VALUES
-(1, 'Facile'),
-(2, 'Medio'),
-(3, 'Difficile');
+CREATE TABLE `primi` (
+`id_recipe` int(11)
+,`recipe_name` varchar(50)
+,`ingredients` text
+,`process` text
+,`time` varchar(50)
+,`category` varchar(50)
+,`difficulty` varchar(50)
+);
 
 -- --------------------------------------------------------
 
@@ -52,66 +62,37 @@ INSERT INTO `difficulty` (`id_difficulty`, `description`) VALUES
 CREATE TABLE `recipes` (
   `id_recipe` int(11) NOT NULL,
   `recipe_name` varchar(50) NOT NULL,
-  `author` int(11) DEFAULT NULL,
   `ingredients` text NOT NULL,
   `process` text NOT NULL,
-  `difficulty` int(11) DEFAULT NULL,
   `time` varchar(50) NOT NULL,
-  `category` int(11) DEFAULT NULL,
-  `suitable_for` int(11) DEFAULT NULL
+  `category` varchar(50) NOT NULL,
+  `difficulty` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dump dei dati per la tabella `recipes`
 --
 
-INSERT INTO `recipes` (`id_recipe`, `recipe_name`, `author`, `ingredients`, `process`, `difficulty`, `time`, `category`, `suitable_for`) VALUES
-(25, 'Giorgio', 1, '', 'Fallo a pezzi e cucinalo, 180 gradi, forno ventilato', NULL, '2 ore', NULL, NULL),
-(29, 'Giorgio', 1, '', 'Fallo a pezzi e cucinalo, 180 gradi, forno ventilato', NULL, '2 ore', NULL, NULL),
-(35, 'Giorgio', 1, '', 'Fallo a pezzi e cucinalo, 180 gradi, forno ventilato', NULL, '2 ore', NULL, NULL),
-(37, 'Giorgio', 1, '', 'Fallo a pezzi e cucinalo, 180 gradi, forno ventilato', NULL, '2 ore', NULL, NULL),
-(38, 'ciao', 1, 'cioa', 'csa', NULL, 'cas', NULL, NULL),
-(39, 'ciao', NULL, 'cioa', 'ciao', NULL, '12', NULL, NULL);
+INSERT INTO `recipes` (`id_recipe`, `recipe_name`, `ingredients`, `process`, `time`, `category`, `difficulty`) VALUES
+(43, 'Finocchietto all\'amaretto', 'cose', 's', '7 ore', 'secondo', 'difficile'),
+(50, 'Giorgione', 'Oca e Pancetta', 'Stro', '2 ore', 'dolce', 'facile'),
+(51, 'Aria', 'Aria', 'Respira', '2 ore', 'primo', 'facile');
 
 -- --------------------------------------------------------
 
 --
--- Struttura della tabella `recipe_category`
+-- Struttura stand-in per le viste `secondi`
+-- (Vedi sotto per la vista effettiva)
 --
-
-CREATE TABLE `recipe_category` (
-  `id_category` int(11) NOT NULL,
-  `description` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dump dei dati per la tabella `recipe_category`
---
-
-INSERT INTO `recipe_category` (`id_category`, `description`) VALUES
-(1, 'Primo'),
-(2, 'Secondo'),
-(3, 'Dolce');
-
--- --------------------------------------------------------
-
---
--- Struttura della tabella `suitable_for`
---
-
-CREATE TABLE `suitable_for` (
-  `id_suitable_for` int(11) NOT NULL,
-  `description` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dump dei dati per la tabella `suitable_for`
---
-
-INSERT INTO `suitable_for` (`id_suitable_for`, `description`) VALUES
-(1, 'Vegan'),
-(2, 'Celiaci'),
-(3, 'Intolleranti al lattosio');
+CREATE TABLE `secondi` (
+`id_recipe` int(11)
+,`recipe_name` varchar(50)
+,`ingredients` text
+,`process` text
+,`time` varchar(50)
+,`category` varchar(50)
+,`difficulty` varchar(50)
+);
 
 -- --------------------------------------------------------
 
@@ -122,7 +103,6 @@ INSERT INTO `suitable_for` (`id_suitable_for`, `description`) VALUES
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `user` varchar(50) NOT NULL,
-  `mail` varchar(50) DEFAULT NULL,
   `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -130,60 +110,45 @@ CREATE TABLE `users` (
 -- Dump dei dati per la tabella `users`
 --
 
-INSERT INTO `users` (`id`, `user`, `mail`, `password`) VALUES
-(1, 'user', NULL, 'user'),
-(11, 'user', NULL, 'user');
+INSERT INTO `users` (`id`, `user`, `password`) VALUES
+(1, 'user', 'user');
 
 -- --------------------------------------------------------
 
 --
--- Struttura della tabella `user_type`
+-- Struttura per vista `dolci`
 --
+DROP TABLE IF EXISTS `dolci`;
 
-CREATE TABLE `user_type` (
-  `id` int(11) NOT NULL,
-  `description` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `dolci`  AS SELECT `recipes`.`id_recipe` AS `id_recipe`, `recipes`.`recipe_name` AS `recipe_name`, `recipes`.`ingredients` AS `ingredients`, `recipes`.`process` AS `process`, `recipes`.`time` AS `time`, `recipes`.`category` AS `category`, `recipes`.`difficulty` AS `difficulty` FROM `recipes` WHERE `recipes`.`category` = 'dolce' GROUP BY `recipes`.`recipe_name``recipe_name`  ;
+
+-- --------------------------------------------------------
 
 --
--- Dump dei dati per la tabella `user_type`
+-- Struttura per vista `primi`
 --
+DROP TABLE IF EXISTS `primi`;
 
-INSERT INTO `user_type` (`id`, `description`) VALUES
-(1, 'user'),
-(2, 'admin');
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `primi`  AS SELECT `recipes`.`id_recipe` AS `id_recipe`, `recipes`.`recipe_name` AS `recipe_name`, `recipes`.`ingredients` AS `ingredients`, `recipes`.`process` AS `process`, `recipes`.`time` AS `time`, `recipes`.`category` AS `category`, `recipes`.`difficulty` AS `difficulty` FROM `recipes` WHERE `recipes`.`category` = 'primo' GROUP BY `recipes`.`recipe_name``recipe_name`  ;
+
+-- --------------------------------------------------------
+
+--
+-- Struttura per vista `secondi`
+--
+DROP TABLE IF EXISTS `secondi`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `secondi`  AS SELECT `recipes`.`id_recipe` AS `id_recipe`, `recipes`.`recipe_name` AS `recipe_name`, `recipes`.`ingredients` AS `ingredients`, `recipes`.`process` AS `process`, `recipes`.`time` AS `time`, `recipes`.`category` AS `category`, `recipes`.`difficulty` AS `difficulty` FROM `recipes` WHERE `recipes`.`category` = 'secondo' GROUP BY `recipes`.`recipe_name``recipe_name`  ;
 
 --
 -- Indici per le tabelle scaricate
 --
 
 --
--- Indici per le tabelle `difficulty`
---
-ALTER TABLE `difficulty`
-  ADD PRIMARY KEY (`id_difficulty`);
-
---
 -- Indici per le tabelle `recipes`
 --
 ALTER TABLE `recipes`
-  ADD PRIMARY KEY (`id_recipe`),
-  ADD KEY `author` (`author`),
-  ADD KEY `recipe_category` (`category`),
-  ADD KEY `suitable_for` (`suitable_for`),
-  ADD KEY `difficulty` (`difficulty`);
-
---
--- Indici per le tabelle `recipe_category`
---
-ALTER TABLE `recipe_category`
-  ADD PRIMARY KEY (`id_category`);
-
---
--- Indici per le tabelle `suitable_for`
---
-ALTER TABLE `suitable_for`
-  ADD PRIMARY KEY (`id_suitable_for`);
+  ADD PRIMARY KEY (`id_recipe`);
 
 --
 -- Indici per le tabelle `users`
@@ -192,63 +157,20 @@ ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indici per le tabelle `user_type`
---
-ALTER TABLE `user_type`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT per le tabelle scaricate
 --
-
---
--- AUTO_INCREMENT per la tabella `difficulty`
---
-ALTER TABLE `difficulty`
-  MODIFY `id_difficulty` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT per la tabella `recipes`
 --
 ALTER TABLE `recipes`
-  MODIFY `id_recipe` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
-
---
--- AUTO_INCREMENT per la tabella `recipe_category`
---
-ALTER TABLE `recipe_category`
-  MODIFY `id_category` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT per la tabella `suitable_for`
---
-ALTER TABLE `suitable_for`
-  MODIFY `id_suitable_for` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_recipe` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT per la tabella `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
-
---
--- AUTO_INCREMENT per la tabella `user_type`
---
-ALTER TABLE `user_type`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- Limiti per le tabelle scaricate
---
-
---
--- Limiti per la tabella `recipes`
---
-ALTER TABLE `recipes`
-  ADD CONSTRAINT `author` FOREIGN KEY (`author`) REFERENCES `users` (`id`),
-  ADD CONSTRAINT `difficulty` FOREIGN KEY (`difficulty`) REFERENCES `difficulty` (`id_difficulty`),
-  ADD CONSTRAINT `recipe_category` FOREIGN KEY (`category`) REFERENCES `recipe_category` (`id_category`),
-  ADD CONSTRAINT `suitable_for` FOREIGN KEY (`suitable_for`) REFERENCES `suitable_for` (`id_suitable_for`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
