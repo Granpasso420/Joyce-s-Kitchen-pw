@@ -39,3 +39,11 @@
 .sec{
     color:white;
 }
+
+#proc{
+    font-weight: bold !important;
+    font-size: 234%;
+    color: cadetblue !important;
+    margin-top: -2%;
+    margin-bottom: 1.3%;
+}

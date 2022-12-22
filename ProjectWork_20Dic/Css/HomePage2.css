@@ -148,12 +148,12 @@ header.sticky .navBar li a {
     transition: 0.5s ease-in, 0.5s ease-out;
 }
 
-#scritta{
+.scritta{
     font-weight: bold !important; 
     font-size:360%;
     /*font-family: 'vintageWheel';*/
     text-align: center;
-    color: cadetblue;
+    color: cadetblue !important;
     margin-top: -10%;
     margin-bottom: 6%;
 }
