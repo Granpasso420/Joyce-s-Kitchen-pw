@@ -8,17 +8,6 @@
     
 }
 
-#fotoprincipale{
-    width: 100%;
-    object-fit: cover;
-    max-height: 91%;
-    margin-top: 3%;
-    grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
 .titoloRicetta{
     position: fixed;
     margin-top: -4%;
@@ -31,4 +20,47 @@
     margin-top: 17%;
     margin-left: -2%;
     color: black !important;
+}
+
+.ricettaFoto_Descrizione {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#fotoprincipale {
+    min-width: 750px;
+    height: inherit;
+    object-fit: cover;
+    height: 478px;
+}
+
+#ingredienti{
+    height: 509px;
+    position: relative;
+    display: block;
+}
+.testoIng{
+    text-align: center;
+    font-size: 20px;
+    padding-right: 65px;
+    /* padding: 86px; */
+    padding-left: 94px;
+    padding-top: 31px;
+    text-align: start;
+}
+
+.icon{
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+}
+
+.testoRicetta{
+    text-align: center;
+        font-weight: lighter;
+        font-size: 35px;
 }

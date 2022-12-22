@@ -9,12 +9,17 @@ h2{
     font-family: Candara,sans-serif;
 }
 
+h1{
+    font-family: Candara,sans-serif;
+}
+
 h3{
     font-family: Candara,sans-serif;
 }
 
 h4{
     font-family: Candara,sans-serif;
+    font-weight: normal;
 }
 body {
     min-height: 1000px;
@@ -201,20 +206,6 @@ section {
     object-fit: cover;
 }
 
-.ricettaFoto_Descrizione {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-#cageislove {
-    width: 500px;
-    height: inherit;
-    object-fit: cover;
-}
 
 p {
     font-family: 'Candara';
