@@ -1,3 +1,34 @@
 #banner {
     background: url(../Images/pasta.jpg) !important;
 }
+
+.fotoIngredienti{
+    display: grid;
+    column-gap: 50px;
+    
+}
+
+#fotoprincipale{
+    width: 100%;
+    object-fit: cover;
+    max-height: 91%;
+    margin-top: 3%;
+    grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.titoloRicetta{
+    position: fixed;
+    margin-top: -4%;
+    margin-left: -2%;
+    transition: 0.2s;
+}
+
+.titoloRicettascroll{
+    position: absolute;
+    margin-top: 17%;
+    margin-left: -2%;
+    color: black !important;
+}
