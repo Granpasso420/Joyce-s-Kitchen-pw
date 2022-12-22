@@ -46,7 +46,7 @@ public class modifyController {
 		}
 	}
 	
-	@PostMapping("modifying")
+	@PostMapping()
 	public String modify(@ModelAttribute("recipe") Recipe recipe) {
 		
 		recipeService.addRecipe(recipe);
