@@ -30,7 +30,6 @@ body {
     background-size: cover;
 }
 
-
 .banner .content {
     max-width: 900px;
     text-align: center;
@@ -99,8 +98,6 @@ header {
     height: 12%;
 }
 
-
-
 header .navBar{
     position: relative;
     display: flex;
@@ -133,118 +130,6 @@ header.sticky{
 header.sticky .navBar li a {
     color: black;
 }
-
-
-/* Navigation Bar buttons */
-    .homeButton {
-        font-size: 1em;
-        color: #fff;
-        background: #ff015600;
-        display: inline-block;
-        padding: 16px 4px;
-        margin-top: 20px;
-        border-radius: 100%;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 2px;
-        transition: 0.5s;
-    }
-
-    .homeButton:hover {
-        transform: scale(1.1);
-        padding: 38px 20px;
-        background: cadetblue;
-        color: rgb(226, 239, 239);
-        
-    }
-
-    .ricetteButton {
-        font-size: 1em;
-        color: #fff;
-        background: #ff015600;
-        display: inline-block;
-        padding: 16px 4px;
-        margin-top: 20px;
-        border-radius: 100%;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 2px;
-        transition: 0.5s;
-    }
-
-    .ricetteButton:hover {
-        transform: scale(1.1);
-        padding: 40px 8px;
-        background: cadetblue;
-        color: rgb(226, 239, 239);
-        
-    }
-
-    .chiSiamoButton {
-        font-size: 1em;
-        color: #fff;
-        background: #ff015600;
-        display: inline-block;
-        padding: 16px 4px;
-        margin-top: 20px;
-        border-radius: 100%;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 2px;
-        transition: 0.5s;
-    }
-
-    .chiSiamoButton:hover {
-        transform: scale(1.1);
-        padding: 40px 2px;
-        background: cadetblue;
-        color: rgb(226, 239, 239);
-        
-    }
-
-    .rivistaButton {
-        font-size: 1em;
-        color: #fff;
-        background: #ff015600;
-        display: inline-block;
-        padding: 16px 4px;
-        margin-top: 20px;
-        border-radius: 100%;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 2px;
-        transition: 0.5s;
-    }
-
-    .rivistaButton:hover {
-        transform: scale(1.1);
-        padding: 35px 10px;
-        background: cadetblue;
-        color: rgb(226, 239, 239);
-        
-    }
-
-    .adminButton {
-        font-size: 1em;
-        color: #fff;
-        background: #ff015600;
-        display: inline-block;
-        padding: 16px 4px;
-        margin-top: 20px;
-        border-radius: 100%;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 2px;
-        transition: 0.5s;
-    }
-
-    .adminButton:hover {
-        transform: scale(1.1);
-        padding: 30px 10px;
-        background: cadetblue;
-        color: rgb(226, 239, 239);
-        
-    }
 
 .logo {
     margin-top: 72px;
@@ -284,7 +169,6 @@ section {
 .titleChiSiamo {
     color: #111;
     font-weight:300;
-
     font-family: 'Candara',sans-serif;
 }
 .row.col50.tvImg {
@@ -301,6 +185,20 @@ section {
     object-fit: cover;
 }
 
+.ricettaFoto_Descrizione {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#cageislove {
+    width: 500px;
+    height: inherit;
+    object-fit: cover;
+}
 
 p {
     font-family: 'Candara';
