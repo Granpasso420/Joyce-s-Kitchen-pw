@@ -46,11 +46,11 @@ public class modifyController {
 		}
 	}
 	
-	@PostMapping
+	@PostMapping()
 	public String modify(@ModelAttribute("recipe") Recipe recipe) {
 		
-				recipeService.addRecipe(recipe);
-				return "redirect:/reserved";
+		recipeService.addRecipe(recipe);
+		return "redirect:/reserved";
 	}
 
 }

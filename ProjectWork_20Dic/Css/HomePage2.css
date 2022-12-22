@@ -30,7 +30,6 @@ body {
     background-size: cover;
 }
 
-
 .banner .content {
     max-width: 900px;
     text-align: center;
@@ -65,6 +64,26 @@ body {
     letter-spacing: 5px;
 }
 
+.buttonStrange {
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    filter: blur(0px);
+    font-family: 'backToTheFuture';
+}
+
+.buttonStrange:hover {
+    transform: scale(1.1);
+    letter-spacing: 0.5px;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -78,8 +97,6 @@ header {
     transition: 0.5s;
     height: 12%;
 }
-
-
 
 header .navBar{
     position: relative;
@@ -112,28 +129,6 @@ header.sticky{
 }
 header.sticky .navBar li a {
     color: black;
-}
-
-.homeButton {
-    font-size: 1em;
-    color: #fff;
-    background: #ff015600;
-    display: inline-block;
-    padding: 16px 4px;
-    margin-top: 20px;
-    border-radius: 100%;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    transition: 0.5s;
-}
-
-.homeButton:hover {
-    transform: scale(1.1);
-    padding: 35px 15px;
-    background: rgb(252, 252, 255);
-    color: #ff0157;
-    
 }
 
 .logo {
@@ -190,6 +185,7 @@ section {
 .titleChiSiamo {
     color: #111;
     font-weight:300;
+    font-family: 'Candara',sans-serif;
 }
 .row.col50.tvImg {
     position: relative;
@@ -203,6 +199,28 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.ricettaFoto_Descrizione {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#cageislove {
+    width: 500px;
+    height: inherit;
+    object-fit: cover;
+}
+
+p {
+    font-family: 'Candara';
+}
+.innerTitle{
+    font-family: 'Candara_Bold';
 }
 
 #search-bar{

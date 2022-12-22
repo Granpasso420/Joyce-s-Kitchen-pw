@@ -11,6 +11,8 @@
 				<p>Ingredients <input type="text" th:field="*{ingredients}" th:value="${recipe.ingredients}" required/></p>
 				<p>Process <input type="text" th:field="*{process}" th:value="${recipe.process}" required/></p>
 				<p>Time <input type="text" th:field="*{time}" th:value="${recipe.time}" required/></p>
+				<p>Categoria Ricetta <input type="text" th:field="*{recipecategory}" th:value="${recipe.recipecategory}" disabled/></p>
+				
 				
 				<!-- Sezione aggiuntiva -->
 				<!--
@@ -19,6 +21,7 @@
 					<p>Recipe Category<input name="recipecategory.description" required/></p>
 				-->
 			<input type="submit" th:value="Modifica"/>
+			<a th:href="@{reserved}"><button type="button" class="btn btn-primary">Annulla</button></a>
 		</form>
 	</body>
 </html>

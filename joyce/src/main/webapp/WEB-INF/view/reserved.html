@@ -28,13 +28,14 @@
         <table class="table">
             <thead>
                 <tr >
-                    <th scope="col">Nome Ricette</th>
-                    <th scope="col"></th>
+                    <th scope="col">Nome Ricetta</th>
+                    <th scope="col">Categoria Ricetta</th>
                 </tr>
             </thead>
             <tbody>
                  <tr th:each="r : ${recipes}">
                     <td th:text="${r.recipe_name}"></td>
+                    <td th:text="${r.recipecategory}"></td>
                     <td><a th:href="@{modify(id=${r.id_recipe})}"><button type="button" class="btn btn-primary bgblue">Modifica</button></a>
                         <a th:href="@{reserved/delete(id=${r.id_recipe})}"><button type="button" class="btn btn-primary bgred">Elimina</button></a></td>
           </tr>
