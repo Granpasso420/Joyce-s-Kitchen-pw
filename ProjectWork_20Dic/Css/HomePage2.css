@@ -340,6 +340,7 @@ footer.container{
     no-repeat center;
     background-size: cover;
     list-style: none;
+    padding-top: 50px;
 }
 
 .footer1::before{
@@ -380,9 +381,25 @@ footer.container{
     text-decoration: underline;
   }
 
-  .foot{
+  .foot {
+    width: 100%;
     background-color: cadetblue;
   }
+
+  .footlist {
+    list-style-type: none;
+  }
+
+  .footlist a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .copyright p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 
   @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
