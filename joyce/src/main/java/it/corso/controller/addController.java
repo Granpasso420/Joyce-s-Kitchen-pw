@@ -32,9 +32,8 @@ public class addController {
 		try {
 			if(userService.checkUser((User) session.getAttribute("user")))
 			{
-				User user = (User) session.getAttribute("user");
 				model.addAttribute("title", "Aggiungi Ricetta");
-				model.addAttribute("author", user.getUser());
+				model.addAttribute("recipe", new Recipe());
 				return "add";
 			}else {
 				return "redirect:/login";
@@ -45,24 +44,11 @@ public class addController {
 		}
 	}
 	
-	@PostMapping("/adding")
-	public String addingRecipe(@ModelAttribute("recipe") Recipe recipe) {
+	@PostMapping
+	public String addingRecipe (@ModelAttribute("recipe") Recipe recipe) {
 		
-		try {
-			if(userService.checkUser((User) session.getAttribute("user")))
-			{
-				User user = (User) session.getAttribute("user");
-				recipe.setUser(user);
-				recipeService.addRecipe(recipe);
-				return "redirect:/reserved";
-			}else {
-				return "redirect:/login";
-			}
-		}
-		catch (Exception e) {
-			return "redirect:/login";
-		}
-		
+		recipeService.addRecipe(recipe);
+		return "redirect:/reserved";
 	}
 	
 }
