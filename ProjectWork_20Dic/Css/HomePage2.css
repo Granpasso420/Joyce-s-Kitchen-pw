@@ -407,18 +407,23 @@ footer.container{
 
   .footlist {
     list-style-type: none;
+    padding-right: 80px;
+    color: aliceblue;
   }
 
   .footlist a {
     text-decoration: none;
-    color: white;
+    color: aliceblue;
+  }
+
+  .footlist p {
+    color: aliceblue;
   }
 
   .copyright p {
     margin-left: auto;
     margin-right: auto;
   }
-
 
   @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
