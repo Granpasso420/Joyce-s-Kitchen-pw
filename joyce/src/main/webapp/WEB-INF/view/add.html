@@ -18,7 +18,7 @@
 		<input type="button" value="Admin" id="admin"/>
 		<h1 th:text="${title}"></h1>-->
     </header>
-     <form name="fadd" id="fadd" method="POST" th:object="${recipe}">
+     <form name="fadd" id="fadd" method="POST" th:object="${recipe}" enctype="multipart/form-data">
     <div class="mod">
         <h1 class="h3 mb-3 fw-normal">Aggiungi nuova ricetta</h1>
         <br>
@@ -40,6 +40,7 @@
         <div class="row">
     	
     	<div class="col-md-4">
+    	<label for="formFile" class="form-label">Categoria</label>
             <select class="form-select" aria-label="Default select example" th:field="*{recipecategory}" required>
             	<option value="0" selected disabled>Categoria</option>
                 <option value="primo">Primi</option>
@@ -49,6 +50,7 @@
             </div>
             <br>
             <div class="col-md-4">
+            <label for="formFile" class="form-label">Difficoltà</label>
             <select class="form-select" aria-label="Default select example" th:field="*{difficulty}" required>
             	<option value="0" selected disabled>Difficoltà</option>
             	<option value="facile">Facile</option>
@@ -57,9 +59,8 @@
             </select>
             </div>
             <br>
-            <div class="col-md-1" id="tempo">
-            <label for="formFile" class="form-label">Tempo</label></div>
-            <div class="col-md-3">
+            <div class="col-md-4" id="tempo">
+            <label for="formFile" class="form-label">Tempo</label>
             <input class="form-control" type="text" placeholder="Tempo" aria-label="default input example" th:field="*{time}" required>   
             </div>
     	</div>

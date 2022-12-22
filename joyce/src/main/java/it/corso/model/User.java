@@ -26,7 +26,7 @@ public class User{
 	
 //	@OneToMany(mappedBy = "user", cascade = CascadeType.MERGE, 
 //			fetch = FetchType.EAGER, orphanRemoval = true)   
-//	private List<Recipe> recipes = new ArrayList<>(); 
+//	private List<Recipe> recipes = new ArrayList<>();
 	
 	
 	public int getId() {
