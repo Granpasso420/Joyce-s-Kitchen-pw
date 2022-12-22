@@ -191,7 +191,6 @@ section {
 
 #search-bar{
     background: cadetblue;
-    min-height: 0;
 }
 
 .searchbar{
@@ -206,9 +205,11 @@ section {
 }
 
 #cercaScritta{
+    margin-top: -73px;
     font-size: 34px;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 63px;
+    text-align: center;
 }
 
 .ultime-div{
