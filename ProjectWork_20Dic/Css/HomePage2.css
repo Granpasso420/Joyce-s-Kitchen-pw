@@ -242,9 +242,19 @@ section {
 
 /*   Footer */
 
+  
+
 .foot{
     font-family: sans-serif;
     
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 
@@ -256,14 +266,15 @@ footer * {
 
 footer ul {
     font-family: Candara,sans-serif;
-    text-decoration: none;
+    
+    
 }
 
 footer {
     color: white;
     background: #080e1b;
     text-shadow: black 15px 2px 30px;
-    list-style: none;
+    text-decoration: none;
 }
 
   
@@ -286,7 +297,7 @@ footer a {
 footer h4{
     margin-bottom: 1em;
     text-transform: uppercase;
-    list-style: none;
+    
 }
 
 footer.container{
@@ -299,10 +310,12 @@ footer.container{
 .footer1{
     position: relative;
     background:
-    url(https://static.vecteezy.com/system/resources/previews/000/391/760/original/bacon-pattern-food-wallpaper-illustration-vector.jpg)
+    url(https://static.vecteezy.com/system/resources/previews/000/391/760/original/bacon-pattern-food-wallpaper-illustration-vector.jpg )
     no-repeat center;
     background-size: cover;
-    list-style: none;
+   
+  
+    
 }
 
 .footer1::before{
@@ -337,6 +350,7 @@ footer.container{
   .footer1 .menu li {
     margin-bottom: 0.2em;
     font-family: Candara,sans-serif;
+    
   }
 
   .footer1 .menu a:hover {
@@ -345,6 +359,7 @@ footer.container{
 
   .foot{
     background-color: cadetblue;
+   
   }
 
   @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
