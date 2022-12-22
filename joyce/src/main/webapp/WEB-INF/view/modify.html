@@ -13,7 +13,7 @@
 				<p>Time <input type="text" th:field="*{time}" th:value="${recipe.time}" required/></p>
 				
 				<p><label for="formFile" class="form-label">Categoria</label>
-			            <select th:field="*{recipecategory}" required>
+			            <select th:field="*{recipecategory}" th:value="${recipe.recipecategory}" required>
 			            	<option value="0" selected disabled>Scegli</option>
 			            	<option value="primo">Primo</option>
 			            	<option value="secondo">Secondo</option>
@@ -21,7 +21,7 @@
 			            </select>
 		            
 					<label for="formFile" class="form-label">Difficoltà</label>
-			            <select th:field="*{difficulty}" required>
+			            <select th:field="*{difficulty}" th:value="${recipe.difficulty}" required>
 			            	<option value="0" selected disabled>Scegli</option>
 			            	<option value="facile">Facile</option>
 			            	<option value="media">Media</option>
