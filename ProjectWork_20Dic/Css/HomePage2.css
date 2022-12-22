@@ -158,8 +158,10 @@ header.sticky .navBar li a {
     margin-bottom: 6%;
 }
 #lastRecipe{
-    max-width: 97%;
-    margin-left: -10%;
+    max-width: 746px;
+    margin-left: -8%;
+    position: relative;
+    margin-top: -39px;
 }
 
 #ultimaUscita{
@@ -168,7 +170,7 @@ header.sticky .navBar li a {
     /* opacity: 0.8; */
     background-image: radial-gradient(#ffffff -4px, #f5b7b7 2.5px);
     background-size: 20px 20px;
-    padding-bottom: 55px;
+    padding-bottom: 60px;
 }
 
 .coloreTesto{
@@ -261,7 +263,13 @@ p {
     margin-top: 31px;
 }
 
-
+.ultima-descrizione{
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 15;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
 .video{
     display: flex;
 }
