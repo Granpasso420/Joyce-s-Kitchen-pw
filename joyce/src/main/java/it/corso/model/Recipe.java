@@ -1,26 +1,16 @@
 package it.corso.model;
 
-import java.io.Serializable;
-
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.Pattern;
 
 @Entity
 @Table (name="recipes")
-public class Recipe implements Serializable{
-
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+public class Recipe{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -38,11 +28,17 @@ public class Recipe implements Serializable{
 	@Column(name = "process", nullable = false)
 	private String process;
 	
+	@Pattern(regexp = "[a-zA-Z]{1,50}", message = "{error.charnotallowed}")
+	@Column(name = "category", length = 50, nullable = true) 
+	private String recipecategory;
 	
 	@Pattern(regexp = "[a-zA-Z\\s]{1,50}", message = "{error.charnotallowed}")
 	@Column(name = "time", length = 50, nullable = false)
 	private String time;
 	
+	@Pattern(regexp = "[a-zA-Z]{1,50}", message = "{error.charnotallowed}")
+	@Column(name = "difficulty", length = 50, nullable = true) 
+	private String difficulty;
 	// FOTO
 	
 //	@Valid
@@ -50,19 +46,12 @@ public class Recipe implements Serializable{
 //	@JoinColumn(name = "suitable_for", referencedColumnName = "id_suitable_for") 
 //	private SuitableFor suitablefor;
 //	
-//	@Valid
-//	@ManyToOne(cascade = CascadeType.REFRESH) 
-//	@JoinColumn(name = "difficulty", referencedColumnName = "id_difficulty") 
-//	private Difficulty difficulty;
-//	
-//	@Valid
-//	@ManyToOne(cascade = CascadeType.REFRESH) 
-//	@JoinColumn(name = "category", referencedColumnName = "id_category") 
-//	private RecipeCategory recipecategory;
+ 
 	
-	@ManyToOne (cascade = CascadeType.REFRESH)
-	@JoinColumn(name="author", referencedColumnName = "id")
-	private User user;
+	
+//	@ManyToOne (cascade = CascadeType.REFRESH)
+//	@JoinColumn(name="author", referencedColumnName = "id")
+//	private User user;
 
 	public int getId_recipe() {
 		return id_recipe;
@@ -98,27 +87,27 @@ public class Recipe implements Serializable{
 //		this.suitablefor = suitablefor;
 //	}
 //
-//	public Difficulty getDifficulty() {
-//		return difficulty;
-//	}
+	public String getDifficulty() {
+		return difficulty;
+	}
+
+	public void setDifficulty(String difficulty) {
+		this.difficulty = difficulty;
+	}
 //
-//	public void setDifficulty(Difficulty difficulty) {
-//		this.difficulty = difficulty;
-//	}
-//
-//	public RecipeCategory getRecipecategory() {
-//		return recipecategory;
-//	}
-//
-//	public void setRecipecategory(RecipeCategory recipecategory) {
-//		this.recipecategory = recipecategory;
-//	}
+	public String getRecipecategory() {
+		return recipecategory;
+	}
+
+	public void setRecipecategory(String recipecategory) {
+		this.recipecategory = recipecategory;
+	}
 
 	
 
-	public User getUser() {
-		return user;
-	}
+//	public User getUser() {
+//		return user;
+//	}
 
 	public String getIngredients() {
 		return ingredients;
@@ -136,9 +125,9 @@ public class Recipe implements Serializable{
 		this.process = process;
 	}
 
-	public void setUser(User user) {
-		this.user = user;
-	}
+//	public void setUser(User user) {
+//		this.user = user;
+//	}
 
 	
 

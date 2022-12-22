@@ -16,9 +16,6 @@
         <h1 class="h3 mb-3 fw-normal">Aggiungi nuova ricetta</h1>
         <br>
         
-        <div class="mb-3"></div>
-        <label for="formFile" class="form-label">Autore</label>
-        <input class="form-control" type="text" placeholder="Default input" aria-label="default input example" disabled>
         </div>
         <div class="mod">
         <div class="mb-3">
@@ -31,11 +28,39 @@
             <input class="form-control" type="file" id="formFile">
         </div>
 
-        <div class="mb-3">
-            <label for="formFile" class="form-label">Tempo</label>
-            <input class="form-control" type="text" placeholder="Tempo" aria-label="default input example">
-            </div>
 
+        <div class="row">
+        
+
+            <div class="col-md-4">
+                <label for="formFile" class="form-label">Categoria</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected disabled>Categoria</option>
+                <option value="1">Primi</option>
+                <option value="2">Secondi</option>
+                <option value="3">Dolci</option>
+              </select>
+            </div>
+            <br>
+            <div class="col-md-4">
+                <label for="formFile" class="form-label">Difficoltà</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected disabled>Difficoltà</option>
+                <option value="1">Facile</option>
+                <option value="2">Medio</option>
+                <option value="3">Difficile</option>
+              </select>
+              </div>
+              <br>
+              
+              <div class="col-md-4" id="tempo">
+              <label for="formFile" class="form-label">Tempo</label>
+              <input class="form-control" type="text" placeholder="Tempo" aria-label="default input example">
+            </div>
+          
+        </div>
+
+        <br>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Ingredienti</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>

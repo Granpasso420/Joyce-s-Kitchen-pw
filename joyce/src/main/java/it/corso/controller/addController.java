@@ -1,7 +1,6 @@
 package it.corso.controller;
 
 import javax.servlet.http.HttpSession;
-import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -33,7 +32,6 @@ public class addController {
 		try {
 			if(userService.checkUser((User) session.getAttribute("user")))
 			{
-				User user = (User) session.getAttribute("user");
 				model.addAttribute("title", "Aggiungi Ricetta");
 				model.addAttribute("recipe", new Recipe());
 				return "add";
@@ -48,10 +46,9 @@ public class addController {
 	
 	@PostMapping
 	public String addingRecipe (@ModelAttribute("recipe") Recipe recipe) {
+		
 		recipeService.addRecipe(recipe);
-		
 		return "redirect:/reserved";
-		
 	}
 	
 }

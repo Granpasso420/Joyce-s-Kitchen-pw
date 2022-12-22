@@ -9,8 +9,17 @@ h2{
     font-family: Candara,sans-serif;
 }
 
+h1{
+    font-family: Candara,sans-serif;
+}
+
 h3{
     font-family: Candara,sans-serif;
+}
+
+h4{
+    font-family: Candara,sans-serif;
+    font-weight: normal;
 }
 body {
     min-height: 1000px;
@@ -26,16 +35,6 @@ body {
     background-size: cover;
 }
 
-#bannersecondi {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(../Images/bistecca.jpg);
-    background-size: cover;
-}
 .banner .content {
     max-width: 900px;
     text-align: center;
@@ -68,6 +67,26 @@ body {
 .mainButton:hover {
     transform: scale(1.1);
     letter-spacing: 5px;
+}
+
+.buttonStrange {
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    filter: blur(0px);
+    font-family: 'backToTheFuture';
+}
+
+.buttonStrange:hover {
+    transform: scale(1.1);
+    letter-spacing: 0.5px;
 }
 
 header {
@@ -117,28 +136,6 @@ header.sticky .navBar li a {
     color: black;
 }
 
-.homeButton {
-    font-size: 1em;
-    color: #fff;
-    background: #ff015600;
-    display: inline-block;
-    padding: 16px 4px;
-    margin-top: 20px;
-    border-radius: 100%;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    transition: 0.5s;
-}
-
-.homeButton:hover {
-    transform: scale(1.1);
-    padding: 35px 15px;
-    background: rgb(252, 252, 255);
-    color: #ff0157;
-    
-}
-
 .logo {
     margin-top: 72px;
     margin-left: -10px;
@@ -151,9 +148,34 @@ header.sticky .navBar li a {
     transition: 0.5s ease-in, 0.5s ease-out;
 }
 
+.scritta{
+    font-weight: bold !important; 
+    font-size:360%;
+    /*font-family: 'vintageWheel';*/
+    text-align: center;
+    color: cadetblue !important;
+    margin-top: -10%;
+    margin-bottom: 6%;
+}
+#lastRecipe{
+    max-width: 746px;
+    margin-left: -8%;
+    position: relative;
+    margin-top: -39px;
+}
 
+#ultimaUscita{
+    background: #f5b7b7;
+    /* background-color: #e5e5f7; */
+    /* opacity: 0.8; */
+    background-image: radial-gradient(#ffffff -4px, #f5b7b7 2.5px);
+    background-size: 20px 20px;
+    padding-bottom: 60px;
+}
 
-
+.coloreTesto{
+   color: gainsboro
+}
 section {
     padding: 100px;
 }
@@ -170,6 +192,7 @@ section {
 .titleChiSiamo {
     color: #111;
     font-weight:300;
+    font-family: 'Candara',sans-serif;
 }
 .row.col50.tvImg {
     position: relative;
@@ -185,9 +208,13 @@ section {
     object-fit: cover;
 }
 
-#search-bar{
-    background: cadetblue;
-    min-height: 0;
+
+p {
+    font-family: 'Candara';
+}
+
+.innerTitle{
+    font-family: 'Candara_Bold';
 }
 
 .searchbar{
@@ -202,9 +229,12 @@ section {
 }
 
 #cercaScritta{
+    margin-top: -39px;
     font-size: 34px;
-    color: white;
-    margin-bottom: 10px;
+    color: cadetblue;
+    font-weight: bold;
+    margin-bottom: 63px;
+    text-align: center;
 }
 
 .ultime-div{
@@ -221,13 +251,25 @@ section {
     margin-top: 3%;
 }
 
+.shadow{
+    text-shadow: 4px 2px 0px rgb(0 0 0 / 70%);
+    box-shadow: 0px 0px 0px !important;
+}
+
 .ultime-bottone{
     text-align: center;
     /* width: 1%; */
     width: 43%;
+    margin-top: 31px;
 }
 
-
+.ultima-descrizione{
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 15;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
 .video{
     display: flex;
 }
@@ -312,10 +354,10 @@ footer.container{
     background:
     url(https://static.vecteezy.com/system/resources/previews/000/391/760/original/bacon-pattern-food-wallpaper-illustration-vector.jpg )
     no-repeat center;
+    opacity: 75%;
     background-size: cover;
-   
-  
-    
+    list-style: none;
+    padding-top: 50px;
 }
 
 .footer1::before{
@@ -357,10 +399,26 @@ footer.container{
     text-decoration: underline;
   }
 
-  .foot{
+  .foot {
+    width: 100%;
     background-color: cadetblue;
    
   }
+
+  .footlist {
+    list-style-type: none;
+  }
+
+  .footlist a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .copyright p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 
   @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
@@ -383,7 +441,6 @@ body {
   width: 100%;
   font-family: "Poppins", sans-serif;
   place-items: center;
-  background: linear-gradient(315deg, #ffffff, #d7e1ec);
 }
 
 .wrapper {

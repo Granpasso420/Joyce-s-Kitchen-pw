@@ -35,7 +35,7 @@ public class modifyController {
 			{
 				Recipe recipe = recipeService.getRecipeById(id);
 				model.addAttribute("title", "Modifica Ricetta");
-				model.addAttribute("r", recipe);
+				model.addAttribute("recipe", recipe);
 				return "modify";
 			}else {
 				return "redirect:/login";
@@ -46,21 +46,11 @@ public class modifyController {
 		}
 	}
 	
-	@PostMapping("/modifying")
-	public String modify(@ModelAttribute("recipe") Recipe recipe, @RequestParam("id") int id) {
-		try {
-			if(userService.checkUser((User) session.getAttribute("user")))
-			{
-				recipe.setId_recipe(id);
-				recipeService.modifyRecipe(recipe);
-				return "redirect:/reserved";
-			}else {
-				return "redirect:/login";
-			}
-		}
-		catch (Exception e) {
-			return "redirect:/login";
-		}
+	@PostMapping()
+	public String update(@ModelAttribute("recipe") Recipe recipe) {
+		
+		recipeService.addRecipe(recipe);
+		return "redirect:/reserved";
 	}
 
 }
