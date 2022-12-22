@@ -225,6 +225,10 @@ section {
     margin-top: 3%;
 }
 
+.shadow{
+    text-shadow: 4px 4px 3px black;
+}
+
 .ultime-bottone{
     text-align: center;
     /* width: 1%; */
