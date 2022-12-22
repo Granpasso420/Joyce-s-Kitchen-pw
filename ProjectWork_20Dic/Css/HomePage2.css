@@ -324,12 +324,64 @@ p {
 .distanzapane{
     margin-right: 19px;
 }
+/*   NEWSLETTER   */
+
+#newsletter {
+    font-family: sans-serif;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #f5b7b7;
+}
+
+.newsletter {
+    text-align: center;
+}
+
+.newsletter p {
+    margin-top: 5px;
+}
+
+#newsmailform{
+    border: white;
+    text-align: center;
+    height: 38px;
+    width: 500px;
+    border-radius: 3px;
+}
+
+.newsButton {
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    filter: blur(0px);
+    font-family: 'backToTheFuture';
+}
+
+.newsButton:hover {
+    transform: scale(1.1);
+    letter-spacing: 5px;
+}
 
 /*   Footer */
 
 .foot{
     font-family: sans-serif;
     
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 
@@ -341,20 +393,17 @@ footer * {
 
 footer ul {
     font-family: Candara,sans-serif;
-    text-decoration: none;
+    
+    
 }
 
 footer {
     color: white;
     background: #080e1b;
     text-shadow: black 15px 2px 30px;
-    list-style: none;
+    text-decoration: none;
 }
-
-  
  
-  
-  
 footer p {
     color: #ccc;
     max-width: 25em;
@@ -371,7 +420,7 @@ footer a {
 footer h4{
     margin-bottom: 1em;
     text-transform: uppercase;
-    list-style: none;
+    
 }
 
 footer.container{
@@ -384,7 +433,7 @@ footer.container{
 .footer1{
     position: relative;
     background:
-    url(https://static.vecteezy.com/system/resources/previews/000/391/760/original/bacon-pattern-food-wallpaper-illustration-vector.jpg)
+    url(https://static.vecteezy.com/system/resources/previews/000/391/760/original/bacon-pattern-food-wallpaper-illustration-vector.jpg )
     no-repeat center;
     opacity: 75%;
     background-size: cover;
@@ -424,6 +473,7 @@ footer.container{
   .footer1 .menu li {
     margin-bottom: 0.2em;
     font-family: Candara,sans-serif;
+    
   }
 
   .footer1 .menu a:hover {
@@ -433,22 +483,28 @@ footer.container{
   .foot {
     width: 100%;
     background-color: cadetblue;
+   
   }
 
   .footlist {
     list-style-type: none;
+    padding-right: 80px;
+    color: aliceblue;
   }
 
   .footlist a {
     text-decoration: none;
-    color: white;
+    color: aliceblue;
+  }
+
+  .footlist p {
+    color: aliceblue;
   }
 
   .copyright p {
     margin-left: auto;
     margin-right: auto;
   }
-
 
   @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 

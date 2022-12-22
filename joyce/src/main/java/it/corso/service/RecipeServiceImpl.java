@@ -1,5 +1,6 @@
 package it.corso.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,5 +36,25 @@ public class RecipeServiceImpl implements RecipeService{
 	public void addRecipe(Recipe recipe) {
 		
 		recipeDao.save(recipe);
+	}
+
+	@Override
+	public List<Recipe> getList(String categoria) {
+		
+		List<Recipe> list = new ArrayList<>();
+		List<Recipe> recipes = (List<Recipe>) recipeDao.findAll();
+		for(Recipe r : recipes) {
+			if(r.getRecipecategory().equals(categoria)) {
+				list.add(r);
+			}
+		}
+		
+		return list;
+	}
+
+	@Override
+	public int getLastId() {
+		
+		return recipeDao.getLastId();
 	}
 }
