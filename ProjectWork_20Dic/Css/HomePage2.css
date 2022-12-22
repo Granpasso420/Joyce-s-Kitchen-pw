@@ -148,18 +148,20 @@ header.sticky .navBar li a {
     transition: 0.5s ease-in, 0.5s ease-out;
 }
 
-#scritta{
+.scritta{
     font-weight: bold !important; 
     font-size:360%;
     /*font-family: 'vintageWheel';*/
     text-align: center;
-    color: cadetblue;
+    color: cadetblue !important;
     margin-top: -10%;
     margin-bottom: 6%;
 }
 #lastRecipe{
-    max-width: 97%;
-    margin-left: -10%;
+    max-width: 746px;
+    margin-left: -8%;
+    position: relative;
+    margin-top: -39px;
 }
 
 #ultimaUscita{
@@ -168,7 +170,7 @@ header.sticky .navBar li a {
     /* opacity: 0.8; */
     background-image: radial-gradient(#ffffff -4px, #f5b7b7 2.5px);
     background-size: 20px 20px;
-    padding-bottom: 55px;
+    padding-bottom: 60px;
 }
 
 .coloreTesto{
@@ -261,7 +263,13 @@ p {
     margin-top: 31px;
 }
 
-
+.ultima-descrizione{
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 15;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
 .video{
     display: flex;
 }
@@ -276,9 +284,19 @@ p {
 
 /*   Footer */
 
+  
+
 .foot{
     font-family: sans-serif;
     
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 
@@ -290,14 +308,15 @@ footer * {
 
 footer ul {
     font-family: Candara,sans-serif;
-    text-decoration: none;
+    
+    
 }
 
 footer {
     color: white;
     background: #080e1b;
     text-shadow: black 15px 2px 30px;
-    list-style: none;
+    text-decoration: none;
 }
 
   
@@ -320,7 +339,7 @@ footer a {
 footer h4{
     margin-bottom: 1em;
     text-transform: uppercase;
-    list-style: none;
+    
 }
 
 footer.container{
@@ -333,7 +352,7 @@ footer.container{
 .footer1{
     position: relative;
     background:
-    url(https://static.vecteezy.com/system/resources/previews/000/391/760/original/bacon-pattern-food-wallpaper-illustration-vector.jpg)
+    url(https://static.vecteezy.com/system/resources/previews/000/391/760/original/bacon-pattern-food-wallpaper-illustration-vector.jpg )
     no-repeat center;
     opacity: 75%;
     background-size: cover;
@@ -373,6 +392,7 @@ footer.container{
   .footer1 .menu li {
     margin-bottom: 0.2em;
     font-family: Candara,sans-serif;
+    
   }
 
   .footer1 .menu a:hover {
@@ -382,6 +402,7 @@ footer.container{
   .foot {
     width: 100%;
     background-color: cadetblue;
+   
   }
 
   .footlist {
