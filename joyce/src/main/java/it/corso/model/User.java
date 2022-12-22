@@ -20,15 +20,13 @@ public class User{
 	@Column(name = "user", length = 50, nullable = false)
 	private String user;
 	
-
-	
 	@Pattern(regexp = "[a-zA-Z\\!]{1,50}", message = "{error.charnotallowed}")
 	@Column(name = "password", length = 50, nullable = false)
 	private String password;
 	
 //	@OneToMany(mappedBy = "user", cascade = CascadeType.MERGE, 
 //			fetch = FetchType.EAGER, orphanRemoval = true)   
-//	private List<Recipe> recipes = new ArrayList<>(); 
+//	private List<Recipe> recipes = new ArrayList<>();
 	
 	
 	public int getId() {
@@ -46,7 +44,6 @@ public class User{
 	public void setUser(String user) {
 		this.user = user;
 	}
-
 
 	public String getPassword() {
 		return password;

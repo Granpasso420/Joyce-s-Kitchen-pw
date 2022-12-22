@@ -4,5 +4,23 @@
 	<body>
 		<a th:href="@{/}"><button>Home</button></a>
 		<h1 th:text="${title}"></h1>
+		
+		<table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Nome Ricetta</th>
+                    <th scope="col">Difficoltà Ricetta</th>
+                    <th scope="col">Tempo</th>
+                </tr>
+            </thead>
+            <tbody>
+                 <tr th:each="r : ${secondi}">
+                    <td th:text="${r.recipe_name}"></td>
+                    <td th:text="${r.difficulty}"></td>
+                    <td th:text="${r.time}"></td>
+            	</tr>
+           	</tbody>
+      	</table>
+      	
 	</body>
 </html>
