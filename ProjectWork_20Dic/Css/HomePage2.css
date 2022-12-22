@@ -30,7 +30,6 @@ body {
     background-size: cover;
 }
 
-
 .banner .content {
     max-width: 900px;
     text-align: center;
@@ -65,6 +64,26 @@ body {
     letter-spacing: 5px;
 }
 
+.buttonStrange {
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    filter: blur(0px);
+    font-family: 'backToTheFuture';
+}
+
+.buttonStrange:hover {
+    transform: scale(1.1);
+    letter-spacing: 0.5px;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -78,8 +97,6 @@ header {
     transition: 0.5s;
     height: 12%;
 }
-
-
 
 header .navBar{
     position: relative;
@@ -114,28 +131,6 @@ header.sticky .navBar li a {
     color: black;
 }
 
-.homeButton {
-    font-size: 1em;
-    color: #fff;
-    background: #ff015600;
-    display: inline-block;
-    padding: 16px 4px;
-    margin-top: 20px;
-    border-radius: 100%;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    transition: 0.5s;
-}
-
-.homeButton:hover {
-    transform: scale(1.1);
-    padding: 35px 15px;
-    background: rgb(252, 252, 255);
-    color: #ff0157;
-    
-}
-
 .logo {
     margin-top: 72px;
     margin-left: -10px;
@@ -148,16 +143,32 @@ header.sticky .navBar li a {
     transition: 0.5s ease-in, 0.5s ease-out;
 }
 
-
+#scritta{
+    font-weight: bold !important; 
+    font-size:360%;
+    /*font-family: 'vintageWheel';*/
+    text-align: center;
+    color: cadetblue;
+    margin-top: -10%;
+    margin-bottom: 6%;
+}
 #lastRecipe{
     max-width: 97%;
     margin-left: -10%;
 }
 
 #ultimaUscita{
-    background:#f5b7b7;
+    background: #f5b7b7;
+    /* background-color: #e5e5f7; */
+    /* opacity: 0.8; */
+    background-image: radial-gradient(#ffffff -4px, #f5b7b7 2.5px);
+    background-size: 20px 20px;
+    padding-bottom: 55px;
 }
 
+.coloreTesto{
+   color: gainsboro
+}
 section {
     padding: 100px;
 }
@@ -174,6 +185,7 @@ section {
 .titleChiSiamo {
     color: #111;
     font-weight:300;
+    font-family: 'Candara',sans-serif;
 }
 .row.col50.tvImg {
     position: relative;
@@ -189,9 +201,30 @@ section {
     object-fit: cover;
 }
 
+.ricettaFoto_Descrizione {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#cageislove {
+    width: 500px;
+    height: inherit;
+    object-fit: cover;
+}
+
+p {
+    font-family: 'Candara';
+}
+.innerTitle{
+    font-family: 'Candara_Bold';
+}
+
 #search-bar{
-    background: cadetblue;
-    min-height: 0;
+
 }
 
 .searchbar{
@@ -206,9 +239,12 @@ section {
 }
 
 #cercaScritta{
+    margin-top: -39px;
     font-size: 34px;
-    color: white;
-    margin-bottom: 10px;
+    color: cadetblue;
+    font-weight: bold;
+    margin-bottom: 63px;
+    text-align: center;
 }
 
 .ultime-div{
@@ -226,13 +262,15 @@ section {
 }
 
 .shadow{
-    text-shadow: 4px 4px 3px black;
+    text-shadow: 4px 2px 0px rgb(0 0 0 / 70%);
+    box-shadow: 0px 0px 0px !important;
 }
 
 .ultime-bottone{
     text-align: center;
     /* width: 1%; */
     width: 43%;
+    margin-top: 31px;
 }
 
 

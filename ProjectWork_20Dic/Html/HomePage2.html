@@ -4,6 +4,7 @@
     <link type="text/css" rel="stylesheet"  href="../Css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet"  href="../Css/HomePage2.css">
     <link type="text/css" rel="stylesheet"  href="../Css/fonts.css">
+    <link type="text/css" rel="stylesheet"  href="../Css/HomePageNavBar.css">
     <link type="" rel="stylesheet"  href="../Css/fonts.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,17 +16,11 @@
     <header>
         <img src="../Images/Logo.png" class="logo"></img>
         <ul class="navBar">
-           <li><a href="#banner" class="homeButton">Home</a></li>
-           <li><a href="#contatti"class="homeButton">Contatti</a></li>
-           <div class="dropdown">
-           <li><a href="#ricette" class="homeButton">Ricette</a></li>
-           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#primi">primi</a></li>
-            <li><a class="dropdown-item" href="#secondi">secondi</a></li>
-            <li><a class="dropdown-item" href="#dolci">dolci</a></li>
-          </ul></div>
-           <li><a href="#rivista" class="homeButton">Rivista</a></li>
-           <li><a href="#rivista" class="homeButton">Admin</a></li>
+            <li><a href="#banner" class="homeButton">Home</a></li>
+            <li><a href="#ricette" class="ricetteButton">Ricette</a></li>
+            <li><a href="#chiSiamo"class="chiSiamoButton" >Chi siamo</a></li>
+            <li><a href="#rivista" class="rivistaButton">Rivista</a></li>
+           <li><a href="#rivista" class="adminButton">Admin</a></li>
         </ul>
     </header>
 
@@ -34,16 +29,14 @@
     <section class="banner" id="banner">
         <div class="content">
             <h2 class="shadow">Ricette</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Illum consectetur distinctio saepe soluta culpa ipsam nostrum
-                architecto, voluptas a quaerat repudiandae excepturi blanditiis 
-                corrupti voluptatibus! Nesciunt cupiditate earum nostrum optio.
-            </p>
-            <a href="#" class="mainButton">Scopri</a>
+            <form class="form1">
+              <input class="searchbar" type="search" placeholder="Search" aria-label="Search">
+              <a href="#" class="mainButton">Cerca</a>
+            </form>
         </div>
     </section>
 
- 
+
 
     <section class="chiSiamo" id="chiSiamo">
         <div class="col-lg video"> 
@@ -55,21 +48,21 @@
                     nihil eveniet quos esse quis optio? Accusamus, corrupti.
                 </p>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur, 
-                    adipisicing elit. Eveniet rem, explicabo 
-                    esse nihil, quas ex nesciunt placeat saepe 
-                    mollitia consequatur sunt fugiat ipsam ab 
-                    corrupti repellendus eaque possimus veniam 
-                    dicta cum! In provident, sunt natus tenetur
-                     delectus laudantium a, expedita, aspernatur
-                      iusto ab placeat voluptates eius quos voluptas 
-                      asperiores quasi! Dicta qsuas tenetur, labore 
-                      corporis commodi quis minima ratione exercitationem. 
-                      Repudiandae saepe vel et explicabo atque similique 
-                      odio earum veniam quas sint beatae quidem aspernatur 
-                      assumenda, consectetur tenetur. Iste, quisquam odio. 
-                      Eos laudantium sed cumque quam natus nam amet quod!
-                </p>
+                  <p>Lorem ipsum dolor sit amet consectetur, 
+                      adipisicing elit. Eveniet rem, explicabo 
+                      esse nihil, quas ex nesciunt placeat saepe 
+                      mollitia consequatur sunt fugiat ipsam ab 
+                      corrupti repellendus eaque possimus veniam 
+                      dicta cum! In provident, sunt natus tenetur
+                      delectus laudantium a, expedita, aspernatur
+                        iusto ab placeat voluptates eius quos voluptas 
+                        asperiores quasi! Dicta qsuas tenetur, labore 
+                        corporis commodi quis minima ratione exercitationem. 
+                        Repudiandae saepe vel et explicabo atque similique 
+                        odio earum veniam quas sint beatae quidem aspernatur 
+                        assumenda, consectetur tenetur. Iste, quisquam odio. 
+                        Eos laudantium sed cumque quam natus nam amet quod!
+                  </p>
     
                
             </div>
@@ -81,19 +74,47 @@
         </div>
     </section>
 
-    <section class="banner" id="search-bar">
-        <div class="content">
-            <h3 id="cercaScritta">Cerca qualcosa!</h3>
-            <form class="form1">
-                <input class="searchbar" type="search" placeholder="Search" aria-label="Search">
-                <a href="#" class="mainButton">Cerca</a>
-              </form>
-        </div>
-        <div> 
-        
-        </div>
-    </section>
-    <section>
+    <section class="chiSiamo" id="ultimaUscita">
+      <div class="col-lg video"> 
+          <div class="col-7">
+              <img src="../Images/pasta2.jpg" id="lastRecipe"></img>
+          </div>
+          <div class="col-5">
+              <h2 class="titleChiSiamo shadow" id="scritta">Ultima uscita!</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                  Maiores recusandae vero laborum, velit nostrum reprehenderit 
+                  eos blanditiis incidunt voluptatem animi, laudantium cupiditate 
+                  nihil eveniet quos esse quis optio? Accusamus, corrupti.
+              </p>
+              <br>
+              <p>Lorem ipsum dolor sit amet consectetur, 
+                  adipisicing elit. Eveniet rem, explicabo 
+                  esse nihil, quas ex nesciunt placeat saepe 
+                  mollitia consequatur sunt fugiat ipsam ab 
+                  corrupti repellendus eaque possimus veniam 
+                  dicta cum! In provident, sunt natus tenetur
+                   delectus laudantium a, expedita, aspernatur
+                    iusto ab placeat voluptates eius quos voluptas 
+                    asperiores quasi! Dicta qsuas tenetur, labore 
+                    corporis commodi quis minima ratione exercitationem. 
+                    Repudiandae saepe vel et explicabo atque similique 
+                    odio earum veniam quas sint beatae quidem aspernatur 
+                    assumenda, consectetur tenetur. Iste, quisquam odio. 
+                    Eos laudantium sed cumque quam natus nam amet quod!
+
+                    <a href="#" class="mainButton ultime-bottone" id="buttonStrange" style="margin-top: 54px;">Scopri di piu'</a>
+                  </p>
+          </div>
+    </div> 
+          </div>
+          
+      </div>
+  
+    
+  </section>
+
+    <section id="search-bar">
+      <h3 id="cercaScritta">Le nostre ultime ricette!</h3>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100 ultime-div">
@@ -126,77 +147,14 @@
               </div>
             </div>
           </div>
-          <br>
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card h-100 ultime-div">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text ultime-descrizione">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-                    <a href="#" class="mainButton ultime-bottone">Vai</a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 ultime-div">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text ultime-descrizione">This card has supporting text below as a natural lead-in to additional content.</p>
-                </div>
-                    <a href="#" class="mainButton ultime-bottone">Vai</a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 ultime-div">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text ultime-descrizione">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                </div>
-                    <a href="#" class="mainButton ultime-bottone">Vai</a>
-              </div>
             </div>
           </div>
     </section>
+  </section>
 
-    <section class="chiSiamo" id="ultimaUscita">
-        <div class="col-lg video"> 
-            <div class="col-7">
-                <img src="../Images/bistecca.jpg" id="lastRecipe"></img>
-            </div>
-            <div class="col-5">
-                <h2 class="titleChiSiamo" style=" font-weight: bold !important; font-size:178%;">Ultima uscita!</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Maiores recusandae vero laborum, velit nostrum reprehenderit 
-                    eos blanditiis incidunt voluptatem animi, laudantium cupiditate 
-                    nihil eveniet quos esse quis optio? Accusamus, corrupti.
-                </p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur, 
-                    adipisicing elit. Eveniet rem, explicabo 
-                    esse nihil, quas ex nesciunt placeat saepe 
-                    mollitia consequatur sunt fugiat ipsam ab 
-                    corrupti repellendus eaque possimus veniam 
-                    dicta cum! In provident, sunt natus tenetur
-                     delectus laudantium a, expedita, aspernatur
-                      iusto ab placeat voluptates eius quos voluptas 
-                      asperiores quasi! Dicta qsuas tenetur, labore 
-                      corporis commodi quis minima ratione exercitationem. 
-                      Repudiandae saepe vel et explicabo atque similique 
-                      odio earum veniam quas sint beatae quidem aspernatur 
-                      assumenda, consectetur tenetur. Iste, quisquam odio. 
-                      Eos laudantium sed cumque quam natus nam amet quod!
 
-                      <a href="#" class="mainButton ultime-bottone" id="buttonStrange">Scopri di piu'</a>
-                    </p>
-            </div>
-      </div> 
-            </div>
-            
-        </div>
-    </section>
+  <section>
+    
     <script src="../Javascript/HomePage2.js"></script>
     
 

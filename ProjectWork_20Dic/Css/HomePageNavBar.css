@@ -1,0 +1,110 @@
+/* Home Page Navigation Bar buttons */
+.homeButton {
+    font-size: 1em;
+    color: #fff;
+    background: #ff015600;
+    display: inline-block;
+    padding: 16px 4px;
+    margin-top: 20px;
+    border-radius: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.homeButton:hover {
+    transform: scale(1.1);
+    padding: 38px 20px;
+    background: cadetblue;
+    color: rgb(226, 239, 239);
+    
+}
+
+.ricetteButton {
+    font-size: 1em;
+    color: #fff;
+    background: #ff015600;
+    display: inline-block;
+    padding: 16px 4px;
+    margin-top: 20px;
+    border-radius: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.ricetteButton:hover {
+    transform: scale(1.1);
+    padding: 40px 8px;
+    background: cadetblue;
+    color: rgb(226, 239, 239);
+    
+}
+
+.chiSiamoButton {
+    font-size: 1em;
+    color: #fff;
+    background: #ff015600;
+    display: inline-block;
+    padding: 16px 4px;
+    margin-top: 20px;
+    border-radius: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.chiSiamoButton:hover {
+    transform: scale(1.1);
+    padding: 40px 2px;
+    background: cadetblue;
+    color: rgb(226, 239, 239);
+    
+}
+
+.rivistaButton {
+    font-size: 1em;
+    color: #fff;
+    background: #ff015600;
+    display: inline-block;
+    padding: 16px 4px;
+    margin-top: 20px;
+    border-radius: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.rivistaButton:hover {
+    transform: scale(1.1);
+    padding: 35px 10px;
+    background: cadetblue;
+    color: rgb(226, 239, 239);
+    
+}
+
+.adminButton {
+    font-size: 1em;
+    color: #fff;
+    background: #ff015600;
+    display: inline-block;
+    padding: 16px 4px;
+    margin-top: 20px;
+    border-radius: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.adminButton:hover {
+    transform: scale(1.1);
+    padding: 30px 10px;
+    background: cadetblue;
+    color: rgb(226, 239, 239);
+    
+}
