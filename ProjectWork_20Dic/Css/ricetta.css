@@ -3,13 +3,20 @@
 }
 
 .fotoIngredienti{
-    display: flex;
+    display: grid;
+    column-gap: 50px;
+    
 }
 
 #fotoprincipale{
-    width: 50%;
+    width: 100%;
     object-fit: cover;
     max-height: 91%;
+    margin-top: 3%;
+    grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .titoloRicetta{
