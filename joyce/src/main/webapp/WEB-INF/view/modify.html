@@ -11,9 +11,22 @@
 				<p>Ingredients <input type="text" th:field="*{ingredients}" th:value="${recipe.ingredients}" required/></p>
 				<p>Process <input type="text" th:field="*{process}" th:value="${recipe.process}" required/></p>
 				<p>Time <input type="text" th:field="*{time}" th:value="${recipe.time}" required/></p>
-				<p>Categoria Ricetta <input type="text" th:field="*{recipecategory}" th:value="${recipe.recipecategory}" disabled/></p>
 				
-				
+				<p><label for="formFile" class="form-label">Categoria</label>
+			            <select th:field="*{recipecategory}" required>
+			            	<option value="0" selected disabled>Scegli</option>
+			            	<option value="primo">Primo</option>
+			            	<option value="secondo">Secondo</option>
+			            	<option value="dolce">Dolce</option>
+			            </select>
+		            
+					<label for="formFile" class="form-label">Difficoltà</label>
+			            <select th:field="*{difficulty}" required>
+			            	<option value="0" selected disabled>Scegli</option>
+			            	<option value="facile">Facile</option>
+			            	<option value="media">Media</option>
+			            	<option value="difficile">Difficile</option>
+			            </select>				
 				<!-- Sezione aggiuntiva -->
 				<!--
 					<p>Suitable for <input name="suitablefor.description" required/></p>

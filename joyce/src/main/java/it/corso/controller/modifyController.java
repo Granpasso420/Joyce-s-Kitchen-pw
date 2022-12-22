@@ -47,7 +47,7 @@ public class modifyController {
 	}
 	
 	@PostMapping()
-	public String modify(@ModelAttribute("recipe") Recipe recipe) {
+	public String update(@ModelAttribute("recipe") Recipe recipe) {
 		
 		recipeService.addRecipe(recipe);
 		return "redirect:/reserved";
