@@ -51,4 +51,10 @@ public class RecipeServiceImpl implements RecipeService{
 		
 		return list;
 	}
+
+	@Override
+	public int getLastId() {
+		
+		return recipeDao.getLastId();
+	}
 }

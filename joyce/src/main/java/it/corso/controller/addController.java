@@ -58,7 +58,7 @@ public class addController {
 		recipeService.addRecipe(recipe);
 		
 		if(image != null & !image.isEmpty())
-			saveImage(recipe.getId_recipe(), image, session);
+			saveImage(recipeService.getLastId(), image, session);
 		
 		return "redirect:/reserved";
 	}
