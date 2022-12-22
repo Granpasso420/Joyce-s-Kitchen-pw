@@ -282,9 +282,52 @@ p {
     padding-left: 119px;
 }
 
-/*   Footer */
+/*   NEWSLETTER   */
 
-  
+#newsletter {
+    font-family: sans-serif;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #f5b7b7;
+}
+
+.newsletter {
+    text-align: center;
+}
+
+.newsletter p {
+    margin-top: 5px;
+}
+
+#newsmailform{
+    border: white;
+    text-align: center;
+    height: 38px;
+    width: 500px;
+    border-radius: 3px;
+}
+
+.newsButton {
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    filter: blur(0px);
+    font-family: 'backToTheFuture';
+}
+
+.newsButton:hover {
+    transform: scale(1.1);
+    letter-spacing: 5px;
+}
+
+/*   Footer */
 
 .foot{
     font-family: sans-serif;
@@ -318,11 +361,7 @@ footer {
     text-shadow: black 15px 2px 30px;
     text-decoration: none;
 }
-
-  
  
-  
-  
 footer p {
     color: #ccc;
     max-width: 25em;
