@@ -22,6 +22,8 @@
     <div class="mod">
         <h1 class="h3 mb-3 fw-normal">Aggiungi nuova ricetta</h1>
         <br>
+        
+        
        	</div>
         <div class="mod">
         <div class="mb-3">
@@ -34,29 +36,35 @@
             <input class="form-control" type="file" id="formFile" name="formFile">
             
         </div>
+        
+        <div class="row">
     	
-    	<div class="mb-3">
-            <label for="formFile" class="form-label">Categoria</label>
-            <select th:field="*{recipecategory}" required>
-            	<option value="0" selected disabled>Scegli</option>
-            	<option value="primo">Primo</option>
-            	<option value="secondo">Secondo</option>
-            	<option value="dolce">Dolce</option>
+    	<div class="col-md-4">
+    	<label for="formFile" class="form-label">Categoria</label>
+            <select class="form-select" aria-label="Default select example" th:field="*{recipecategory}" required>
+            	<option value="0" selected disabled>Categoria</option>
+                <option value="primo">Primi</option>
+                <option value="secondo">Secondi</option>
+                <option value="dolce">Dolci</option>
             </select>
-            
+            </div>
+            <br>
+            <div class="col-md-4">
             <label for="formFile" class="form-label">Difficoltà</label>
-            <select th:field="*{difficulty}" required>
-            	<option value="0" selected disabled>Scegli</option>
+            <select class="form-select" aria-label="Default select example" th:field="*{difficulty}" required>
+            	<option value="0" selected disabled>Difficoltà</option>
             	<option value="facile">Facile</option>
             	<option value="media">Media</option>
             	<option value="difficile">Difficile</option>
             </select>
-            
+            </div>
+            <br>
+            <div class="col-md-4" id="tempo">
             <label for="formFile" class="form-label">Tempo</label>
             <input class="form-control" type="text" placeholder="Tempo" aria-label="default input example" th:field="*{time}" required>   
-            
+            </div>
     	</div>
-
+		<br>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Ingredienti</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" th:field="*{ingredients}" required></textarea>

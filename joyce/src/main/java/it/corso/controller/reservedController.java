@@ -35,11 +35,9 @@ public class reservedController {
 		try {
 			if(userService.checkUser(user) || userService.checkUser((User) session.getAttribute("user")))
 			{
-
 				//List<Recipe> recipes = recipeService.getRecipes();
 				model.addAttribute("title", "Area Riservata");
 				model.addAttribute("recipes", recipeService.getRecipes());
-				
 				return "reserved";
 			}else {
 				return "redirect:/login";
