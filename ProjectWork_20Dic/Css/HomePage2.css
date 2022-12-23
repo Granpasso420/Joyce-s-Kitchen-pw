@@ -31,9 +31,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../Images/cibo.jpeg);
+    background: url(../Images/ciboDarkened.jpeg);
     background-size: cover;
 }
+
+
 
 .banner .content {
     max-width: 900px;

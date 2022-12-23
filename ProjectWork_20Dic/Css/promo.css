@@ -52,9 +52,9 @@
 }
 
 #iframe{
-    margin-top: 57px;
-    border: 0;
-    margin-left: -30px;
+        /* margin-top: 57px; */
+        border: 0;
+        margin-left: 248px;
 }
 
 #contattiContainer{
@@ -67,4 +67,11 @@
     text-align: center;
     margin-right: 188px;
     padding-top: 21px;
+}
+
+#container1{
+    background: #def0f6;
+    /* margin-top: 7px; */
+    padding-top: 0;
+    padding-bottom: 31px;
 }
