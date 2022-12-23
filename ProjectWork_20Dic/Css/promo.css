@@ -51,8 +51,20 @@
 
 }
 
+#iframe{
+    margin-top: 57px;
+    border: 0;
+    margin-left: -30px;
+}
+
 #contattiContainer{
     margin-left: 276px;
     /* justify-content: center; */
     padding-top: 58px;
+}
+
+.distanzaContatti{
+    text-align: center;
+    margin-right: 188px;
+    padding-top: 21px;
 }
