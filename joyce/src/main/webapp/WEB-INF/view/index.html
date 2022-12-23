@@ -12,165 +12,164 @@
 
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <link type="text/css" rel="stylesheet"  th:href="@{static/css/bootstrap.min.css}">
-    <link type="text/css" rel="stylesheet"  th:href="@{static/css/HomePage2.css}">
-    <link type="text/css" rel="stylesheet"  th:href="@{static/css/fonts.css}">
-    <link type="text/css" rel="stylesheet"  th:href="@{static/css/HomePageNavBar.css}">
-    <link type="text/css" rel="stylesheet"  th:href="@{static/css/dropdown.css}">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-
-<body>
-  <header th:replace="../template/base-template :: headerFragment"></header>
-
-
-
-    <section class="banner" id="banner">
-        <div class="content">
-            <h2 class="shadow">Benvenuti!</h2>
-            <form class="form1">
-              <input class="searchbar" type="search" placeholder="Search" aria-label="Search">
-              <a href="#" class="mainButton">Cerca</a>
-            </form>
-        </div>
-    </section>
-
-
-
-    <section class="chiSiamo" id="chiSiamo">
-        <div class="col-lg video"> 
-            <div class="col-5">
-                <h2 class="titleChiSiamo">Chi siamo</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Maiores recusandae vero laborum, velit nostrum reprehenderit 
-                    eos blanditiis incidunt voluptatem animi, laudantium cupiditate 
-                    nihil eveniet quos esse quis optio? Accusamus, corrupti.
-                </p>
-                <br>
-                  <p>Lorem ipsum dolor sit amet consectetur, 
-                      adipisicing elit. Eveniet rem, explicabo 
-                      esse nihil, quas ex nesciunt placeat saepe 
-                      mollitia consequatur sunt fugiat ipsam ab 
-                      corrupti repellendus eaque possimus veniam 
-                      dicta cum! In provident, sunt natus tenetur
-                      delectus laudantium a, expedita, aspernatur
-                        iusto ab placeat voluptates eius quos voluptas 
-                        asperiores quasi! Dicta qsuas tenetur, labore 
-                        corporis commodi quis minima ratione exercitationem. 
-                        Repudiandae saepe vel et explicabo atque similique 
-                        odio earum veniam quas sint beatae quidem aspernatur 
-                        assumenda, consectetur tenetur. Iste, quisquam odio. 
-                        Eos laudantium sed cumque quam natus nam amet quod!
-                  </p>
-    
-               
-            </div>
-            <div class="col-1"></div>
-            <div class="col-6">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/qH__o17xHls" 
-              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
-
-    <section class="chiSiamo" id="ultimaUscita">
-      <div class="col-lg video"> 
-          <div class="col-7">
-              <img th:src="@{static/images/pasta2.jpg}" id="lastRecipe"></img>
-          </div>
-          <div class="col-5">
-              <h2 class="titleChiSiamo shadow scritta">Ultima uscita!</h2>
-              <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                  Maiores recusandae vero laborum, velit nostrum reprehenderit 
-                  eos blanditiis incidunt voluptatem animi, laudantium cupiditate 
-                  nihil eveniet quos esse quis optio? Accusamus, corrupti.
-              <br>
-              <br>
-              Lorem ipsum dolor sit amet consectetur, 
-                  adipisicing elit. Eveniet rem, explicabo 
-                  esse nihil, quas ex nesciunt placeat saepe 
-                  mollitia consequatur sunt fugiat ipsam ab 
-                  corrupti repellendus eaque possimus veniam 
-                  dicta cum! In provident, sunt natus tenetur
-                   delectus laudantium a, expedita, aspernatur
-                    iusto ab placeat voluptates eius quos voluptas 
-                    asperiores quasi! Dicta qsuas tenetur, labore 
-                    corporis commodi quis minima ratione exercitationem. 
-                    Repudiandae saepe vel et explicabo atque similique 
-                    odio earum veniam quas sint beatae quidem aspernatur 
-                    assumenda, consectetur tenetur. Iste, quisquam odio. 
-                    Eos laudantium sed cumque quam natus nam amet quod!
-
-                    
-                  </p>
-                  <div>
-                    <a href="#" class="mainButton ultime-bottone" id="buttonStrange">Scopri di piu'</a>
-                  </div>
-                  </div>
-    </div> 
-          </div>
-          
-      </div>
-  
-    
-  </section>
-
-    <section id="search-bar">
-      <h3 id="cercaScritta">Le nostre ultime ricette!</h3>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            
-            <div class="cardProva">
-              <div class="circle"></div>
-              <div class="content">
-                <h2>Ricetta X</h2>
-                <p>Lungo e accurato testo su suna buonissima ricetta </p>
-                <a href="#">Vedi ricetta!</a>
-              </div>
-              <img src="https://th.bing.com/th/id/OIP.XHkR-ILZXg8vDY_o4sWPHgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7">
-            </div>
-           
-            
-            <div class="cardProva1">
-              <div class="circle1"></div>
-              <div class="content1">
-                <h2>Ricetta X</h2>
-                <p>Lungo e accurato testo su suna buonissima ricetta </p>
-                <a href="#">Vedi ricetta!</a>
-              </div>
-              <img src="https://th.bing.com/th/id/OIP.XHkR-ILZXg8vDY_o4sWPHgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7">
-            </div>
-            
-            <div class="cardProva2">
-              <div class="circle2"></div>
-              <div class="content2">
-                <h2>Ricetta X</h2>
-                <p>Lungo e accurato testo su suna buonissima ricetta </p>
-                <a href="#">Vedi ricetta!</a>
-              </div>
-              <img src="https://th.bing.com/th/id/OIP.XHkR-ILZXg8vDY_o4sWPHgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7">
-            </div>
-            
-            <div class="cardProva3">
-              <div class="circle3"></div>
-              <div class="content3" >
-                <h2>Ricetta X</h2>
-                <p>Lungo e accurato testo su suna buonissima ricetta </p>
-                <a href="#">Vedi ricetta!</a>
-              </div>
-              <img src="https://th.bing.com/th/id/OIP.XHkR-ILZXg8vDY_o4sWPHgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7">
-            </div>
-            
-            
-
-    </section>
-
-	<form th:replace="../template/base-template :: newsletterFragment"></form>
-	<footer th:replace="../template/base-template :: footerFragment"></footer>
-    
-    <script th:src="@{static/javascript/HomePage2.js}"></script>
-</body>
+	<head>
+	    <link type="text/css" rel="stylesheet"  th:href="@{static/css/bootstrap.min.css}">
+	    <link type="text/css" rel="stylesheet"  th:href="@{static/css/HomePage2.css}">
+	    <link type="text/css" rel="stylesheet"  th:href="@{static/css/fonts.css}">
+	    <link type="text/css" rel="stylesheet"  th:href="@{static/css/HomePageNavBar.css}">
+	    <link type="text/css" rel="stylesheet"  th:href="@{static/css/dropdown.css}">
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Home</title>
+	</head>
+	
+	<body>
+	  <header th:replace="../template/base-template :: headerFragment"></header>
+	
+	
+	
+	    <section class="banner" id="banner">
+	        <div class="content">
+	            <h2 class="shadow">Benvenuti!</h2>
+	            <form class="form1">
+	              <input class="searchbar" type="search" placeholder="Search" aria-label="Search">
+	              <a href="#" class="mainButton">Cerca</a>
+	            </form>
+	        </div>
+	    </section>
+	
+	
+	
+	    <section class="chiSiamo" id="chiSiamo">
+	        <div class="col-lg video">
+	            <div class="col-5">
+	                <h2 class="titleChiSiamo">Chi siamo</h2>
+	                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+	                    Maiores recusandae vero laborum, velit nostrum reprehenderit 
+	                    eos blanditiis incidunt voluptatem animi, laudantium cupiditate 
+	                    nihil eveniet quos esse quis optio? Accusamus, corrupti.
+	                </p>
+	                <br>
+						<p>Lorem ipsum dolor sit amet consectetur, 
+	                      adipisicing elit. Eveniet rem, explicabo 
+	                      esse nihil, quas ex nesciunt placeat saepe 
+	                      mollitia consequatur sunt fugiat ipsam ab 
+	                      corrupti repellendus eaque possimus veniam 
+	                      dicta cum! In provident, sunt natus tenetur
+	                      delectus laudantium a, expedita, aspernatur
+	                        iusto ab placeat voluptates eius quos voluptas 
+	                        asperiores quasi! Dicta qsuas tenetur, labore 
+	                        corporis commodi quis minima ratione exercitationem. 
+	                        Repudiandae saepe vel et explicabo atque similique 
+	                        odio earum veniam quas sint beatae quidem aspernatur 
+	                        assumenda, consectetur tenetur. Iste, quisquam odio. 
+	                        Eos laudantium sed cumque quam natus nam amet quod!
+	                  </p>
+	                  
+	            </div>
+	            <div class="col-1"></div>
+	            <div class="col-6">
+	              <iframe width="560" height="315" src="https://www.youtube.com/embed/qH__o17xHls" 
+	              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	            </div>
+	        </div>
+	    </section>
+	
+	    <section class="chiSiamo" id="ultimaUscita">
+	      <div class="col-lg video"> 
+	          <div class="col-7">
+	              <img th:src="@{static/images/pasta2.jpg}" id="lastRecipe"></img>
+	          </div>
+	          <div class="col-5">
+	              <h2 class="titleChiSiamo shadow scritta">Ultima uscita!</h2>
+	              <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+	                  Maiores recusandae vero laborum, velit nostrum reprehenderit 
+	                  eos blanditiis incidunt voluptatem animi, laudantium cupiditate 
+	                  nihil eveniet quos esse quis optio? Accusamus, corrupti.
+	              <br>
+	              <br>
+	              Lorem ipsum dolor sit amet consectetur, 
+	                  adipisicing elit. Eveniet rem, explicabo 
+	                  esse nihil, quas ex nesciunt placeat saepe 
+	                  mollitia consequatur sunt fugiat ipsam ab 
+	                  corrupti repellendus eaque possimus veniam 
+	                  dicta cum! In provident, sunt natus tenetur
+	                   delectus laudantium a, expedita, aspernatur
+	                    iusto ab placeat voluptates eius quos voluptas 
+	                    asperiores quasi! Dicta qsuas tenetur, labore 
+	                    corporis commodi quis minima ratione exercitationem. 
+	                    Repudiandae saepe vel et explicabo atque similique 
+	                    odio earum veniam quas sint beatae quidem aspernatur 
+	                    assumenda, consectetur tenetur. Iste, quisquam odio. 
+	                    Eos laudantium sed cumque quam natus nam amet quod!
+	
+	                    
+	                  </p>
+	                  <div>
+	                    <a href="#" class="mainButton ultime-bottone" id="buttonStrange">Scopri di piu'</a>
+	                  </div>
+	                  </div>
+	    </div> 
+	          </div>
+	          
+	      </div>
+	  
+	    
+	  </section>
+	
+	    <section id="search-bar">
+	      <h3 id="cercaScritta">Le nostre ultime ricette!</h3>
+	        <div class="row row-cols-1 row-cols-md-3 g-4">
+	            
+	            <div class="cardProva">
+	              <div class="circle"></div>
+	              <div class="content">
+	                <h2>Ricetta X</h2>
+	                <p>Lungo e accurato testo su suna buonissima ricetta </p>
+	                <a href="#">Vedi ricetta!</a>
+	              </div>
+	              <img src="https://th.bing.com/th/id/OIP.XHkR-ILZXg8vDY_o4sWPHgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7">
+	            </div>
+	           
+	            
+	            <div class="cardProva1">
+	              <div class="circle1"></div>
+	              <div class="content1">
+	                <h2>Ricetta X</h2>
+	                <p>Lungo e accurato testo su suna buonissima ricetta </p>
+	                <a href="#">Vedi ricetta!</a>
+	              </div>
+	              <img src="https://th.bing.com/th/id/OIP.XHkR-ILZXg8vDY_o4sWPHgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7">
+	            </div>
+	            
+	            <div class="cardProva2">
+	              <div class="circle2"></div>
+	              <div class="content2">
+	                <h2>Ricetta X</h2>
+	                <p>Lungo e accurato testo su suna buonissima ricetta </p>
+	                <a href="#">Vedi ricetta!</a>
+	              </div>
+	              <img src="https://th.bing.com/th/id/OIP.XHkR-ILZXg8vDY_o4sWPHgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7">
+	            </div>
+	            
+	            <div class="cardProva3">
+	              <div class="circle3"></div>
+	              <div class="content3" >
+	                <h2>Ricetta X</h2>
+	                <p>Lungo e accurato testo su suna buonissima ricetta </p>
+	                <a href="#">Vedi ricetta!</a>
+	              </div>
+	              <img src="https://th.bing.com/th/id/OIP.XHkR-ILZXg8vDY_o4sWPHgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7">
+	            </div>
+	            
+	            
+	
+	    </section>
+	
+		<form th:replace="../template/base-template :: newsletterFragment"></form>
+		<footer th:replace="../template/base-template :: footerFragment"></footer>
+	    
+	    <script th:src="@{static/javascript/HomePage2.js}"></script>
+	</body>
 </html>

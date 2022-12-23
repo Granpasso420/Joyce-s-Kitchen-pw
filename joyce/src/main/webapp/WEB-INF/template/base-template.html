@@ -1,25 +1,25 @@
 <html xmlns:th="http://www.thymeleaf.org">
 	<!-- FRAMMENTO HEAD -->
 	<head th:fragment="headFragment">
-		<title th:text="@{title}"></title>
+		<title th:text="${title}"></title>
 	</head>
 	
 	<body>
 		<!-- FRAMMENTO HEADER -->
 		<header th:fragment="headerFragment">
-		    <img th:src="@{static/images/Logo.png}" class="logo"></img>
+		    <a th:href="@{/index}"><img th:src="@{static/images/Logo.png}" class="logo"></img></a>
 		    <ul class="navBar">
-		        <li><a href="#banner" class="homeButton">Home</a></li>
+		        <li><a th:href="@{/index}" class="homeButton">Home</a></li>
 		        <li><a class="ricetteButton">Ricette</a>
 		            <ul class="dropdown">
-		                <li><a>Primi</a></li>
-		                <li><a>Secondi</a></li>
-		                <li><a>Dolci</a></li>
+		                <li><a th:href="@{/primi}">Primi</a></li>
+		                <li><a th:href="@{/secondi}">Secondi</a></li>
+		                <li><a th:href="@{/dolci}">Dolci</a></li>
 		            </ul>
 		        </li>
-		        <li><a href="#chiSiamo" class="chiSiamoButton">Chi siamo</a></li>
-		        <li><a href="#rivista" class="rivistaButton">Rivista</a></li>
-		        <li><a href="#rivista" class="adminButton">Admin</a></li>
+		        <li><a th:href="@{/chisiamo}" class="chiSiamoButton">Chi siamo</a></li>
+		        <li><a th:href="@{/rivista}" class="rivistaButton">Rivista</a></li>
+		        <li><a th:href="@{/login}" class="adminButton">Admin</a></li>
 		    </ul>
 		</header>
 		
