@@ -1057,15 +1057,6 @@ footer.container{
   outline: none !important;
   -webkit-tap-highlight-color: transparent;
 }
-
-html,
-body {
-  display: grid;
-  height: 100%;
-  width: 100%;
-  font-family: "Poppins", sans-serif;
-}
-
 .wrapper {
   display: inline-flex;
   list-style: none;

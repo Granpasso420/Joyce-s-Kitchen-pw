@@ -6,6 +6,7 @@
     <link type="text/css" rel="stylesheet"  href="../Css/fonts.css">
     <link type="text/css" rel="stylesheet"  href="../Css/HomePageNavBar.css">
     <link type="text/css" rel="stylesheet"  href="../Css/fonts.css">
+    <link type="text/css" rel="stylesheet"  href="../Css/dropdown.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,16 +14,21 @@
 </head>
 
 <body>
-    <header>
-        <img src="../Images/Logo.png" class="logo"></img>
-        <ul class="navBar">
-            <li><a href="#banner" class="homeButton">Home</a></li>
-            <li><a href="#chiSiamo"class="chiSiamoButton" >Contatti</a></li>
-            <li><a href="#ricette" class="ricetteButton">Ricette</a></li>
-            <li><a href="#rivista" class="rivistaButton">Rivista</a></li>
-           <li><a href="#rivista" class="adminButton">Admin</a></li>
-        </ul>
-    </header>
+  <header>
+    <img src="../Images/Logo.png" class="logo"></img>
+    <ul class="navBar">
+        <li><a href="#banner" class="homeButton">Home</a></li>
+        <li><a href="#ricette" class="ricetteButton">Ricette</a>
+            <ul class="dropdown">
+                <li>Hello</li>
+                <li>Hello 2</li>
+            </ul>
+        </li>
+        <li><a href="#chiSiamo"class="chiSiamoButton">Chi siamo</a></li>
+        <li><a href="#rivista" class="rivistaButton">Rivista</a></li>
+        <li><a href="#rivista" class="adminButton">Admin</a></li>
+    </ul>
+</header>
 
 
 
