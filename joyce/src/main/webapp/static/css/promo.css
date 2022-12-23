@@ -1,3 +1,4 @@
+
 #banner {
     position: relative;
     width: 100%;
@@ -36,6 +37,41 @@
     margin-right: 40%;
 }
 
-#decoration{
-    background: url(../Images/chcked.jpg);
+
+.iconeContatti{
+    height: 142px;
+    margin-right: 162px;
+    padding: 13px;
+    background: cadetblue;
+}
+
+.iconeContatti:hover {
+    background:#97cbdb ;
+    box-shadow: 1px 1px 2px cadetblue, 0 0 25px cadetblue, 0 0 5px #f8f9fa;
+
+}
+
+#iframe{
+        /* margin-top: 57px; */
+        border: 0;
+        margin-left: 248px;
+}
+
+#contattiContainer{
+    margin-left: 276px;
+    /* justify-content: center; */
+    padding-top: 58px;
+}
+
+.distanzaContatti{
+    text-align: center;
+    margin-right: 188px;
+    padding-top: 21px;
+}
+
+#container1{
+    background: #def0f6;
+    /* margin-top: 7px; */
+    padding-top: 0;
+    padding-bottom: 31px;
 }

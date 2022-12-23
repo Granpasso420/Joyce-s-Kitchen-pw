@@ -1,12 +1,121 @@
 <html xmlns:th="http://www.thymeleaf.org">
 	<!-- FRAMMENTO HEAD -->
 	<head th:fragment="headFragment">
-		<meta charset="ISO-8859-1">
-		<title th:text="${title}"></title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title th:text="@{title}"></title>
 	</head>
 	
 	<body>
+		<!-- FRAMMENTO HEADER -->
+		<header th:fragment="headerFragment">
+		    <img th:src="@{static/images/Logo.png}" class="logo"></img>
+		    <ul class="navBar">
+		        <li><a href="#banner" class="homeButton">Home</a></li>
+		        <li><a class="ricetteButton">Ricette</a>
+		            <ul class="dropdown">
+		                <li><a>Primi</a></li>
+		                <li><a>Secondi</a></li>
+		                <li><a>Dolci</a></li>
+		            </ul>
+		        </li>
+		        <li><a href="#chiSiamo" class="chiSiamoButton">Chi siamo</a></li>
+		        <li><a href="#rivista" class="rivistaButton">Rivista</a></li>
+		        <li><a href="#rivista" class="adminButton">Admin</a></li>
+		    </ul>
+		</header>
+		
+		<!--------------------------------- NEWSLETTER --------------------------------->
+	    <form id="newsletter" th:fragment="newsletterFragment">
+	        <div id="newslettertitle" class="container newsletter">
+	          <h2>Iscriviti alla nostra Newsletter!</h2>
+	        </div>
+	      
+	        <div id="newsletterform" class="container newsletter">
+	          <input id="newsmailform" type="text" placeholder="Email" name="mail" required>
+	          <p><input type="checkbox" checked> Accetto i termini e le condizioni</p>
+	          <input class="newsButton" type="submit" value="Iscriviti">
+	        </div>
+	      </form>
+	    <!--------------------------------- FOOTER --------------------------------->
+	    <footer class="footer1 foot" th:fragment="footerFragment">
+	        <div class="footer-top">
+	            <div class="container">
+	                <div class="col2">
+	                    <ul class="menu footlist">
+	                        <li>
+	                            <h4>RICETTE</h4>
+	                        </li>
+	                        <li>
+	                          <a href="#">Primi</a>
+	                        </li>
+	                        <li>
+	                          <a href="#">Secondi</a>
+	                        </li>
+	                        <li>
+	                          <a href="#">Dolci</a>
+	                        </li>
+	                        
+	                    </ul>
 	
+	                    <ul class="menu footlist">
+	                      <li>
+	                          <h4>RIVISTA</h4>
+	                      </li>
+	                      <li>
+	                          <a href="#">Scopri le nostre riviste!</a>
+	                      </li>
+	                
+	                  </ul>
+	                    <ul class="menu footlist">
+	                      <li>
+	                          <h4>CONTATTI</h4>
+	                      </li>
+	                      <li>
+	                          <p>Telefono: +39 333 123 4567</p>
+	                      </li>
+	                      <li>
+	                          <p>E-mail: Joyces@kitchen.com</p>
+	                      </li>
+	                      <li>
+	                          <p>Indirizzo: Via Joyce, 100</p>
+	                      </li>
+	                     
+	                  </ul>
+	                    
+	                    
+	                </div>
+	                
+	                <div class="col1">
+	                  <ul class="wrapper">
+	                    <li class="icon facebook">
+	                      <span class="tooltip">Facebook</span>
+	                      <img th:src="@{static/images/fb-logo.png}" alt="" width="40px">
+	                      <span><i class="fab fa-facebook-f"></i></span>
+	                    </li>
+	                    <li class="icon twitter">
+	                      <span class="tooltip">Twitter</span>
+	                      <img th:src="@{static/images/twitter-logo.png}" alt="" width="40px">
+	                      <span><i class="fab fa-twitter"></i></span>
+	                    </li>
+	                    <li class="icon instagram">
+	                      <span class="tooltip">Instagram</span>
+	                      <img th:src="@{static/images/instagram-logo.png}" alt="" width="35px">
+	                      <span><i class="fab fa-instagram"></i></span>
+	                    </li>
+	                    <li class="icon youtube">
+	                      <span class="tooltip">Youtube</span>
+	                      <img th:src="@{static/images/youtube-logo.png}" alt="luce" width="40px">
+	                      <span><i class="fab fa-youtube"></i></span>
+	                    </li>
+	                  </ul>
+	                </div>
+	            </div>
+	            <div class="footer-bottom">
+	                <div class="container copyright">
+	                    <p>© 2022 Joyce's kitchen - All rights reserved</p>
+	                    
+	                </div>
+	            </div>
+	        </div>
+	    </footer>
 	</body>
 </html>

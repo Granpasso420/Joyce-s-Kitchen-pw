@@ -9,8 +9,17 @@ h2{
     font-family: Candara,sans-serif;
 }
 
+h1{
+    font-family: Candara,sans-serif;
+}
+
 h3{
     font-family: Candara,sans-serif;
+}
+
+h4{
+    font-family: Candara,sans-serif;
+    font-weight: normal;
 }
 body {
     min-height: 1000px;
@@ -22,20 +31,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../Images/cibo.jpeg);
+    background: url(../images/ciboDarkened.jpeg);
     background-size: cover;
 }
 
-#bannersecondi {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(../Images/bistecca.jpg);
-    background-size: cover;
-}
+
+
 .banner .content {
     max-width: 900px;
     text-align: center;
@@ -68,6 +69,26 @@ body {
 .mainButton:hover {
     transform: scale(1.1);
     letter-spacing: 5px;
+}
+
+.buttonStrange {
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    filter: blur(0px);
+    font-family: 'backToTheFuture';
+}
+
+.buttonStrange:hover {
+    transform: scale(1.1);
+    letter-spacing: 0.5px;
 }
 
 header {
@@ -117,32 +138,11 @@ header.sticky .navBar li a {
     color: black;
 }
 
-.homeButton {
-    font-size: 1em;
-    color: #fff;
-    background: #ff015600;
-    display: inline-block;
-    padding: 16px 4px;
-    margin-top: 20px;
-    border-radius: 100%;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    transition: 0.5s;
-}
-
-.homeButton:hover {
-    transform: scale(1.1);
-    padding: 35px 15px;
-    background: rgb(252, 252, 255);
-    color: #ff0157;
-    
-}
-
 .logo {
     margin-top: 72px;
     margin-left: -10px;
     height: 150px;
+    transition: 0.5s ease-in, 0.5s ease-out;
 }
 
 .logo:hover {
@@ -151,9 +151,34 @@ header.sticky .navBar li a {
     transition: 0.5s ease-in, 0.5s ease-out;
 }
 
+.scritta{
+    font-weight: bold !important; 
+    font-size:360%;
+    /*font-family: 'vintageWheel';*/
+    text-align: center;
+    color: cadetblue !important;
+    margin-top: -10%;
+    margin-bottom: 6%;
+}
+#lastRecipe{
+    max-width: 746px;
+    margin-left: -8%;
+    position: relative;
+    margin-top: -39px;
+}
 
+#ultimaUscita{
+    background: #f5b7b7;
+    /* background-color: #e5e5f7; */
+    /* opacity: 0.8; */
+    background-image: radial-gradient(#ffffff -4px, #f5b7b7 2.5px);
+    background-size: 20px 20px;
+    padding-bottom: 60px;
+}
 
-
+.coloreTesto{
+   color: gainsboro
+}
 section {
     padding: 100px;
 }
@@ -170,6 +195,7 @@ section {
 .titleChiSiamo {
     color: #111;
     font-weight:300;
+    font-family: 'Candara',sans-serif;
 }
 .row.col50.tvImg {
     position: relative;
@@ -179,15 +205,19 @@ section {
 .row.col50.tvImg img {
     position: absolute;
     top: 0;
-    let: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-#search-bar{
-    background: cadetblue;
-    min-height: 0;
+
+p {
+    font-family: 'Candara';
+}
+
+.innerTitle{
+    font-family: 'Candara_Bold';
 }
 
 .searchbar{
@@ -202,9 +232,12 @@ section {
 }
 
 #cercaScritta{
+    margin-top: -39px;
     font-size: 34px;
-    color: white;
-    margin-bottom: 10px;
+    color: cadetblue;
+    font-weight: bold;
+    margin-bottom: 63px;
+    text-align: center;
 }
 
 .ultime-div{
@@ -221,13 +254,25 @@ section {
     margin-top: 3%;
 }
 
+.shadow{
+    text-shadow: 4px 2px 0px rgb(0 0 0 / 70%);
+    box-shadow: 0px 0px 0px !important;
+}
+
 .ultime-bottone{
     text-align: center;
     /* width: 1%; */
     width: 43%;
+    margin-top: 31px;
 }
 
-
+.ultima-descrizione{
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 15;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
 .video{
     display: flex;
 }
@@ -240,7 +285,663 @@ section {
     padding-left: 119px;
 }
 
+
+/*briciole di pane*/
+
+
+.margine{
+    margin-top: -7px;
+    margin-left: 2px;
+}
+
+.panegrande{
+    padding-top: 27px !important;
+    padding-left: 39px;
+}
+
+#freccia{
+    margin-top: 7px;
+    margin-right: 4px;
+    margin-left: -14px;
+}
+.pane{
+    display: flex;}
+    
+
+.iconepane{
+    background-color: #f5b7b7;
+    padding: 9px;
+    border-radius: 131px;
+    object-fit: cover;
+    height: 40px;
+    transition: 0.2s;
+}
+
+.iconepane:hover{
+    padding: 0px;
+    transition: 0.2s;
+    box-shadow: 1px 1px 2px #f5b7b7, 0 0 25px #f5b7b7, 0 0 5px #f8f9fa;
+}
+
+.panepane{
+    object-fit: cover;
+    height: 40px;
+    transition: 0.2s;
+    margin-right: 19px;
+}
+
+
+.distanzapane{
+    margin-right: 19px;
+}
+/*   NEWSLETTER   */
+
+#newsletter {
+    font-family: sans-serif;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #f5b7b7;
+}
+
+.newsletter {
+    text-align: center;
+}
+
+.newsletter p {
+    margin-top: 5px;
+}
+
+#newsmailform{
+    border: white;
+    text-align: center;
+    height: 38px;
+    width: 500px;
+    border-radius: 3px;
+}
+
+.newsButton {
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    filter: blur(0px);
+    font-family: 'backToTheFuture';
+}
+
+.newsButton:hover {
+    transform: scale(1.1);
+    letter-spacing: 5px;
+}
+
+.descrizioneRicette{
+    padding-top: 15px;
+    padding-left: 89px;
+    padding-right: 89px;
+    margin-bottom: -55px;
+}
+
+
+
+/* Cosa SSSSWAG */
+
+.cardProva{
+    position:relative;
+   
+    width: 600px;
+    height: 350px;
+    background: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.cardProva .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cardProva .circle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#ff0157;
+    clip-path: circle(120 px at center);
+    transition: 0.5s;
+}
+
+.cardProva:hover .circle:before{
+    background: cadetblue;
+    clip-path: circle(400 px at center);
+    
+}
+
+.cardProva img{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    pointer-events: none;
+    transition: 0.5s;
+    border-radius: 100%;
+}
+
+.cardProva:hover img{
+    left: 75%;
+    height: 300px;
+
+}
+
+.cardProva .content{
+    position:relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: absolute;
+}
+
+.cardProva:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: absolute;
+
+}
+
+.cardProva .content h2{
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+
+}
+
+.cardProva .content p{
+    color: #fff;
+}
+
+.cardProva .content p {
+    color: #fff;
+}
+
+.cardProva .content a{
+    position: relative;
+    color: #ff0157;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    color:#111;
+    margin-top: 10px;
+    display:inline-block;
+} 
+
+@media (max-width: 991px){
+    .cardProva{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+    }
+
+    .cardProva:hover{
+        height: 600px;
+    }
+
+    .cardProva .content{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+
+    .cardProva:hover img{
+        top: 70%;
+        left: 50%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 420px){
+    .cardProva .content{
+        
+        padding: 20px;
+    }
+}
+/* seconda card*/
+.cardProva1{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    background: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.cardProva1 .circle1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cardProva1 .circle1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#ff0157;
+    clip-path: circle(120 px at center);
+    transition: 0.5s;
+}
+
+.cardProva1:hover .circle1:before{
+    background: cadetblue;
+    clip-path: circle(400 px at center);
+    
+}
+
+.cardProva1 img{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    pointer-events: none;
+    transition: 0.5s;
+    border-radius: 100%;
+}
+
+.cardProva1:hover img{
+    left: 75%;
+    height: 300px;
+
+}
+
+.cardProva1 .content1{
+    position:relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: absolute;
+}
+
+.cardProva1:hover .content1{
+    left: 0;
+    opacity: 1;
+    visibility: absolute;
+
+}
+
+.cardProva1 .content1 h2{
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+
+}
+
+.cardProva1 .content1 p{
+    color: #fff;
+}
+
+.cardProva1 .content1 p {
+    color: #fff;
+}
+
+.cardProva1 .content1 a{
+    position: relative;
+    color: #ff0157;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    color:#111;
+    margin-top: 10px;
+    display:inline-block;
+} 
+
+@media (max-width: 991px){
+    .cardProva1{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+    }
+
+    .cardProva1:hover{
+        height: 600px;
+    }
+
+    .cardProva1 .content1{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+
+    .cardProva1:hover img{
+        top: 70%;
+        left: 50%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 420px){
+    .cardProva1 .content1{
+        
+        padding: 20px;
+    }
+}
+/* terza card*/
+.cardProva2{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    background: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.cardProva2 .circle2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cardProva2 .circle2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#ff0157;
+    clip-path: circle(120 px at center);
+    transition: 0.5s;
+}
+
+.cardProva2:hover .circle2:before{
+    background: cadetblue;
+    clip-path: circle(400 px at center);
+    
+}
+
+.cardProva2 img{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    pointer-events: none;
+    transition: 0.5s;
+    border-radius: 100%;
+}
+
+.cardProva2:hover img{
+    left: 75%;
+    height: 300px;
+
+}
+
+.cardProva2 .content2{
+    position:relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: absolute;
+}
+
+.cardProva2:hover .content2{
+    left: 0;
+    opacity: 1;
+    visibility: absolute;
+
+}
+
+.cardProva2 .content2 h2{
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+
+}
+
+.cardProva2 .content2 p{
+    color: #fff;
+}
+
+.cardProva2 .content2 p {
+    color: #fff;
+}
+
+.cardProva2 .content2 a{
+    position: relative;
+    color: #ff0157;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    color:#111;
+    margin-top: 10px;
+    display:inline-block;
+} 
+
+@media (max-width: 991px){
+    .cardProva2{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+    }
+
+    .cardProva2:hover{
+        height: 600px;
+    }
+
+    .cardProva2 .content2{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+
+    .cardProva2:hover img{
+        top: 70%;
+        left: 50%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 420px){
+    .cardProva2 .content2{
+        
+        padding: 20px;
+    }
+}
+/* quarta card*/
+.cardProva3{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    background: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.cardProva3 .circle3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cardProva3 .circle3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#ff0157;
+    clip-path: circle(120 px at center);
+    transition: 0.5s;
+}
+
+.cardProva3:hover .circle3:before{
+    background: cadetblue;
+    clip-path: circle(400 px at center);
+    
+}
+
+.cardProva3 img{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    pointer-events: none;
+    transition: 0.5s;
+    border-radius: 100%;
+}
+
+.cardProva3:hover img{
+    left: 75%;
+    height: 300px;
+
+}
+
+.cardProva3 .content3{
+    position:relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: absolute;
+}
+
+.cardProva3:hover .content3{
+    left: 0;
+    opacity: 1;
+    visibility: absolute;
+
+}
+
+.cardProva3 .content3 h2{
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+
+}
+
+.cardProva3 .content3 p{
+    color: #fff;
+}
+
+.cardProva3 .content3 p {
+    color: #fff;
+}
+
+.cardProva3 .content3 a{
+    position: relative;
+    color: #ff0157;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    color:#111;
+    margin-top: 10px;
+    display:inline-block;
+} 
+
+@media (max-width: 991px){
+    .cardProva3{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+    }
+
+    .cardProva3:hover{
+        height: 600px;
+    }
+
+    .cardProva3 .content3{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+
+    .cardProva3:hover img{
+        top: 70%;
+        left: 50%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 420px){
+    .cardProva3 .content3{
+        
+        padding: 20px;
+    }
+}
 /*   Footer */
+
+.foot{
+    font-family: sans-serif;
+    
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
 footer * {
     box-sizing: border-box;
     padding: 0;
@@ -248,29 +949,35 @@ footer * {
 }
 
 footer ul {
-    list-style: none;
+    font-family: Candara,sans-serif;
+    
+    
 }
 
 footer {
-    color: black;
-    background: #121315;
+    color: white;
+    background: #080e1b;
+    text-shadow: black 15px 2px 30px;
+    text-decoration: none;
 }
-
+ 
 footer p {
     color: #ccc;
     max-width: 25em;
     font-size: 0.9em;
     line-height: 23px;
+    font-family: Candara,sans-serif;
 }
 
 footer a {
-    color: aqua;
-    text-decoration: none;
+    color: black;
+    font-family: Candara,sans-serif;
 }
 
 footer h4{
     margin-bottom: 1em;
     text-transform: uppercase;
+    
 }
 
 footer.container{
@@ -283,9 +990,12 @@ footer.container{
 .footer1{
     position: relative;
     background:
-    url(R.png)
+    url(https://static.vecteezy.com/system/resources/previews/000/391/760/original/bacon-pattern-food-wallpaper-illustration-vector.jpg )
     no-repeat center;
+    opacity: 80%;
     background-size: cover;
+    list-style: none;
+    padding-top: 50px;
 }
 
 .footer1::before{
@@ -318,20 +1028,146 @@ footer.container{
   }
 
   .footer1 .menu li {
-    margin-bottom: 0.6em;
+    margin-bottom: 0.2em;
+    font-family: Candara,sans-serif;
+    
   }
 
   .footer1 .menu a:hover {
     text-decoration: underline;
   }
 
-  .foot{
+  .foot {
+    width: 100%;
     background-color: cadetblue;
+   
   }
 
-  .brand{
-    display: block;
-    font-size: 1.8em;
-    font-weight: 600;
-    margin-bottom: 1em;
+  .footlist {
+    list-style-type: none;
+    padding-right: 80px;
+    color: aliceblue;
   }
+
+  .footlist a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+
+  .footlist p {
+    color: aliceblue;
+  }
+
+  .copyright p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877F2;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #CD201F;
+  color: #ffffff;
+}
