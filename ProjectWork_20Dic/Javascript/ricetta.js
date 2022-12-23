@@ -1,4 +1,3 @@
-
 let variabile;
     variabile=document.getElementById("titoloRicetta");
 
