@@ -285,6 +285,13 @@ p {
 
 
 /*briciole di pane*/
+
+
+.margine{
+    margin-top: -7px;
+    margin-left: 2px;
+}
+
 .panegrande{
     padding-top: 27px !important;
     padding-left: 39px;
@@ -369,6 +376,16 @@ p {
     transform: scale(1.1);
     letter-spacing: 5px;
 }
+
+.descrizioneRicette{
+    padding-top: 15px;
+    padding-left: 89px;
+    padding-right: 89px;
+    margin-bottom: -55px;
+}
+
+
+
 /* Cosa SSSSWAG */
 
 .cardProva{
