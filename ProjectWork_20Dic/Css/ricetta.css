@@ -12,7 +12,7 @@
     position: fixed;
     margin-top: -4%;
     margin-left: -2%;
-    transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in, 0.2s ease-out;
     
 }
 
@@ -21,7 +21,7 @@
     margin-top: 17%;
     margin-left: -2%;
     color:cadetblue !important;
-    transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in, 0.2s ease-out;
     padding-top: 57px;
 }
 
