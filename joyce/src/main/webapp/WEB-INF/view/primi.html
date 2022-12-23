@@ -1,24 +1,72 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-	<head th:replace="../template/base-template :: headFragment"></head>
-	<body>
-		<a th:href="@{/}"><button>Home</button></a>
-		<h1 th:text="${title}"></h1>
-		<table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Nome Ricetta</th>
-                    <th scope="col">Difficoltà Ricetta</th>
-                    <th scope="col">Tempo</th>
-                </tr>
-            </thead>
-            <tbody>
-                 <tr th:each="r : ${primi}">
-                    <td th:text="${r.recipe_name}"></td>
-                    <td th:text="${r.difficulty}"></td>
-                    <td th:text="${r.time}"></td>
-            	</tr>
-           	</tbody>
-      	</table>
-	</body>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link type="text/css" rel="stylesheet"  th:href="@{static/css/bootstrap.min.css}">
+    <link type="text/css" rel="stylesheet"  th:href="@{static/css/ricette.css}">
+    <link type="text/css" rel="stylesheet"  th:href="@{static/css/fonts.css}">
+    <link type="" rel="stylesheet" th:href="@{static/css/fonts.css}">
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" th:href="@{static/css/HomePage2.css}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+    
+</head>
+
+<body>
+    <header>
+        <img th:src="@{static/images/Logo.png}" class="logo"></img>
+        <ul class="navBar">
+           <li><a href="#banner" class="homeButton">Home</a></li>
+           <li><a href="#ricette" class="homeButton">Ricette</a></li>
+           <li><a href="#chiSiamo"class="homeButton" >Chi siamo</a></li>
+           <li><a href="#rivista" class="homeButton">Rivista</a></li>
+           <li><a href="#rivista" class="homeButton">Admin</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="bannerprimi">
+        <div class="content">
+            <h2 class="shadow" th:text="${title}"></h2>           
+        </div>
+    </section>
+
+    <div class="panegrande">
+      <div class="pane"> 
+        <a href=""><img class="iconepane distanzapane"  th:src="@{static/images/pane1.png}" ></img></a>
+      
+      <p id="freccia"> ></p>
+    
+     <img class="iconepane distanzapane" th:src="@{static/images/pane2.png}" ></img>
+      
+      </div>
+      <div class="pane" style="margin-top: -7px; margin-left: 2px;">
+        <p class="distanzapane">Home</p>
+        <p class="distanzapane">Primi</p>
+      </div>
+    </div>
+    <div class="descrizioneRicette"> 
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptates atque alias praesentium commodi laudantium dicta debitis facilis ullam, vero, nemo odio impedit. Molestiae dolore delectus voluptatem amet deleniti ullam.</p>
+      </div>
+
+    <section>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100" th:each="r : ${primi}">
+                <img src="..." class="card-img-top" alt="Foto Cibo">
+                <div class="card-body">
+                  <h5 class="card-title" th:text="${r.recipe_name}"></h5>
+                  <p class="card-text" th:text="'-' + ${r.recipecategory} + '\n-' + ${r.difficulty} + '\n-' + ${r.time}"></p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+   		</div>
+    </section>
+
+    <script th:src="@{static/javascript/HomePage2.js}"></script>
+
+    </body>
 </html>
