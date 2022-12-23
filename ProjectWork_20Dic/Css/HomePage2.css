@@ -285,6 +285,13 @@ p {
 
 
 /*briciole di pane*/
+
+
+.margine{
+    margin-top: -7px;
+    margin-left: 2px;
+}
+
 .panegrande{
     padding-top: 27px !important;
     padding-left: 39px;
