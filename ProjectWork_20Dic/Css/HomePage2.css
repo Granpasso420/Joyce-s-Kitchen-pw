@@ -31,9 +31,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../Images/cibo.jpeg);
+    background: url(../Images/ciboDarkened.jpeg);
     background-size: cover;
 }
+
+
 
 .banner .content {
     max-width: 900px;
@@ -285,6 +287,13 @@ p {
 
 
 /*briciole di pane*/
+
+
+.margine{
+    margin-top: -7px;
+    margin-left: 2px;
+}
+
 .panegrande{
     padding-top: 27px !important;
     padding-left: 39px;
@@ -1067,15 +1076,6 @@ footer.container{
   outline: none !important;
   -webkit-tap-highlight-color: transparent;
 }
-
-html,
-body {
-  display: grid;
-  height: 100%;
-  width: 100%;
-  font-family: "Poppins", sans-serif;
-}
-
 .wrapper {
   display: inline-flex;
   list-style: none;
