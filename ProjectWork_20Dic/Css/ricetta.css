@@ -93,3 +93,27 @@
     margin-top: -47px;
     padding-top: 0px;
 }
+
+.Tfoto{
+    margin: 0% 18%;
+   }
+
+   .divcolor11 {
+    background: linear-gradient(90deg, #a8c6fa 0%, #00d4ff 35%, #0844a4 100%);
+    padding: 1% 0% 0% 0%;
+    margin: 1% 1%;
+  }
+
+  .MOVE {
+    transition: transform .2s ease-in-out;
+} 
+
+.MOVE:hover {
+    transform: scale(1.5);
+}
+
+.linea2 {
+    height: 400px;
+    width: 270px;
+      border-radius: 4%;
+    }
