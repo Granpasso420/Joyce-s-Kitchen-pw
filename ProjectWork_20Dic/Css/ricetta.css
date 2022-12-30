@@ -35,13 +35,15 @@
 }
 
 #fotoprincipale {
-    min-width: 951px;
-    height: inherit;
+    height: 535px;
+    width: 81%;
+    /* min-width: 951px; */
+    /* height: inherit; */
     object-fit: cover;
-    height: 478px;
 }
 
 #ingredienti{
+    padding-left: 54px;
     height: 509px;
     position: relative;
     display: block;
@@ -50,12 +52,12 @@
     text-align: center;
     font-size: 20px;
     padding-right: 28px;
-    /* padding: 86px; */
-    padding-left: 60px;
-    padding-top: 31px;
     
 }
 
+#contenitore1{
+    
+}
 .icon{
     object-fit: cover;
     width: 30px;
@@ -67,26 +69,22 @@
 }
 
 .testoRicetta{
-    text-align: center;
+    text-align: left;
         font-weight: lighter;
         font-size: 35px;
         margin-top: 15px;
 }
 
 .contenitore{
-    position: relative;
     display: flex;
     justify-content: left;
-    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
 
 }
 
 .tretesti{
-    line-height: 1.8;
-    height: 64px;
-    height: -30px;
-    width: 0;
-    font-size: 20px;
+
 }
 
 #procedimento{
