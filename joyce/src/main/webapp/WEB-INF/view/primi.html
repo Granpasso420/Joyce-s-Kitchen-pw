@@ -47,13 +47,13 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100" th:each="r : ${primi}">
-                <img th:src="@{'static/foto/' + ${recipe.id_recipe} + '.png'}" class="card-img-top" alt="Foto Cibo">
+                <img th:src="@{'static/foto/' + ${r.id_recipe} + '.png'}" class="card-img-top" alt="Foto Cibo">
                 <div class="card-body">
                   <h5 class="card-title" th:text="${r.recipe_name}"></h5>
                   <p class="card-text" th:text="'-' + ${r.recipecategory} + '\n-' + ${r.difficulty} + '\n-' + ${r.time}"></p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <a th:href="@{recipe(id=${r.id_recipe})}"><small class="text-muted">Dettagli</small></a>
                 </div>
               </div>
             </div>
@@ -63,6 +63,5 @@
 		<form th:replace="../template/base-template :: newsletterFragment"></form>
 		<footer th:replace="../template/base-template :: footerFragment"></footer>
 	    <script th:src="@{static/javascript/HomePage2.js}"></script>
-
     </body>
 </html>
