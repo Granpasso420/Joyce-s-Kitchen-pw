@@ -2,21 +2,23 @@
 <html lang="en">
 <head>
     <link type="text/css" rel="stylesheet"  href="../Css/bootstrap.min.css">
-    <link type="text/css" rel="stylesheet"  href="../Css/HomePage2.css">
+    <link type="text/css" rel="stylesheet"  href="../Css/HomePage_responsive.css">
     <link type="text/css" rel="stylesheet"  href="../Css/fonts.css">
     <link type="text/css" rel="stylesheet"  href="../Css/HomePageNavBar.css">
     <link type="text/css" rel="stylesheet"  href="../Css/fonts.css">
     <link type="text/css" rel="stylesheet"  href="../Css/dropdown.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
     <title>Home</title>
 </head>
 
 <body>
   <header>
     <img src="../Images/Logo.png" class="logo"></img>
-    <ul class="navBar">
+
+    <ul class="navBar navbar2" id="navBar">
         <li><a href="#banner" class="homeButton">Home</a></li>
         <li><a href="#ricette" class="ricetteButton">Ricette</a>
             <ul class="dropdown">
@@ -28,6 +30,10 @@
         <li><a href="#rivista" class="rivistaButton">Rivista</a></li>
         <li><a href="#rivista" class="adminButton">Admin</a></li>
     </ul>
+    <img src="../Images/panino.png" id="panino" class="paninoDopo" onclick="menu()"></img>
+    <img src="../Images/X.png" id="X"  onclick="chiudere()"></img>
+    
+
 </header>
 
 
@@ -44,9 +50,9 @@
 
 
 
-    <section class="chiSiamo" id="chiSiamo">
-        <div class="col-lg video"> 
-            <div class="col-5">
+    <section  id="chiSiamo">
+        <div class="video"> 
+            <div class="chiSiamo">
                 <h2 class="titleChiSiamo">Chi siamo</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                     Maiores recusandae vero laborum, velit nostrum reprehenderit 
@@ -72,21 +78,21 @@
     
                
             </div>
-            <div class="col-1"></div>
-            <div class="col-6">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/qH__o17xHls" 
+            <div class="videoYt">
+              <iframe width="640" height="100%" src="https://www.youtube.com/embed/qH__o17xHls" 
               title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </section>
 
-    <section class="chiSiamo" id="ultimaUscita">
-      <div class="col-lg video"> 
-          <div class="col-7">
+    <section id="ultimaUscita">
+      <div class="video"> 
+        <h2 class="titleChiSiamo shadow scritta" id="titoloNascosto">Ultima uscita!</h2>
+          <div class="">
               <img src="../Images/pasta2.jpg" id="lastRecipe"></img>
           </div>
-          <div class="col-5">
-              <h2 class="titleChiSiamo shadow scritta">Ultima uscita!</h2>
+          <div class="">
+              <h2 class="titleChiSiamo shadow scritta" id="titoloVista">Ultima uscita!</h2>
               <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                   Maiores recusandae vero laborum, velit nostrum reprehenderit 
                   eos blanditiis incidunt voluptatem animi, laudantium cupiditate 
@@ -173,6 +179,7 @@
   </section>
 
     <!--------------------------------- NEWSLETTER --------------------------------->
+    <section style="padding:0; padding-bottom:5%"> 
     <form id="newsletter">
         <div id="newslettertitle" class="container newsletter">
           <h2>Iscriviti alla nostra Newsletter!</h2>
@@ -184,7 +191,9 @@
           <input class="newsButton" type="submit" value="Iscriviti">
         </div>
       </form>
+    </section>
     <!--------------------------------- FOOTER --------------------------------->
+    <section style="padding:0;"> 
     <footer class="footer1 foot">
         <div class="footer-top">
             <div class="container">
@@ -234,7 +243,7 @@
                 </div>
                 
                 <div class="col1">
-                  <ul class="wrapper">
+                  <ul class="wrapper" id="social">
                     <li class="icon facebook">
                       <span class="tooltip">Facebook</span>
                       <img src="../Images/fb-logo.png" alt="" width="40px">
@@ -266,6 +275,7 @@
             </div>
         </div>
     </footer>
+    </section>
     <script src="../Javascript/HomePage2.js"></script>
 </body>
 </html>

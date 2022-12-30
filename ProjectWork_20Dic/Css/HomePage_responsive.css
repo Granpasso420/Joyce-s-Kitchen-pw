@@ -267,10 +267,11 @@ p {
 }
 
 .ultime-bottone{
+    letter-spacing: 2px;
     text-align: center;
     /* width: 1%; */
-    width: 43%;
-    margin-top: 31px;
+    width: 50%;
+    margin-top: 3%;
 }
 
 .ultima-descrizione{
@@ -379,6 +380,7 @@ p {
     transition: 0.5s;
     filter: blur(0px);
     font-family: 'backToTheFuture';
+    border-width: 0;
 }
 
 .newsButton:hover {
