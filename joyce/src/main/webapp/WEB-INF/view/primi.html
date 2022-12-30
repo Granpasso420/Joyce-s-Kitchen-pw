@@ -45,7 +45,7 @@
 
     <section>
         <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
+            <div class="col-md-3">
               <div class="card h-100" th:each="r : ${primi}">
                 <img th:src="@{'static/foto/' + ${r.id_recipe} + '.png'}" class="card-img-top" alt="Foto Cibo">
                 <div class="card-body">
@@ -53,7 +53,7 @@
                   <p class="card-text" th:text="'-' + ${r.recipecategory} + '\n-' + ${r.difficulty} + '\n-' + ${r.time}"></p>
                 </div>
                 <div class="card-footer">
-                  <a th:href="@{recipe(id=${r.id_recipe})}"><small class="text-muted">Dettagli</small></a>
+                  <p class="text-muted"><a th:href="@{recipe(id=${r.id_recipe})}">Dettagli</a></p>
                 </div>
               </div>
             </div>
