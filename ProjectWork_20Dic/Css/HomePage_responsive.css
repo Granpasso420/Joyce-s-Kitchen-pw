@@ -1182,6 +1182,7 @@ footer.container{
 
 #panino{
     display: none;
+    width: 50px;
 }
 
 #X{
@@ -1271,10 +1272,16 @@ footer.container{
         transition: 0.2s;
     }
 
+
     #panino:hover{
-        width: 50px;
+        width: 55px;
+        cursor: pointer;
     }
 
+#X:hover{
+    width: 50px;
+    cursor: pointer;
+}
 
     header input[type="checkbox"]{
         right: 31px;
