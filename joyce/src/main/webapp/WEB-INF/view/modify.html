@@ -29,9 +29,17 @@
 			        <label for="formFile" class="form-label">Ricetta</label>
 			        <input class="form-control" type="text" placeholder="Ricetta" aria-label="default input example" th:field="*{recipe_name}" required>
 	        	</div>
-	        <div class="mb-3">
-	            <label for="formFile" class="form-label">Inserisci foto</label>
-	            <input class="form-control" type="file" id="formFile" name="formFile">
+	        <div class="row">
+	        	<div class="col-md-6">
+	        		<label for="formFile" class="form-label">Inserisci foto</label>
+		            <input class="form-control" type="file" id="formFile" name="formFile" value="">
+	        	</div>
+		            
+		       	<div class="col-md-6" style="text-align:center;">
+		       		<img th:src="@{'static/foto/' + ${recipe.id_recipe} + '.png'}"
+							class="img-thumbnail mt-4" alt="recipe"
+							style="width:160px;max-width:160px;height:180px;max-height:180px;">
+		       	</div>
 	        </div>
 	        
 	        <div class="row">

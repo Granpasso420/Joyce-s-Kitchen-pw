@@ -52,18 +52,19 @@ public class addController {
 	
 	@PostMapping
 	public String addingRecipe (@ModelAttribute("recipe") Recipe recipe,
-			@RequestParam(name = "formFile", required = false) MultipartFile image,
-			HttpSession session) {
+			@RequestParam(name = "formFile", required = false) MultipartFile image) {
 		
 		recipeService.addRecipe(recipe);
 		
-		if(image != null & !image.isEmpty())
-			saveImage(recipeService.getLastId(), image, session);
+		if(image != null && !image.isEmpty()) {
+			saveImage(recipeService.getLastId(), image);
+		}
 		
 		return "redirect:/reserved";
 	}
 	
-	private void saveImage(int id_recipe, MultipartFile image, HttpSession session) {
+	// metodo save image
+	private void saveImage(int id_recipe, MultipartFile image) {
 		String rootDir = session.getServletContext().getRealPath("/");
 		String filePath = rootDir + "static\\foto\\" + id_recipe + ".png";
 		try {
