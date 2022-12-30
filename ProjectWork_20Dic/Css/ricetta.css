@@ -1,5 +1,6 @@
-#banner {
-    background: url(../Images/pasta.jpg) !important;
+.banner {
+    min-height: 79vh;
+    background: url(../Images/ing.jpg);
 }
 
 .fotoIngredienti{
@@ -18,7 +19,7 @@
 
 .titoloRicettascroll{
     position: absolute;
-    margin-top: 17%;
+    margin-top: 21%;
     color:cadetblue !important;
     transition: 0.2s ease-in, 0.2s ease-out;
 }
