@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="text/css" rel="stylesheet"  href="../Css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet"  href="../Css/HomePage_responsive.css">
+    <link type="text/css" rel="stylesheet"  href="../Css/fonts.css">
+    <link type="text/css" rel="stylesheet"  href="../Css/HomePageNavBar.css">
+    <link type="text/css" rel="stylesheet"  href="../Css/fonts.css">
+    <link type="text/css" rel="stylesheet"  href="../Css/dropdown.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+    <title>Home</title>
+</head>
+
+<body>
+  <header>
+    <img src="../Images/Logo.png" class="logo"></img>
+
+    <ul class="navBar navbar2" id="navBar">
+        <li><a href="#banner" class="homeButton">Home</a></li>
+        <li><a href="#ricette" class="ricetteButton">Ricette</a>
+            <ul class="dropdown">
+                <li>Hello</li>
+                <li>Hello 2</li>
+            </ul>
+        </li>
+        <li><a href="#chiSiamo"class="chiSiamoButton">Chi siamo</a></li>
+        <li><a href="#rivista" class="rivistaButton">Rivista</a></li>
+        <li><a href="#rivista" class="adminButton">Admin</a></li>
+    </ul>
+    <img src="../Images/panino.png" id="panino" class="paninoDopo"></img>
+    <img src="../Images/X.png" id="X"></img>
+    <input type="checkbox" name="" id="checkbox" onclick="menu()" >
+    
+
+</header>
+
+
+
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2 class="shadow">Benvenuti!</h2>
+            <form class="form1">
+              <input class="searchbar" type="search" placeholder="Search" aria-label="Search">
+              <a href="#" class="mainButton">Cerca</a>
+            </form>
+        </div>
+    </section>
+
+
+
+    <section  id="chiSiamo">
+        <div class="video"> 
+            <div class="chiSiamo">
+                <h2 class="titleChiSiamo">Chi siamo</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Maiores recusandae vero laborum, velit nostrum reprehenderit 
+                    eos blanditiis incidunt voluptatem animi, laudantium cupiditate 
+                    nihil eveniet quos esse quis optio? Accusamus, corrupti.
+                </p>
+                <br>
+                  <p>Lorem ipsum dolor sit amet consectetur, 
+                      adipisicing elit. Eveniet rem, explicabo 
+                      esse nihil, quas ex nesciunt placeat saepe 
+                      mollitia consequatur sunt fugiat ipsam ab 
+                      corrupti repellendus eaque possimus veniam 
+                      dicta cum! In provident, sunt natus tenetur
+                      delectus laudantium a, expedita, aspernatur
+                        iusto ab placeat voluptates eius quos voluptas 
+                        asperiores quasi! Dicta qsuas tenetur, labore 
+                        corporis commodi quis minima ratione exercitationem. 
+                        Repudiandae saepe vel et explicabo atque similique 
+                        odio earum veniam quas sint beatae quidem aspernatur 
+                        assumenda, consectetur tenetur. Iste, quisquam odio. 
+                        Eos laudantium sed cumque quam natus nam amet quod!
+                  </p>
+    
+               
+            </div>
+            <div class="videoYt">
+              <iframe width="640" height="100%" src="https://www.youtube.com/embed/qH__o17xHls" 
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="ultimaUscita">
+      <div class="video"> 
+        <h2 class="titleChiSiamo shadow scritta" id="titoloNascosto">Ultima uscita!</h2>
+          <div class="">
+              <img src="../Images/pasta2.jpg" id="lastRecipe"></img>
+          </div>
+          <div class="">
+              <h2 class="titleChiSiamo shadow scritta" id="titoloVista">Ultima uscita!</h2>
+              <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                  Maiores recusandae vero laborum, velit nostrum reprehenderit 
+                  eos blanditiis incidunt voluptatem animi, laudantium cupiditate 
+                  nihil eveniet quos esse quis optio? Accusamus, corrupti.
+              <br>
+              <br>
+              Lorem ipsum dolor sit amet consectetur, 
+                  adipisicing elit. Eveniet rem, explicabo 
+                  esse nihil, quas ex nesciunt placeat saepe 
+                  mollitia consequatur sunt fugiat ipsam ab 
+                  corrupti repellendus eaque possimus veniam 
+                  dicta cum! In provident, sunt natus tenetur
+                   delectus laudantium a, expedita, aspernatur
+                    iusto ab placeat voluptates eius quos voluptas 
+                    asperiores quasi! Dicta qsuas tenetur, labore 
+                    corporis commodi quis minima ratione exercitationem. 
+                    Repudiandae saepe vel et explicabo atque similique 
+                    odio earum veniam quas sint beatae quidem aspernatur 
+                    assumenda, consectetur tenetur. Iste, quisquam odio. 
+                    Eos laudantium sed cumque quam natus nam amet quod!
+
+                    
+                  </p>
+                  <div>
+                    <a href="#" class="mainButton ultime-bottone" id="buttonStrange">Scopri di piu'</a>
+                  </div>
+                  </div>
+    </div> 
+          </div>
+          
+      </div>
+  
+    
+  </section>
+
+    <section id="search-bar">
+      <h3 id="cercaScritta">Le nostre ultime ricette!</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            
+            <div class="cardProva">
+              <div class="circle"></div>
+              <div class="content">
+                <h2>Ricetta X</h2>
+                <p>Lungo e accurato testo su suna buonissima ricetta </p>
+                <a href="#">Vedi ricetta!</a>
+              </div>
+              <img src="https://th.bing.com/th/id/OIP.XHkR-ILZXg8vDY_o4sWPHgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7">
+            </div>
+           
+            
+            <div class="cardProva1">
+              <div class="circle1"></div>
+              <div class="content1">
+                <h2>Ricetta X</h2>
+                <p>Lungo e accurato testo su suna buonissima ricetta </p>
+                <a href="#">Vedi ricetta!</a>
+              </div>
+              <img src="https://th.bing.com/th/id/OIP.XHkR-ILZXg8vDY_o4sWPHgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7">
+            </div>
+            
+            <div class="cardProva2">
+              <div class="circle2"></div>
+              <div class="content2">
+                <h2>Ricetta X</h2>
+                <p>Lungo e accurato testo su suna buonissima ricetta </p>
+                <a href="#">Vedi ricetta!</a>
+              </div>
+              <img src="https://th.bing.com/th/id/OIP.XHkR-ILZXg8vDY_o4sWPHgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7">
+            </div>
+            
+            <div class="cardProva3">
+              <div class="circle3"></div>
+              <div class="content3" >
+                <h2>Ricetta X</h2>
+                <p>Lungo e accurato testo su suna buonissima ricetta </p>
+                <a href="#">Vedi ricetta!</a>
+              </div>
+              <img src="https://th.bing.com/th/id/OIP.XHkR-ILZXg8vDY_o4sWPHgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7">
+            </div>
+            
+            
+
+    </section>
+  </section>
+
+    <!--------------------------------- NEWSLETTER --------------------------------->
+    <section style="padding:0; padding-bottom:5%"> 
+    <form id="newsletter">
+        <div id="newslettertitle" class="container newsletter">
+          <h2>Iscriviti alla nostra Newsletter!</h2>
+        </div>
+      
+        <div id="newsletterform" class="container newsletter">
+          <input id="newsmailform" type="text" placeholder="Email" name="mail" required>
+          <p><input type="checkbox" checked> Accetto i termini e le condizioni</p>
+          <input class="newsButton" type="submit" value="Iscriviti">
+        </div>
+      </form>
+    </section>
+    <!--------------------------------- FOOTER --------------------------------->
+    <section style="padding:0;"> 
+    <footer class="footer1 foot">
+        <div class="footer-top">
+            <div class="container">
+                <div class="col2">
+                    <ul class="menu footlist">
+                        <li>
+                            <h4>RICETTE</h4>
+                        </li>
+                        <li>
+                          <a href="#">Primi</a>
+                        </li>
+                        <li>
+                          <a href="#">Secondi</a>
+                        </li>
+                        <li>
+                          <a href="#">Dolci</a>
+                        </li>
+                        
+                    </ul>
+
+                    <ul class="menu footlist">
+                      <li>
+                          <h4>RIVISTA</h4>
+                      </li>
+                      <li>
+                          <a href="#">Scopri le nostre riviste!</a>
+                      </li>
+                
+                  </ul>
+                    <ul class="menu footlist">
+                      <li>
+                          <h4>CONTATTI</h4>
+                      </li>
+                      <li>
+                          <p>Telefono: +39 333 123 4567</p>
+                      </li>
+                      <li>
+                          <p>E-mail: Joyces@kitchen.com</p>
+                      </li>
+                      <li>
+                          <p>Indirizzo: Via Joyce, 100</p>
+                      </li>
+                     
+                  </ul>
+                    
+                    
+                </div>
+                
+                <div class="col1">
+                  <ul class="wrapper" id="social">
+                    <li class="icon facebook">
+                      <span class="tooltip">Facebook</span>
+                      <img src="../Images/fb-logo.png" alt="" width="40px">
+                      <span><i class="fab fa-facebook-f"></i></span>
+                    </li>
+                    <li class="icon twitter">
+                      <span class="tooltip">Twitter</span>
+                      <img src="../Images/twitter-logo.png" alt="" width="40px">
+                      <span><i class="fab fa-twitter"></i></span>
+                    </li>
+                    <li class="icon instagram">
+                      <span class="tooltip">Instagram</span>
+                      <img src="../Images/instagram-logo.png" alt="" width="35px">
+                      <span><i class="fab fa-instagram"></i></span>
+                    </li>
+                    <li class="icon youtube">
+                      <span class="tooltip">Youtube</span>
+                      <img src="../Images/youtube-logo.png" alt="" width="40px">
+                      <span><i class="fab fa-youtube"></i></span>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container copyright">
+                    <p>© 2022 Joyce's kitchen - All rights reserved</p>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    </section>
+    <script src="../Javascript/HomePage2.js"></script>
+</body>
+</html>
