@@ -54,7 +54,7 @@
 #iframe{
         /* margin-top: 57px; */
         border: 0;
-        margin-left: 248px;
+        margin-left: -64px;
 }
 
 #contattiContainer{
@@ -70,8 +70,40 @@
 }
 
 #container1{
+    display: flex;
     background: #def0f6;
     /* margin-top: 7px; */
     padding-top: 0;
     padding-bottom: 31px;
+}
+
+#ceo{
+    height: 279px;
+    margin-top: 23px;
+    margin-right: 152px;
+}
+
+#ceotitolo{
+    padding-left: 46px;
+        font-size: 38px;
+    margin-right: 56px;
+    padding-top: 33px;
+}
+
+.ceonome{
+    text-align: center;
+    padding-right: 157px;
+}
+
+#linkedin{
+    margin-top: 11px;
+    height: 36px;
+    padding-left: 76px;
+    transition: 0.2s;
+}
+
+#linkedin:hover{
+    height: 40px;
+    padding-left: 70px;
+    transition: 0.2s;
 }

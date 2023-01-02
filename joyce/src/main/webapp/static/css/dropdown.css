@@ -73,10 +73,6 @@
     animation: animate 300ms ease-in-out forwards;
     animation-delay: 0.3s;
 }
-.navBar li:hover >.dropdown li:nth-child(3) {
-    animation: animate 300ms ease-in-out forwards;
-    animation-delay: 0.4s;
-}
 @keyframes animate {
     0%{
         opacity: 0;
