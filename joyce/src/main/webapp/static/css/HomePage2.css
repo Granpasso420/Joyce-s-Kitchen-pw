@@ -1169,3 +1169,146 @@ footer.container{
   background: #CD201F;
   color: #ffffff;
 }
+
+/*responsive----------*/
+
+#panino{
+    display: none;
+    width: 50px;
+}
+
+#X{
+    display: none;
+    position: absolute;
+    /* height: 59px; */
+    width: 44px;
+    margin-top: -1%;
+    transition: 0.2s;
+    right: 29px;
+}
+
+#titoloNascosto{
+    display: none;
+}
+
+
+@media (max-width: 1230px){
+
+    #chiSiamo{
+        padding-bottom: 89px;
+        padding-top: 64px;
+    }
+    #social{
+        flex-direction: column;
+    }
+    #cercaScritta{
+        margin-top: 0;
+    }
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+.scritta{
+    margin-top: -2%;
+    margin-bottom: 4%;
+}
+
+    #titoloVista{
+        display: none !important;
+    }
+
+    #titoloNascosto{
+        display: block !important;
+    }
+    section{
+        padding: 39px;
+    }
+    #lastRecipe{
+        padding-bottom: 53px;
+        height: 387px;
+        width: 100%;
+        object-fit: cover;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+.videoYt{
+    height: 302px;
+    margin-top: 39px;
+}
+    .video{
+        flex-direction: column;
+    }
+    .chiSiamo{
+        text-align: center;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 943px){
+
+    .logo{
+        position: relative;
+        left: -89px;
+    }
+    .Xvisible{
+        display: block !important;
+    }
+    .paninoDopo{
+        right: 29px;
+        display: block !important;
+        position: absolute;
+        /* height: 59px; */
+        width: 44px;
+        margin-top: -1%;
+        transition: 0.2s;
+    }
+
+
+    #panino:hover{
+        width: 55px;
+        cursor: pointer;
+    }
+
+#X:hover{
+    width: 50px;
+    cursor: pointer;
+}
+
+    header input[type="checkbox"]{
+        right: 31px;
+    position: absolute;
+    height: 59px;
+    width: 39px;
+    margin-top: -1%;
+    display: block !important;
+    opacity: 0;
+    }
+
+    .navbar2{
+        padding-right: 66px;
+        padding-top: 50px;
+        background: rgba(255, 255, 255, 0.5);
+        top: 0px;
+        position: absolute !important;
+        flex-direction: column;
+        right: -24px;
+        display: block !important;
+        padding-bottom: 100%;
+        box-shadow: 5px 0px 10px 0px #aaa;
+        transition: 0.2s;
+        text-align: right;
+        transform: translateX(130%);
+        transition: transform 0.2s;
+    }
+
+    .navbar3{
+        transform: translateX(0);
+
+    
+    }
+}
+
+header input[type="checkbox"]{
+    display: none;
+}
