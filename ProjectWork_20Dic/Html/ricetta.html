@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
+<head>    <link type="text/css" rel="stylesheet"  href="../Css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet"  href="../Css/HomePageNavBar.css">
+  <link type="text/css" rel="stylesheet"  href="../Css/fonts.css">
+  <link type="text/css" rel="stylesheet"  href="../Css/dropdown.css">
     <link type="text/css" rel="stylesheet"  href="../Css/HomePage2.css">
     <link type="text/css" rel="stylesheet"  href="../Css/ricetta.css">
-    <link type="text/css" rel="stylesheet"  href="../Css/fonts.css">
-    <link type="text/css" rel="stylesheet"  href="../Css/promo.css">
     <link type="text/css" rel="stylesheet"  href="../Css/RicetteNavBar.css">
-    <link type="text/css" rel="stylesheet"  href="../Css/bootstrap.min.css">
     <link type="" rel="stylesheet"  href="../Css/fonts.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
     <title>Ricetta</title>
 </head>
 <body>
-     <header>
-        <img src="../Images/Logo.png" class="logo"></img>
-        <ul class="navBar" id="navbar">
-           <li><a href="#banner" class="homeButton">Home</a></li>
-           <li><a href="#ricette" class="ricetteButton">Ricette</a></li>
-           <li><a href="#chiSiamo"class="chiSiamoButton" >Chi siamo</a></li>
-           <li><a href="#rivista" class="rivistaButton">Rivista</a></li>
-           <li><a href="#rivista" class="adminButton">Admin</a></li>
-        </ul>
-    </header>
+  <header>
+    <img src="../Images/Logo.png" class="logo"></img>
+
+    <ul class="navBar navbar2" id="navBar">
+        <li><a href="#banner" class="homeButton">Home</a></li>
+        <li><a href="#ricette" class="ricetteButton">Ricette</a>
+            <ul class="dropdown">
+                <li>Hello</li>
+                <li>Hello 2</li>
+            </ul>
+        </li>
+        <li><a href="#chiSiamo"class="chiSiamoButton">Chi siamo</a></li>
+        <li><a href="#rivista" class="rivistaButton">Rivista</a></li>
+        <li><a href="#rivista" class="adminButton">Admin</a></li>
+    </ul>
+    <img src="../Images/panino.png" id="panino" class="paninoDopo" onclick="menu()"></img>
+    <img src="../Images/X.png" id="X"  onclick="chiudere()"></img>
     
-    <section class="banner" id="banner">
+
+</header>
+
+    
+    <section class="banner">
         <div class="content">
             <h2 name=titoloRicetta class="titloRicetta shadow" id="titoloRicetta">Pasta buona</h2>
             <a href="#" class="mainButton">Trovala sul magazine ></a>
@@ -56,29 +67,26 @@
 
 
 <section class="ricettaFoto_Descrizione" id="ricettaFoto_Descrizione">
-    <img id="fotoprincipale" src="../Images/pasta2.jpg" alt="">
-    <div id="ingredienti"> <h1 class="testoRicetta" >Ingredienti</h1> 
-   <div > <div class="contenitore">  <div class="testoIng" style="padding-right: 11px;
-    text-align: start;"> 
-    <h4 ><img class="icon" src="../Images/icon1.png" alt=""> Difficoltà: </h4>
-    <h4> <img class="icon" src="../Images/icon2.png" alt="" > Categoria:</h4>
-    <h4> <img class="icon" src="../Images/icon3.png" alt=""> Tempo: </h4> 
+   <img id="fotoprincipale" src="../Images/pasta2.jpg" alt="">
+    <div id="ingredienti"> 
+    <div class="contenitore">  <div id="testoIng"> 
+    <h4  ><img class="icon" src="../Images/icon1.png" alt=""> Difficoltà: </h4>
+    <h4 > <img class="icon" src="../Images/icon2.png" alt="" > Categoria:</h4>
+    <h4 > <img class="icon" src="../Images/icon3.png" alt=""> Tempo: </h4> 
 </div>
-<div class="tretesti"> <h4>Facile</h4> <h4>Primi</h4> <h4>30min </h4> </div></div> 
-
+<div class="tretesti"> <h4 class="tre">Facile</h4> <h4 class="tre">Primi</h4> <h4 class="tre">30min </h4> </div></div> 
+<div> <h1 class="testoRicetta" >Ingredienti</h1> 
     <p class="testoIng" style="text-align: left;">Spaghetti 320 g
         Pomodori pelati 800 g
         Olio extravergine d'oliva 30 g
         Aglio 1 spicchio
         Basilico q.b.
         Sale fino q.b. </p>
-    </div>
+      </div>
 </section>
 
 <section id="procedimento">
-    <h2 class="testoRicetta" style="margin-top: -24px;
-    text-align: left;
-    margin-bottom: 13px;"> Procedimento:</h2>
+    <h2 class="testoRicetta"> Procedimento:</h2>
     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In egestas erat imperdiet sed euismod nisi porta. Duis convallis convallis tellus id interdum velit laoreet id. Enim neque volutpat ac tincidunt vitae semper. Mauris sit amet massa vitae. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Ut sem nulla pharetra diam sit amet nisl. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Felis imperdiet proin fermentum leo vel orci. Tellus molestie nunc non blandit massa enim nec. <br> 
 
 Dictumst<br> vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Commodo ullamcorper a lacus vestibulum sed arcu non odio euismod. Interdum posuere lorem ipsum dolor sit. Eu feugiat pretium nibh ipsum consequat nisl vel. Vitae ultricies leo integer malesuada. Feugiat pretium nibh ipsum consequat. Vel eros donec ac odio tempor orci. Facilisi etiam dignissim diam quis enim. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Nec feugiat in fermentum posuere urna. Risus in hendrerit gravida rutrum quisque non tellus. Dui nunc mattis enim ut tellus elementum sagittis vitae et. Justo donec enim diam vulputate ut. Habitant morbi tristique senectus et netus. Nibh praesent tristique magna sit amet purus gravida quis. Egestas sed sed risus pretium. Mollis nunc sed id semper risus in hendrerit. At augue eget arcu dictum. Felis bibendum ut tristique et egestas.

@@ -25,7 +25,7 @@
 
 <div class="panegrande">
     <div class="pane"> 
-      <a href=""><img class="iconepane distanzapane"  th:src="@{static/images/pane1.png}" ></img></a>
+      <a th:href="@{/}"><img class="iconepane distanzapane"  th:src="@{static/images/pane1.png}" ></img></a>
     
     <p id="freccia"> ></p>
   
@@ -44,9 +44,9 @@
 <section class="ricettaFoto_Descrizione" id="ricettaFoto_Descrizione">
     <img id="fotoprincipale" th:src="@{'static/foto/' + ${recipe.id_recipe} + '.png'}" alt="">
    	<div class="contenitore">  <div class="testoIng" style="padding-right: 11px;text-align: start;">
-    <h4 ><img class="icon" src="../Images/icon1.png" alt=""> Difficoltà: </h4>
-    <h4> <img class="icon" src="../Images/icon2.png" alt="" > Categoria:</h4>
-    <h4> <img class="icon" src="../Images/icon3.png" alt=""> Tempo: </h4> 
+    <h4 ><img class="icon" th:src="@{static/images/icon1.png}" alt=""> Difficoltà: </h4>
+    <h4> <img class="icon" th:src="@{static/images/icon2.png}" > Categoria:</h4>
+    <h4> <img class="icon" th:src="@{static/images/icon3.png}" alt=""> Tempo: </h4> 
 </div>
 <div class="tretesti"> <h4 th:text="${recipe.difficulty}"></h4> <h4 th:text="${recipe.recipecategory}"></h4> <h4 th:text="${recipe.time}"></h4> </div></div> 
 
