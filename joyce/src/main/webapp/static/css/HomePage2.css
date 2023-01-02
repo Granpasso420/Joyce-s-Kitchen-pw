@@ -399,542 +399,80 @@ p {
 
 /* Cosa SSSSWAG */
 
-.cardProva{
-    position:relative;
-   
-    width: 600px;
-    height: 350px;
-    background: none;
-    border-radius: 20px;
+.flexcard{
     display: flex;
-    align-items: center;
-    border-radius: 20px;
+}
+
+.cardUltime{
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    padding: 2%;
+    background-color: #97cbdb;
+    height: 0%;
     transition: 0.5s;
+
 }
 
-.cardProva .circle{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.cardProva .circle::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:#97cbdb;
-    clip-path: circle(120 px at center);
-    transition: 0.5s;
-}
-
-.cardProva:hover .circle:before{
-    background: #ff0157;
-    clip-path: circle(400 px at center);
+.cardUltime img{
+    transition: transform 0.75s;
+    margin-right: -24px;
+    min-height: 371px;
+    border-radius: 101%;
+    width: 69%;
+    padding: 20px;
+    object-fit: cover;
     
 }
-
-.cardProva img{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 300px;
-    pointer-events: none;
-    transition: 0.5s;
-    border-radius: 100%;
+.cardUltime .contenuto{
+    transition: transform 0.75s;
 }
-
-.cardProva:hover img{
-    left: 75%;
-    height: 300px;
-
-}
-
-.cardProva .content{
-    position:relative;
-    width: 50%;
-    left: 20%;
-    padding: 20px 20px 20px 40px;
-    transition: 0.5s;
-    opacity: 0;
-    visibility: absolute;
-}
-
-.cardProva:hover .content{
-    left: 0;
-    opacity: 1;
-    visibility: absolute;
-
-}
-
-.cardProva .content h2{
-    color:#fff;
+.cardUltime .contenuto h2{
     text-transform: uppercase;
-    font-size: 2em;
-    line-height: 1em;
-    margin-bottom: 5px;
-
 }
 
-.cardProva .content p{
-    color: #fff;
-}
-
-.cardProva .content p {
-    color: #fff;
-}
-
-.cardProva .content a{
-    position: relative;
-    color: #ff0157;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background: #fff;
-    color:#111;
-    margin-top: 10px;
-    display:inline-block;
-} 
-
-@media (max-width: 991px){
-    .cardProva{
-        width: auto;
-        max-width: 350px;
-        align-items: flex-start;
-        margin: 10px;
-    }
-
-    .cardProva:hover{
-        height: 600px;
-    }
-
-    .cardProva .content{
-        width: 100%;
-        left: 0;
-        padding: 30px;
-    }
-
-    .cardProva:hover img{
-        top: 70%;
-        left: 50%;
-        height: 300px;
-    }
-}
-
-@media (max-width: 420px){
-    .cardProva .content{
-        
-        padding: 20px;
-    }
-}
-/* seconda card*/
-.cardProva1{
-    position: relative;
-    width: 600px;
-    height: 350px;
-    background: none;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-    transition: 0.5s;
-}
-
-.cardProva1 .circle1{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.cardProva1 .circle1::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:#97cbdb;
-    clip-path: circle(120 px at center);
-    transition: 0.5s;
-}
-
-.cardProva1:hover .circle1:before{
-    background: #ff0157;
-    clip-path: circle(400 px at center);
+.cardUltime .contenuto p{
     
-}
-
-.cardProva1 img{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 300px;
-    pointer-events: none;
-    transition: 0.5s;
-    border-radius: 100%;
-}
-
-.cardProva1:hover img{
-    left: 75%;
-    height: 300px;
-
-}
-
-.cardProva1 .content1{
-    position:relative;
-    width: 50%;
-    left: 20%;
-    padding: 20px 20px 20px 40px;
-    transition: 0.5s;
-    opacity: 0;
-    visibility: absolute;
-}
-
-.cardProva1:hover .content1{
-    left: 0;
-    opacity: 1;
-    visibility: absolute;
-
-}
-
-.cardProva1 .content1 h2{
-    color:#fff;
-    text-transform: uppercase;
-    font-size: 2em;
-    line-height: 1em;
-    margin-bottom: 5px;
-
-}
-
-.cardProva1 .content1 p{
-    color: #fff;
-}
-
-.cardProva1 .content1 p {
-    color: #fff;
-}
-
-.cardProva1 .content1 a{
-    position: relative;
-    color: #ff0157;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background: #fff;
-    color:#111;
-    margin-top: 10px;
-    display:inline-block;
-} 
-
-@media (max-width: 991px){
-    .cardProva1{
-        width: auto;
-        max-width: 350px;
-        align-items: flex-start;
-        margin: 10px;
-    }
-
-    .cardProva1:hover{
-        height: 600px;
-    }
-
-    .cardProva1 .content1{
-        width: 100%;
-        left: 0;
-        padding: 30px;
-    }
-
-    .cardProva1:hover img{
-        top: 70%;
-        left: 50%;
-        height: 300px;
-    }
-}
-
-@media (max-width: 420px){
-    .cardProva1 .content1{
-        
-        padding: 20px;
-    }
-}
-/* terza card*/
-.cardProva2{
-    position: relative;
-    width: 600px;
-    height: 350px;
-    background: none;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-    transition: 0.5s;
-}
-
-.cardProva2 .circle2{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
     overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
 }
 
-.cardProva2 .circle2::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:#97cbdb;
-    clip-path: circle(120 px at center);
-    transition: 0.5s;
+.contenuto{
+    color: white;
+    margin-top: 11%;
+    margin-left: 3%;
+    width: 27%;
 }
 
-.cardProva2:hover .circle2:before{
-    background: #ff0157;
-    clip-path: circle(400 px at center);
-    
+
+.cardUltime a{
+opacity: 0;
 }
-
-.cardProva2 img{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 300px;
-    pointer-events: none;
-    transition: 0.5s;
-    border-radius: 100%;
-}
-
-.cardProva2:hover img{
-    left: 75%;
-    height: 300px;
-
-}
-
-.cardProva2 .content2{
-    position:relative;
-    width: 50%;
-    left: 20%;
-    padding: 20px 20px 20px 40px;
-    transition: 0.5s;
-    opacity: 0;
-    visibility: absolute;
-}
-
-.cardProva2:hover .content2{
-    left: 0;
+.cardUltime:hover a{
     opacity: 1;
-    visibility: absolute;
-
 }
 
-.cardProva2 .content2 h2{
-    color:#fff;
-    text-transform: uppercase;
-    font-size: 2em;
-    line-height: 1em;
-    margin-bottom: 5px;
-
+.cardUltime:hover img{
+    margin-left: -74px;
+    transform: translateX(-47%);
 }
 
-.cardProva2 .content2 p{
-    color: #fff;
-}
-
-.cardProva2 .content2 p {
-    color: #fff;
-}
-
-.cardProva2 .content2 a{
-    position: relative;
-    color: #ff0157;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background: #fff;
-    color:#111;
-    margin-top: 10px;
-    display:inline-block;
-} 
-
-@media (max-width: 991px){
-    .cardProva2{
-        width: auto;
-        max-width: 350px;
-        align-items: flex-start;
-        margin: 10px;
-    }
-
-    .cardProva2:hover{
-        height: 600px;
-    }
-
-    .cardProva2 .content2{
-        width: 100%;
-        left: 0;
-        padding: 30px;
-    }
-
-    .cardProva2:hover img{
-        top: 70%;
-        left: 50%;
-        height: 300px;
-    }
-}
-
-@media (max-width: 420px){
-    .cardProva2 .content2{
-        
-        padding: 20px;
-    }
-}
-/* quarta card*/
-.cardProva3{
-    position: relative;
-    width: 600px;
-    height: 350px;
-    background: none;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
+.cardUltime:hover{
+    background-color: cadetblue;
     transition: 0.5s;
 }
 
-.cardProva3 .circle3{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    overflow: hidden;
+.cardUltime:hover p{
+    display: none;
+}
+.cardUltime:hover .contenuto{
+    transform: translateX(203%);
+    margin-left: 15%;
 }
 
-.cardProva3 .circle3::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:#97cbdb;
-    clip-path: circle(120 px at center);
-    transition: 0.5s;
-}
-
-.cardProva3:hover .circle3:before{
-    background: #ff0157;
-    clip-path: circle(400 px at center);
-    
-}
-
-.cardProva3 img{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 300px;
-    pointer-events: none;
-    transition: 0.5s;
-    border-radius: 100%;
-}
-
-.cardProva3:hover img{
-    left: 75%;
-    height: 300px;
-
-}
-
-.cardProva3 .content3{
-    position:relative;
-    width: 50%;
-    left: 20%;
-    padding: 20px 20px 20px 40px;
-    transition: 0.5s;
-    opacity: 0;
-    visibility: absolute;
-}
-
-.cardProva3:hover .content3{
-    left: 0;
-    opacity: 1;
-    visibility: absolute;
-
-}
-
-.cardProva3 .content3 h2{
-    color:#fff;
-    text-transform: uppercase;
-    font-size: 2em;
-    line-height: 1em;
-    margin-bottom: 5px;
-
-}
-
-.cardProva3 .content3 p{
-    color: #fff;
-}
-
-.cardProva3 .content3 p {
-    color: #fff;
-}
-
-.cardProva3 .content3 a{
-    position: relative;
-    color: #ff0157;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background: #fff;
-    color:#111;
-    margin-top: 10px;
-    display:inline-block;
-} 
-
-@media (max-width: 991px){
-    .cardProva3{
-        width: auto;
-        max-width: 350px;
-        align-items: flex-start;
-        margin: 10px;
-    }
-
-    .cardProva3:hover{
-        height: 600px;
-    }
-
-    .cardProva3 .content3{
-        width: 100%;
-        left: 0;
-        padding: 30px;
-    }
-
-    .cardProva3:hover img{
-        top: 70%;
-        left: 50%;
-        height: 300px;
-    }
-}
-
-@media (max-width: 420px){
-    .cardProva3 .content3{
-        
-        padding: 20px;
-    }
-}
 /*   Footer */
 
 .foot{
@@ -1255,8 +793,7 @@ footer.container{
     }
 }
 
-@media screen and (max-width: 943px){
-
+@media (max-width: 943px){
     .logo{
         position: relative;
         left: -89px;
@@ -1285,15 +822,6 @@ footer.container{
     cursor: pointer;
 }
 
-    header input[type="checkbox"]{
-        right: 31px;
-    position: absolute;
-    height: 59px;
-    width: 39px;
-    margin-top: -1%;
-    display: block !important;
-    opacity: 0;
-    }
 
     .navbar2{
         padding-right: 66px;
@@ -1319,6 +847,21 @@ footer.container{
     }
 }
 
-header input[type="checkbox"]{
-    display: none;
+
+@media screen and (max-width: 1175px){
+    .cardProva img {
+        padding: 20px;
+    }
 }
+
+@media screen and (max-width: 876px){
+
+    .flexcard{
+        flex-direction: column;
+    }
+
+    .cardUltime {
+        width: 100%;
+    } 
+}
+

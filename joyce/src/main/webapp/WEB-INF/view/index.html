@@ -32,8 +32,8 @@
 	
 	
 	    <section class="chiSiamo" id="chiSiamo">
-	        <div class="col-lg video">
-	            <div class="col-5">
+	        <div class="video">
+	            <div class="chiSiamo">
 	                <h2 class="titleChiSiamo">Chi siamo</h2>
 	                <p>Joyce's Kitchen è una comunità di professionisti appassionati dell'arte culinaria che hanno deciso di <br>
 	                	creare un sito dove condividere le nostre creazione con voi!
@@ -49,20 +49,20 @@
 	                  </p>
 	                  
 	            </div>
-	            <div class="col-1"></div>
-	            <div class="col-6">
-	              <iframe width="560" height="315" src="https://www.youtube.com/embed/qH__o17xHls" 
-	              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	            </div>
+	            <div class="videoYt">
+					<iframe width="640" height="100%" src="https://www.youtube.com/embed/qH__o17xHls" 
+					title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				  </div>
 	        </div>
 	    </section>
 	
-	    <section class="chiSiamo" id="ultimaUscita">
-	      <div class="col-lg video"> 
-	          <div class="col-7">
+	    <section id="ultimaUscita">
+	      <div class="video"> 
+			<h2 class="titleChiSiamo shadow scritta" id="titoloNascosto">Ultima uscita!</h2>
+	          <div class="">
 	              <img th:src="@{static/images/pasta2.jpg}" id="lastRecipe"></img>
 	          </div>
-	          <div class="col-5">
+	          <div class="">
 	              <h2 class="titleChiSiamo shadow scritta">Ultima uscita!</h2>
 	              <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
 	                  Maiores recusandae vero laborum, velit nostrum reprehenderit 
@@ -96,53 +96,55 @@
 	    
 	  </section>
 	
-	    <section id="search-bar">
-	      <h3 id="cercaScritta">Le nostre ultime ricette!</h3>
-	        <div class="row row-cols-1 row-cols-md-3 g-4">
-	            <div class="cardProva">
-	              <div class="circle"></div>
-	              <div class="content">
-	                <h2>Ricetta X</h2>
-	                <p>Lungo e accurato testo su suna buonissima ricetta </p>
-	                <a href="#">Vedi ricetta!</a>
-	              </div>
-	              <img src="https://th.bing.com/th/id/OIP.XHkR-ILZXg8vDY_o4sWPHgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7">
-	            </div>
-	           
-	            
-	            <div class="cardProva1">
-	              <div class="circle1"></div>
-	              <div class="content1">
-	                <h2>Ricetta X</h2>
-	                <p>Lungo e accurato testo su suna buonissima ricetta </p>
-	                <a href="#">Vedi ricetta!</a>
-	              </div>
-	              <img src="https://th.bing.com/th/id/OIP.XHkR-ILZXg8vDY_o4sWPHgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7">
-	            </div>
-	            
-	            <div class="cardProva2">
-	              <div class="circle2"></div>
-	              <div class="content2">
-	                <h2>Ricetta X</h2>
-	                <p>Lungo e accurato testo su suna buonissima ricetta </p>
-	                <a href="#">Vedi ricetta!</a>
-	              </div>
-	              <img src="https://th.bing.com/th/id/OIP.XHkR-ILZXg8vDY_o4sWPHgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7">
-	            </div>
-	            
-	            <div class="cardProva3">
-	              <div class="circle3"></div>
-	              <div class="content3" >
-	                <h2>Ricetta X</h2>
-	                <p>Lungo e accurato testo su suna buonissima ricetta </p>
-	                <a href="#">Vedi ricetta!</a>
-	              </div>
-	              <img src="https://th.bing.com/th/id/OIP.XHkR-ILZXg8vDY_o4sWPHgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7">
-	            </div>
-	            </div>
-	            
+	  <section id="search-bar">
+		<h3 id="cercaScritta">Le nostre ultime ricette!</h3>
+		<div> 
+		  <div class="flexcard">
+			  
+			<div class="cardUltime">
+			  
+			  <div class="contenuto"><h2>Ricetta X</h2>
+				<p>Lungo e accurato testo su suna buonissima ricetta </p>
+				<a href="" class="mainButton">Scopri Ricetta</a>
+			   </div>
+			   <img th:src="@{static/images/chili.jpg}">
+			</div>
+			 
+			  
+			<div class="cardUltime">
+			  
+			  <div class="contenuto"><h2>Ricetta X</h2>
+				<p>Lungo e accurato testo su suna buonissima ricetta </p>
+				<a href="" class="mainButton">Scopri Ricetta</a>
+			   </div>
+			   <img th:src="@{static/images/chili.jpg}">
+			</div>
+		  </div>
+		   
+		   <div class="flexcard">
+			  
+			<div class="cardUltime">
+			  
+			  <div class="contenuto"><h2>Ricetta X</h2>
+				<p>Lungo e accurato testo su suna buonissima ricetta </p>
+				<a href="" class="mainButton">Scopri Ricetta</a>
+			   </div>
+			   <img th:src="@{static/images/chili.jpg}">
+			</div>
+			 
+			  
+			<div class="cardUltime">
+			  
+			  <div class="contenuto"><h2>Ricetta X</h2>
+				<p>Lungo e accurato testo su suna buonissima ricetta </p>
+				<a href="" class="mainButton">Scopri Ricetta</a>
+			   </div>
+			   <img th:src="@{static/images/chili.jpg}">
+			</div>
+			 
+			  </div>
 	
-	    </section>
+	  </section>
 	
 		<form th:replace="../template/base-template :: newsletterFragment"></form>
 		<footer th:replace="../template/base-template :: footerFragment"></footer>
