@@ -403,136 +403,74 @@ p {
     display: flex;
 }
 
-.cardProva{
-    margin: 20px;
-    position: relative;
+.cardUltime{
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
     width: 50%;
-    height: 350px;
-    background: none;
-    border-radius: 20px;
-    display: grid;
-    align-items: center;
-    border-radius: 20px;
+    padding: 2%;
+    background-color: #97cbdb;
+    height: 0%;
     transition: 0.5s;
+
 }
 
-.cardProva .circle{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.cardProva .circle::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(#f6fefe -4px, #97cbdb 2.5px);
-    background-size: 20px 20px;
-    clip-path: circle(120 px at center);
-    transition: 0.5s;
-}
-
-.cardProva:hover .circle:before{
-    background-image: url(../Images/cage.jpeg);
-    background-size: cover;
-    opacity: 90%;
-    filter: brightness(80%);
-    clip-path: circle(400 px at center);
+.cardUltime img{
+    transition: transform 0.75s;
+    margin-right: -24px;
+    min-height: 371px;
+    border-radius: 101%;
+    width: 69%;
+    padding: 20px;
+    object-fit: cover;
     
 }
-
-.cardProva img{
-    padding: 20px;
-    min-width: 275px;
-    object-fit: cover;
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    height: 300px;
-    transform: translate(-50%,-50%);
-    height: 81%;
-    pointer-events: none;
-    transition: 0.5s;
-    border-radius: 100%;
+.cardUltime .contenuto{
+    transition: transform 0.75s;
 }
- 
-.cardProva:hover img{
-    left: 30%;
-    height: 300px;
-
-}
-
-.cardProva .content{
-    top: 51px;
-    position:relative;
-    width: 50%;
-    left: 0;
-    padding: 20px 20px 20px 40px;
-    transition: 0.5s;
-    opacity: 1;
-    visibility: absolute;
-    margin-right: 79px;
-}
-
-.cardProva:hover .content{
-    left: 25%;
-    opacity: 0;
-    visibility: absolute;
-
-}
-
-.cardProva .contentHover{
-    position:relative;
-    width: 50%;
-    left: -50%;
-    padding: 20px 20px 20px 40px;
-    transition: 0.5s;
-    opacity: 0;
-    visibility: absolute;
-}
-
-.cardProva:hover .contentHover{
-    left: 3%;
-    opacity: 1;
-    visibility: absolute;
-
-}
-
-.cardProva .content h2{
-    color:#fff;
+.cardUltime .contenuto h2{
     text-transform: uppercase;
-    font-size: 2em;
-    line-height: 1em;
-    margin-bottom: 5px;
-
 }
 
-.cardProva .content p{
-    color: #fff;
+.cardUltime .contenuto p{
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
 }
 
-.cardProva .content p {
-    color: #fff;
-}
-
-.cardProva .contentHover a{
-    position: relative;
-    color: #ff0157;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background: #fff;
-    color:#111;
-    margin-top: 10px;
-    display:inline-block;
-} 
-.cardProva .contentHover h2{
+.contenuto{
     color: white;
+    margin-top: 11%;
+    margin-left: 3%;
+    width: 27%;
+}
+
+
+.cardUltime a{
+opacity: 0;
+}
+.cardUltime:hover a{
+    opacity: 1;
+}
+
+.cardUltime:hover img{
+    margin-left: -74px;
+    transform: translateX(-47%);
+}
+
+.cardUltime:hover{
+    background-color: cadetblue;
+    transition: 0.5s;
+}
+
+.cardUltime:hover p{
+    display: none;
+}
+.cardUltime:hover .contenuto{
+    transform: translateX(203%);
+    margin-left: 15%;
 }
 
 /*   Footer */
@@ -910,12 +848,20 @@ footer.container{
 }
 
 
-
-@media screen and (max-width: 800px){
-    .cardProva{
-        width: 100%;  
+@media screen and (max-width: 1175px){
+    .cardProva img {
+        padding: 20px;
     }
+}
+
+@media screen and (max-width: 876px){
+
     .flexcard{
         flex-direction: column;
     }
+
+    .cardUltime {
+        width: 100%;
+    } 
 }
+
