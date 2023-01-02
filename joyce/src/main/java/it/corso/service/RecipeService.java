@@ -17,4 +17,6 @@ public interface RecipeService {
 	void addRecipe(Recipe recipe);
 	
 	int getLastId();
+	
+	List<Recipe> lastRecipes();
 }

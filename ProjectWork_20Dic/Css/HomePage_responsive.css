@@ -418,7 +418,6 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 20px;
     overflow: hidden;
 }
 
@@ -429,13 +428,17 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background:#97cbdb;
+    background-image: radial-gradient(#f6fefe -4px, #97cbdb 2.5px);
+    background-size: 20px 20px;
     clip-path: circle(120 px at center);
     transition: 0.5s;
 }
 
 .cardProva:hover .circle:before{
-    background: #ff0157;
+    background-image: url(../Images/cage.jpeg);
+    background-size: cover;
+    opacity: 90%;
+    filter: brightness(80%);
     clip-path: circle(400 px at center);
     
 }
@@ -443,16 +446,17 @@ p {
 .cardProva img{
     position:absolute;
     top: 50%;
-    left: 50%;
+    left: 70%;
+    height: 300px;
     transform: translate(-50%,-50%);
     height: 300px;
     pointer-events: none;
     transition: 0.5s;
     border-radius: 100%;
 }
-
+ 
 .cardProva:hover img{
-    left: 75%;
+    left: 30%;
     height: 300px;
 
 }
@@ -460,15 +464,32 @@ p {
 .cardProva .content{
     position:relative;
     width: 50%;
-    left: 20%;
+    left: 0;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 1;
+    visibility: absolute;
+}
+
+.cardProva:hover .content{
+    left: 25%;
+    opacity: 0;
+    visibility: absolute;
+
+}
+
+.cardProva .contentHover{
+    position:relative;
+    width: 50%;
+    left: -50%;
     padding: 20px 20px 20px 40px;
     transition: 0.5s;
     opacity: 0;
     visibility: absolute;
 }
 
-.cardProva:hover .content{
-    left: 0;
+.cardProva:hover .contentHover{
+    left: 3%;
     opacity: 1;
     visibility: absolute;
 
@@ -491,7 +512,7 @@ p {
     color: #fff;
 }
 
-.cardProva .content a{
+.cardProva .contentHover a{
     position: relative;
     color: #ff0157;
     padding: 10px 20px;
@@ -501,6 +522,10 @@ p {
     margin-top: 10px;
     display:inline-block;
 } 
+.cardProva .contentHover h2{
+    color: white;
+}
+ 
 
 @media (max-width: 991px){
     .cardProva{
