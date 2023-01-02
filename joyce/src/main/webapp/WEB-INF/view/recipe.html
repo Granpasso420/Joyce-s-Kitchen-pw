@@ -7,6 +7,8 @@
     <link type="text/css" rel="stylesheet" th:href="@{static/css/promo.css}">
     <link type="text/css" rel="stylesheet"  th:href="@{static/css/HomePageNavBar.css}">
     <link type="text/css" rel="stylesheet"  th:href="@{static/css/dropdown.css}">
+    <link type="text/css" rel="stylesheet" th:href="@{static/css/ricetta.css}">
+    <link type="text/css" rel="stylesheet" th:href="@{static/css/ricette.css}">
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +20,7 @@
     
     <section class="banner" id="banner">
         <div class="content">
-            <h2 name="titoloRicetta" class="titloRicetta shadow" id="titoloRicetta" th:text="${recipe.recipe_name}"></h2>
+            <h2 class="titloRicetta shadow" id="titoloRicetta" th:text="${recipe.recipe_name}"></h2>
             <a href="#" class="mainButton">Trovala sul magazine ></a>
         </div>
     </section>
@@ -45,7 +47,7 @@
     <img id="fotoprincipale" th:src="@{'static/foto/' + ${recipe.id_recipe} + '.png'}" alt="">
    	<div class="contenitore">  <div class="testoIng" style="padding-right: 11px;text-align: start;">
     <h4 ><img class="icon" th:src="@{static/images/icon1.png}" alt=""> Difficoltà: </h4>
-    <h4> <img class="icon" th:src="@{static/images/icon2.png}" > Categoria:</h4>
+    <h4> <img class="icon" th:src="@{static/images/icon2.png}" > Categoria: </h4>
     <h4> <img class="icon" th:src="@{static/images/icon3.png}" alt=""> Tempo: </h4> 
 </div>
 <div class="tretesti"> <h4 th:text="${recipe.difficulty}"></h4> <h4 th:text="${recipe.recipecategory}"></h4> <h4 th:text="${recipe.time}"></h4> </div></div> 
@@ -68,7 +70,7 @@
  	 <p th:text="${recipe.process}"></p>
 
 <div class="divcolor11">
-  <h2 name=titoloRicetta class="titloRicetta shadow" id="titoloRicetta">Le foto delle vostre ricette!</h2>
+  <h2 class="titloRicetta shadow" id="titoloRicetta">Le foto delle vostre ricette!</h2>
     <div class="container">
       <div class="row">
         <div class="col-sm-12">      
@@ -106,7 +108,11 @@
           </table>
         </div>
       </div>
-
+      </div>
+      </div>
+      </div>
+</div>
+      </div>
       
 
 </section>

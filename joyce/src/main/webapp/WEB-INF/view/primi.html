@@ -45,8 +45,8 @@
 
     <section>
         <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col-md-3">
-              <div class="card h-100" th:each="r : ${primi}">
+            <div class="col-md-3" th:each="r : ${primi}">
+              <div class="card h-100">
                 <img th:src="@{'static/foto/' + ${r.id_recipe} + '.png'}" class="card-img-top" alt="Foto Cibo">
                 <div class="card-body">
                   <h5 class="card-title" th:text="${r.recipe_name}"></h5>
