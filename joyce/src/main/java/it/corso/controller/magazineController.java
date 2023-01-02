@@ -11,6 +11,8 @@ public class magazineController {
 
 	@GetMapping
 	public String getPage(Model model) {
+		
+		model.addAttribute("title","Magazine");
 		return "magazine";
 	}
 	
