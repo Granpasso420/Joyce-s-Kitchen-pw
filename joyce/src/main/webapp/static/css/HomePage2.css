@@ -31,12 +31,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../images/ciboDarkened.jpeg);
-    background-size: cover;
+    background: url(../Images/ciboDarkened.jpeg);
+    background-size: cover !important;
 }
 
+
+
 .banner .content {
-    max-width: 900px;
+   /*max-width: 900px;*/
     text-align: center;
 }
 .banner .content h2 {
@@ -103,9 +105,11 @@ header {
     height: 12%;
 }
 
+
 header .navBar{
     position: relative;
     display: flex;
+    font-size: 100%;
 }
 header .navBar li {
     list-style: none;
@@ -159,10 +163,11 @@ header.sticky .navBar li a {
     margin-bottom: 6%;
 }
 #lastRecipe{
-    max-width: 746px;
+    height: 100%;
+    width: 728px;
     margin-left: -8%;
-    position: relative;
     margin-top: -39px;
+    object-fit: cover;
 }
 
 #ultimaUscita{
@@ -194,6 +199,10 @@ section {
     color: #111;
     font-weight:300;
     font-family: 'Candara',sans-serif;
+}
+
+.chiSiamo{
+    padding-right: 50px
 }
 .row.col50.tvImg {
     position: relative;
@@ -258,10 +267,11 @@ p {
 }
 
 .ultime-bottone{
+    letter-spacing: 2px;
     text-align: center;
     /* width: 1%; */
-    width: 43%;
-    margin-top: 31px;
+    width: 50%;
+    margin-top: 3%;
 }
 
 .ultima-descrizione{
@@ -370,6 +380,7 @@ p {
     transition: 0.5s;
     filter: blur(0px);
     font-family: 'backToTheFuture';
+    border-width: 0;
 }
 
 .newsButton:hover {
@@ -418,13 +429,13 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background:#ff0157;
+    background:#97cbdb;
     clip-path: circle(120 px at center);
     transition: 0.5s;
 }
 
 .cardProva:hover .circle:before{
-    background: cadetblue;
+    background: #ff0157;
     clip-path: circle(400 px at center);
     
 }
@@ -552,13 +563,13 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background:#ff0157;
+    background:#97cbdb;
     clip-path: circle(120 px at center);
     transition: 0.5s;
 }
 
 .cardProva1:hover .circle1:before{
-    background: cadetblue;
+    background: #ff0157;
     clip-path: circle(400 px at center);
     
 }
@@ -686,13 +697,13 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background:#ff0157;
+    background:#97cbdb;
     clip-path: circle(120 px at center);
     transition: 0.5s;
 }
 
 .cardProva2:hover .circle2:before{
-    background: cadetblue;
+    background: #ff0157;
     clip-path: circle(400 px at center);
     
 }
@@ -820,13 +831,13 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background:#ff0157;
+    background:#97cbdb;
     clip-path: circle(120 px at center);
     transition: 0.5s;
 }
 
 .cardProva3:hover .circle3:before{
-    background: cadetblue;
+    background: #ff0157;
     clip-path: circle(400 px at center);
     
 }
@@ -1169,7 +1180,6 @@ footer.container{
   background: #CD201F;
   color: #ffffff;
 }
-
 /*responsive----------*/
 
 #panino{
