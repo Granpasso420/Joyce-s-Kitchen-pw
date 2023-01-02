@@ -29,8 +29,9 @@
 		        <li><a th:href="@{/magazine}" class="rivistaButton">Rivista</a></li>
 		        <li><a th:href="@{/login}" class="adminButton">Admin</a></li>
 		    </ul>
-			<img th:src="@{static/images/panino.png}"id="panino" class="paninoDopo" onclick="menu()"></img>
-    		<img th:src="@{static/images/X.png}" id="X"  onclick="chiudere()"></img>
+			<img th:src="@{static/images/panino.png}" id="panino" class="paninoDopo" onclick="menu()" width="50px" height="50px"></img>
+    		<img th:src="@{static/images/X.png}" id="X"  onclick="chiudere()" width="50px" height="50px"></img>
+    		<script th:src="@{static/javascript/ricetta.js}"></script>
 		</header>
 		
 		<!--------------------------------- NEWSLETTER --------------------------------->
