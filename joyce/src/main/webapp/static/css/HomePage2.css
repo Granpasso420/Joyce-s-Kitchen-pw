@@ -1315,10 +1315,11 @@ footer.container{
     .navbar3{
         transform: translateX(0);
 
-    
     }
+    
 }
 
 header input[type="checkbox"]{
     display: none;
 }
+
