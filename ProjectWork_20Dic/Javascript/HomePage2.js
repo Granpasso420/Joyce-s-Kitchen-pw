@@ -3,6 +3,14 @@ window.addEventListener('scroll', function(){
     header.classList.toggle("sticky", window.scrollY > 0);
 })
 
+window.addEventListener('scroll', function(){
+    const header = document.querySelector('header');
+    header.classList.toggle("stickySecondi", window.scrollY > 0);
+})
+
+
+
+
 function menu(){
 var navBar = document.getElementById('navBar');
 

@@ -10,6 +10,12 @@
     background-size: cover;
 }
 
+.titoli{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    
+}
+
 .fotoRivista{
     background: cadetblue;
     width: 100%;
@@ -19,6 +25,10 @@
 .banner .content {
     margin-top: 8%;}
 
+#sette{
+     width: 55%;
+    margin-left: 8%;
+    }
 
 .rivista{
     margin-left: -46%;
@@ -26,10 +36,9 @@
 }
 
 #testoRivista{
-    /* justify-content: center; */
-    /* text-align: center; */
-    margin-top: 5%;
-    margin-left: 1%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
 }
 
 #promoRivista{
@@ -37,6 +46,9 @@
     margin-right: 40%;
 }
 
+#contRivista{
+    display:flex;
+}
 
 .iconeContatti{
     height: 142px;
@@ -106,4 +118,33 @@
     height: 40px;
     padding-left: 70px;
     transition: 0.2s;
+}
+
+@media (max-width: 877px){
+    #contRivista{
+        flex-direction: column;
+    }
+
+    #sette{
+        width: 100%;
+        margin-left: 0;
+        padding-right: 20px;
+    }
+
+    #testoRivista{
+        text-align: left;
+        width: 100%;
+        flex-direction: row;
+        padding-right: 20px;
+    }
+
+    #descrizione{
+        width: 50%;
+    margin-right: 38px;
+    }
+    #altreRiviste{
+        width: 50%;
+    }
+    .titoli {
+        font-weight: lighter;}
 }

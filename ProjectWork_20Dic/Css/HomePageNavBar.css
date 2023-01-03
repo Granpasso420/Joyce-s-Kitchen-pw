@@ -108,3 +108,118 @@
     color: rgb(226, 239, 239);
     
 }
+
+
+
+/* NAV BAR SECONDI */
+
+
+.homeButtonSecondi {
+    font-size: 1em;
+    color: #fff;
+    background: #ff015600;
+    display: inline-block;
+    padding: 16px 4px;
+    margin-top: 20px;
+    border-radius: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.homeButtonSecondi:hover {
+    transform: scale(1.1);
+    padding: 38px 20px;
+    background: rgb(245, 255, 255);
+    color: #0d0908;
+    
+}
+
+.ricetteButtonSecondi {
+    font-size: 1em;
+    color: #fff;
+    background: #ff015600;
+    display: inline-block;
+    padding: 16px 4px;
+    margin-top: 20px;
+    border-radius: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.ricetteButtonSecondi:hover {
+    transform: scale(1.1);
+    padding: 40px 8px;
+    background: rgb(245, 255, 255);
+    color: #0d0908;
+    
+}
+
+.chiSiamoButtonSecondi {
+    font-size: 1em;
+    color: #fff;
+    background: #ff015600;
+    display: inline-block;
+    padding: 16px 4px;
+    margin-top: 20px;
+    border-radius: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.chiSiamoButtonSecondi:hover {
+    transform: scale(1.1);
+    padding: 40px 2px;
+    background: rgb(245, 255, 255);
+    color: #0d0908;
+    
+}
+
+.rivistaButtonSecondi {
+    font-size: 1em;
+    color: #fff;
+    background: #ff015600;
+    display: inline-block;
+    padding: 16px 4px;
+    margin-top: 20px;
+    border-radius: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.rivistaButtonSecondi:hover {
+    transform: scale(1.1);
+    padding: 35px 10px;
+    background: rgb(245, 255, 255);
+    color: #0d0908;
+    
+}
+
+.adminButtonSecondi {
+    font-size: 1em;
+    color: #fff;
+    background: #ff015600;
+    display: inline-block;
+    padding: 16px 4px;
+    margin-top: 20px;
+    border-radius: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.adminButtonSecondi:hover {
+    transform: scale(1.1);
+    padding: 30px 10px;
+    background: rgb(245, 255, 255);
+    color: #0d0908;
+    
+}
