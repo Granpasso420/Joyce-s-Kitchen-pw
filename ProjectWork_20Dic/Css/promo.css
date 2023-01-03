@@ -50,7 +50,6 @@ margin-left: 8%;
 
 .iconeContatti{
     height: 142px;
-    margin-right: 162px;
     padding: 13px;
     background: cadetblue;
 }
@@ -61,21 +60,27 @@ margin-left: 8%;
 
 }
 
-#iframe{
-        /* margin-top: 57px; */
+#iframe1{
         border: 0;
-        margin-left: -64px;
+        height: 104%;
+    padding-top: 38px;
+    width: 60%;
 }
 
 #contattiContainer{
-    margin-left: 276px;
     /* justify-content: center; */
     padding-top: 58px;
+
+}
+
+.contatti{
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 
 .distanzaContatti{
     text-align: center;
-    margin-right: 188px;
     padding-top: 21px;
 }
 
@@ -90,13 +95,10 @@ margin-left: 8%;
 #ceo{
     height: 279px;
     margin-top: 23px;
-    margin-right: 152px;
 }
 
 #ceotitolo{
-    padding-left: 46px;
         font-size: 38px;
-    margin-right: 56px;
     padding-top: 33px;
 }
 
@@ -108,7 +110,6 @@ margin-left: 8%;
 #linkedin{
     margin-top: 11px;
     height: 36px;
-    padding-left: 76px;
     transition: 0.2s;
 }
 
@@ -145,4 +146,34 @@ margin-left: 8%;
     }
     .titoli {
         font-weight: lighter;}
+}
+
+@media (max-width: 623px){
+    .contatti{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width: 1230px){
+iframe {
+    width: 600px;
+    height: 450px;
+}
+}
+
+@media(max-width: 1023px){
+    #container1{
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 100% !important;}
+
+        #ceoContainer{
+            width: 100% !important;
+        }
+
+        #iframe1{
+            width: 100%
+        }
 }
