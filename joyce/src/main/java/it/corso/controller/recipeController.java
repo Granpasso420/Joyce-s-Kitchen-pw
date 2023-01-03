@@ -22,9 +22,11 @@ public class recipeController {
 		
 		
 		Recipe recipe = service.getRecipeById(id);
-		
+		String tipo = recipe.getRecipecategory().substring(0,recipe.getRecipecategory().length()-1);
+		tipo = tipo.concat("i");
 		
 		model.addAttribute("recipe", recipe);
+		model.addAttribute("tipo", tipo);
 		model.addAttribute("title", "Ricetta");
 		return "recipe";
 	}
