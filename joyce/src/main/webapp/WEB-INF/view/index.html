@@ -83,18 +83,14 @@
 	
 	    <section id="search-bar">
       <h3 id="cercaScritta">Le nostre ultime ricette!</h3>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="cardProva" th:each="r : ${lastRecipes}">
-            <div class="circle"></div>
-            <div class="content">
+		<div class="flexcard"> 
+          <div class="cardUltime" th:each="r : ${lastRecipes}">
+            <div class="contenuto">
               <h2 th:text="${r.recipe_name}"></h2>
-              <p th:text="'- ' + ${r.recipecategory}"></p>
+             <div> <p th:text="'- ' + ${r.recipecategory}"></p>
               <p th:text="'- ' + ${r.time}"></p>
-              <p th:text="'- ' + ${r.difficulty}"></p>
-            </div>
-            <div class="contentHover">
-              <h2 th:text="${r.recipe_name}"></h2>
-              <a th:href="@{recipe(id=${r.id_recipe})}">Scopri Ricetta</a>
+              <p th:text="'- ' + ${r.difficulty}"></p> </div>
+			  <a class="mainButton" th:href="@{recipe(id=${r.id_recipe})}">Scopri Ricetta</a>
             </div>
             <img th:src="@{'static/foto/' + ${r.id_recipe} + '.png'}">
           </div>

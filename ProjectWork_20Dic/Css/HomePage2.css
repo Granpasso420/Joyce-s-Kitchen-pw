@@ -400,17 +400,17 @@ p {
 /* Cosa SSSSWAG */
 
 .flexcard{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 
 .cardUltime{
     margin: 2%;
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 96%;
     padding: 2%;
     background-color: #97cbdb;
-    height: 0%;
     transition: 0.5s;
 
 }
@@ -857,7 +857,7 @@ footer.container{
 @media screen and (max-width: 876px){
 
     .flexcard{
-        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
     }
 
     .cardUltime {
