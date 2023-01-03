@@ -119,3 +119,32 @@
     padding-left: 70px;
     transition: 0.2s;
 }
+
+@media (max-width: 877px){
+    #contRivista{
+        flex-direction: column;
+    }
+
+    #sette{
+        width: 100%;
+        margin-left: 0;
+        padding-right: 20px;
+    }
+
+    #testoRivista{
+        text-align: left;
+        width: 100%;
+        flex-direction: row;
+        padding-right: 20px;
+    }
+
+    #descrizione{
+        width: 50%;
+    margin-right: 38px;
+    }
+    #altreRiviste{
+        width: 50%;
+    }
+    .titoli {
+        font-weight: lighter;}
+}
