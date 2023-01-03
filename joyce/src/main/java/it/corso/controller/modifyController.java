@@ -60,11 +60,10 @@ public class modifyController {
 		if(image != null && !image.isEmpty()) {
 			saveImage(recipe.getId_recipe(), image);
 		}
-		
 		return "redirect:/reserved";
 	}
 
-	// save image
+	// metodo save image
 	private void saveImage(int id_recipe, MultipartFile image) {
 		String rootDir = session.getServletContext().getRealPath("/");
 		String filePath = rootDir + "static\\foto\\" + id_recipe + ".png";
