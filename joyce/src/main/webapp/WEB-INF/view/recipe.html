@@ -47,14 +47,19 @@
 
 <section class="ricettaFoto_Descrizione" id="ricettaFoto_Descrizione">
     <img id="fotoprincipale" th:src="@{'static/foto/' + ${recipe.id_recipe} + '.png'}" alt="">
-   	<div class="contenitore">  <div class="testoIng" style="padding-right: 11px;text-align: start;">
+    <div id="ingredienti"> 
+    <div class="contenitore">  <div id="testoIng">
     <h4 ><img class="icon" th:src="@{static/images/icon1.png}" alt=""> Difficoltà: </h4>
     <h4> <img class="icon" th:src="@{static/images/icon2.png}" > Categoria: </h4>
     <h4> <img class="icon" th:src="@{static/images/icon3.png}" alt=""> Tempo: </h4>
 </div>
-<div class="tretesti"> <h4 th:text="${recipe.difficulty}"></h4> <h4 th:text="${recipe.recipecategory}"></h4> <h4 th:text="${recipe.time}"></h4> </div></div> 
+<div class="tretesti"> 
+  <h4 class="tre" th:text="${recipe.difficulty}"></h4> 
+<h4 class="tre" th:text="${recipe.recipecategory}"></h4> 
+<h4 class="tre" th:text="${recipe.time}"></h4> 
+</div></div> 
 
-<div id="ingredienti"> <h1 class="testoRicetta">Ingredienti</h1>
+<div > <h1 class="testoRicetta">Ingredienti</h1>
     <p class="testoIng" style="text-align: left;" th:text="${recipe.ingredients}">
     	<!-- Spaghetti 320 g
         Pomodori pelati 800 g
@@ -62,6 +67,7 @@
         Aglio 1 spicchio
         Basilico q.b.
         Sale fino q.b. --></p>
+    </div>
     </div>
 </section>
 
