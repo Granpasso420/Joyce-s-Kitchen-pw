@@ -1,6 +1,6 @@
 .banner {
     min-height: 79vh;
-    background: url(../Images/ing.jpg);
+    background: url(../images/ing.jpg);
 }
 
 .fotoIngredienti{
@@ -92,10 +92,6 @@
     justify-content: left;
     padding-top: 25px;
     padding-bottom: 15px;
-
-}
-
-.tretesti{
 
 }
 

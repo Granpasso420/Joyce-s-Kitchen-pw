@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../Images/bistecca.jpg);
+    background: url(../images/bistecca.jpg);
     background-size: cover;
 }
 #bannerprimi {
@@ -22,7 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../Images/pasta.jpg);
+    background: url(../images/pasta.jpg);
     background-size: cover;
 }
 #bannerdolci {
@@ -32,7 +32,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../Images/torta.jpg);
+    background: url(../images/torta.jpg);
     background-size: cover;
 }
 
