@@ -469,7 +469,7 @@ opacity: 0;
     display: none;
 }
 .cardUltime:hover .contenuto{
-    transform: translateX(203%);
+    transform: translateX(193%);
     margin-left: 15%;
 }
 
