@@ -130,6 +130,29 @@ header .navBar li a {
 }
 
 
+header .navBarSticky{
+    position: relative;
+    display: flex;
+    font-size: 100%;
+}
+header .navBarSticky li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header.sec li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+header .navBarSticky li a {
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+    font-weight: 300;
+}
+
+
 header.sticky{
     background-color: #fff;
     padding: 10px 100px;
@@ -138,6 +161,16 @@ header.sticky{
 }
 header.sticky .navBar li a {
     color: black;
+}
+
+header.stickySecondi{
+    background-color: #0d0908;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0,0.05);
+    height: 12%;
+}
+header.stickySecondi .navBar li a {
+    color: #fff2ef;
 }
 
 .logo {
