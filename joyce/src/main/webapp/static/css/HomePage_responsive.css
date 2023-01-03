@@ -31,7 +31,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../Images/ciboDarkened.jpeg);
+    background: url(../images/ciboDarkened.jpeg);
     background-size: cover;
 }
 

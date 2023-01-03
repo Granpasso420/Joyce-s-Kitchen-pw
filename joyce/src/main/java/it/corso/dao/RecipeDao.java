@@ -12,6 +12,6 @@ public interface RecipeDao extends CrudRepository<Recipe, Integer>{
 	@Query(value = "select max(id_recipe) from recipes", nativeQuery = true)
 	int getLastId();
 	
-	@Query(value="SELECT id_recipe FROM recipes ORDER BY id_recipe DESC LIMIT 4;", nativeQuery = true)
+	@Query(value="SELECT id_recipe FROM recipes ORDER BY id_recipe ASC LIMIT 5", nativeQuery = true)
 	List<Integer> lastRecipes();
 }

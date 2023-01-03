@@ -20,10 +20,11 @@ public class indexController {
 	
 	@GetMapping
 	public String getPage(Model model) {
+		
 		List<Recipe> last = service.lastRecipes();
 		Recipe ultR= service.getRecipeById(service.getLastId());
 		last.remove(0);
-		// ultima ricetta
+		
 		model.addAttribute("ultR", ultR);
 		model.addAttribute("lastRecipes", last);
 		model.addAttribute("title", "Home");

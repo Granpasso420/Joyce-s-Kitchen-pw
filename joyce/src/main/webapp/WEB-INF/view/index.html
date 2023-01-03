@@ -83,7 +83,7 @@
 	    <section id="search-bar">
       <h3 id="cercaScritta">Le nostre ultime ricette!</h3>
         <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="cardProva" th:each="r : ${last}">
+          <div class="cardProva" th:each="r : ${lastRecipes}">
             <div class="circle"></div>
             <div class="content">
               <h2 th:text="${r.recipe_name}"></h2>
@@ -93,13 +93,11 @@
             </div>
             <div class="contentHover">
               <h2 th:text="${r.recipe_name}"></h2>
-              <a href="@{recipe(id=${r.id_recipe})}">Scopri Ricetta</a>
+              <a th:href="@{recipe(id=${r.id_recipe})}">Scopri Ricetta</a>
             </div>
             <img th:src="@{'static/foto/' + ${r.id_recipe} + '.png'}">
           </div>
 	            </div>
-	            
-	
 	    </section>
 	
 		<form th:replace="../template/base-template :: newsletterFragment"></form>
