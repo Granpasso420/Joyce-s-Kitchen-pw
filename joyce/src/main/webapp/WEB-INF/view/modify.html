@@ -17,7 +17,7 @@
 		<input type="button" value="Admin" id="admin"/>
 		<h1 th:text="${title}"></h1>-->
     </header>
-	    <form name="fmod" id="fmod" method="POST" th:object="${recipe}">
+	    <form name="fmod" id="fmod" method="POST" th:object="${recipe}" enctype="multipart/form-data">
 	    	<input type="hidden" th:field="*{id_recipe}"/>
 	    	<div class="mod">
 	        	<h1 class="h3 mb-3 fw-normal">Modifica ricetta</h1>
