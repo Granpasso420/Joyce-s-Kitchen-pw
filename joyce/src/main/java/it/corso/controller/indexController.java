@@ -22,6 +22,7 @@ public class indexController {
 	public String getPage(Model model) {
 		
 		List<Recipe> last = service.lastRecipes();
+
 		Recipe ultR= service.getRecipeById(service.getLastId());
 		last.remove(0);
 		
