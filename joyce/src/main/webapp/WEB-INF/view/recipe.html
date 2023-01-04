@@ -29,18 +29,23 @@
 
 <div class="panegrande">
     <div class="pane"> 
-      <a th:href="@{/}"><img class="iconepane distanzapane"  th:src="@{static/images/pane1.png}" ></img></a>
-    
+
+      <div> 
+        <a th:href="@{/}"><img class="iconepane distanzapane"  th:src="@{static/images/pane1.png}" ></img></a>
+        <p class="distanzapane">Home</p> 
+      </div>
     <p id="freccia"> ></p>
-  
+  <div>
     <a th:href="@{${tipo}}"><img class="iconepane distanzapane"  th:src="@{static/images/pane2.png}" ></img></a>
+    <p class="distanzapane" th:text="${tipo}"></p>
+  </div> 
     <p id="freccia"> ></p>
-    <img class="iconepane distanzapane"  th:src="@{static/images/pane3.png}" ></img>
-    </div>
-    <div class="pane">
-      <p class="distanzapane">Home</p> 
-      <p class="distanzapane" th:text="${tipo}"></p>
+
+    <div>
+      <img class="iconepane distanzapane"  th:src="@{static/images/pane3.png}" ></img>
       <p class="distanzapane">Ricetta</p>
+    </div> 
+   
     </div>
   </div>
 
