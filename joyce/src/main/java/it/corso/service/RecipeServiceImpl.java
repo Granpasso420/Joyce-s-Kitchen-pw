@@ -61,6 +61,7 @@ public class RecipeServiceImpl implements RecipeService{
 	@Override
 	public List<Recipe> lastRecipes() {
 		
-		return (List<Recipe>) recipeDao.findAllById(recipeDao.lastRecipes());
+		List<Integer> recipes = recipeDao.lastRecipes();
+		return (List<Recipe>) recipeDao.findAllById(recipes);
 	}
 }

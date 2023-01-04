@@ -21,23 +21,23 @@
 	<section class="banner" id="banner">
         <div class="content">
             <h2 class="shadow">Contatti</h2>
-            <a href="#" class="mainButton"> Mandaci una mail ></a>
+            <a href="#mail" class="mainButton"> Mandaci una mail ></a>
         </div>        
     </section>
 
 
     <div class="panegrande">
         <div class="pane"> 
-          <a th:href="@{/}"><img class="iconepane distanzapane"  th:src="@{static/images/pane1.png}"  ></img></a>
-        
+
+          <div>
+            <a th:href="@{/}"><img class="iconepane distanzapane"  th:src="@{static/images/pane1.png}"  ></img></a>
+            <p class="distanzapane">Home</p> 
+          </div> 
         <p id="freccia"> ></p>
-      
+      <div> 
        <img class="iconepane distanzapane" th:src="@{static/images/pane2.png}"  ></img>
-        
-        </div>
-        <div class="pane">
-          <p class="distanzapane">Home</p> 
-          <p class="distanzapane">Contatti</p>
+       <p class="distanzapane">Contatti</p>
+      </div>
         </div>
       </div>
 
@@ -59,7 +59,7 @@
               <p> 243.567.8900</p>
             </div>
             <div class="distanzaContatti">
-              <a href="mailto:info@panebello.com"> <img class="iconepane  iconeContatti" th:src="@{static/images/icon6.png}" ></img></a>
+              <a href="mailto:info@panebello.com"> <img class="iconepane  iconeContatti" th:src="@{static/images/icon6.png}" id="mail"></img></a>
               <h3>E-Mail</h3>
               <p>joyces@kitchen.com</p>
               <p> servizi@joyce.com</p>

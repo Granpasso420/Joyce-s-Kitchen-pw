@@ -20,7 +20,7 @@
 		<a th:href="@{add}"><input type="button" th:value="'Aggiungi'"></a>-->
     </header>
     <div class="mod">
-        <h1 class="h3 mb-3 fw-normal">Area Riservata</h1>
+        <h1 class="h3 mb-3 fw-normal" style="margin-top:20%;">Area Riservata</h1>
         <br>
     <div>  
         <a th:href="@{add}"><button type="button" class="btn btn-primary btn-lg bgblue" th:value="Aggiungi">Aggiungi</button></a>
@@ -38,13 +38,11 @@
                     <td th:text="${r.recipe_name}"></td>
                     <td th:text="${r.recipecategory}"></td>
                     <td><a th:href="@{modify(id=${r.id_recipe})}"><button type="button" class="btn btn-primary bgblue">Modifica</button></a>
-                        <a th:href="@{reserved/delete(id=${r.id_recipe})}"><button type="button" class="btn btn-primary bgred">Elimina</button></a></td>
+                        <a th:href="@{reserved/delete(id=${r.id_recipe})}"><button id="butt" type="button" class="btn btn-primary bgred">Elimina</button></a>
           </tr>
         </tbody>
       </table>
     </div>
-    
-    <footer th:replace="../template/base-template :: footerFragment"></footer>
 
 	<script th:src="@{static/javascript/HomePage2.js}"></script>
     

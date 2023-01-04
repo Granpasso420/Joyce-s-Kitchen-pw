@@ -23,14 +23,14 @@
 		        <li><a th:href="@{/}" class="homeButton">Home</a></li>
 		        <li><a class="ricetteButton ">Ricette</a>
 		            <ul class="dropdown">
-		                <li><a th:href="@{/primi}">Primi</a></li>
-		                <li><a th:href="@{/secondi}">Secondi</a></li>
-		                <li><a th:href="@{/dolci}">Dolci</a></li>
+		                <li><a th:href="@{primi}">Primi</a></li>
+		                <li><a th:href="@{secondi}">Secondi</a></li>
+		                <li><a th:href="@{dolci}">Dolci</a></li>
 		            </ul>
 		        </li>
-		        <li><a th:href="@{/contatti}" class="chiSiamoButton">Contatti</a></li>
-		        <li><a th:href="@{/magazine}" class="rivistaButton">Rivista</a></li>
-		        <li><a th:href="@{/login}" class="adminButton">Admin</a></li>
+		        <li><a th:href="@{contatti}" class="chiSiamoButton">Contatti</a></li>
+		        <li><a th:href="@{magazine}" class="rivistaButton">Rivista</a></li>
+		        <li><a th:href="@{login}" class="adminButton">Admin</a></li>
 		    </ul>
 		    <img th:src="@{static/images/panino.png}" id="panino" class="paninoDopo" onclick="menu()"></img>
     		<img th:src="@{static/images/X.png}" id="X"  onclick="chiudere()"></img>
@@ -61,13 +61,13 @@
 	                            <h4>RICETTE</h4>
 	                        </li>
 	                        <li>
-	                          <a href="#">Primi</a>
+	                          <a th:href="@{primi}">Primi</a>
 	                        </li>
 	                        <li>
-	                          <a href="#">Secondi</a>
+	                          <a th:href="@{secondi}">Secondi</a>
 	                        </li>
 	                        <li>
-	                          <a href="#">Dolci</a>
+	                          <a th:href="@{dolci}">Dolci</a>
 	                        </li>
 	                        
 	                    </ul>
@@ -77,7 +77,7 @@
 	                          <h4>RIVISTA</h4>
 	                      </li>
 	                      <li>
-	                          <a href="#">Scopri le nostre riviste!</a>
+	                          <a th:href="@{magazine}">Scopri le nostre riviste!</a>
 	                      </li>
 	                
 	                  </ul>
