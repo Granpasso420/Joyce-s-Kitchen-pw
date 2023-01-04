@@ -844,6 +844,13 @@ footer.container{
         margin-top: -1%;
         transition: 0.2s;
     }
+    
+    .dropdown {
+    
+    left: -25% !important;
+    right:111%;
+    top:12%;
+}
 
 
     #panino:hover{
@@ -878,6 +885,8 @@ footer.container{
 
     }
     
+    
+
 }
 
 @media screen and (max-width: 1175px){
