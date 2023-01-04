@@ -1,6 +1,7 @@
 .banner {
     min-height: 79vh;
     background: url(../images/ing.jpg);
+    
 }
 
 .fotoIngredienti{
@@ -50,6 +51,7 @@
    background-color: #def0f6;
    padding: 40px;
    padding-top: 13px !important;
+   width: 40%;
 }
 .testoIng{
     text-align: left;
@@ -159,6 +161,7 @@
     display: flex;
     margin-left: 0px !important;
     margin-bottom: 51px;
+    width:100%;
 }
 
 .contenitore {
