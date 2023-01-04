@@ -27,19 +27,21 @@
     <div class="mod">
         <h1 class="h3 mb-3 fw-normal">Area Riservata</h1>
         <br>
-    <div>  
+    <div>
         <a th:href="@{add}"><button type="button" class="btn btn-primary btn-lg bgblue" th:value="Aggiungi">Aggiungi</button></a>
     </div>
         <br>
         <table class="table">
             <thead>
                 <tr >
+                	<th scope="col"></th>
                     <th scope="col">Nome Ricetta</th>
                     <th scope="col">Categoria Ricetta</th>
                 </tr>
             </thead>
             <tbody>
                  <tr th:each="r : ${recipes}">
+                 	<td><img th:src="@{'static/foto/' + ${r.id_recipe} + '.png'}" width="30" height="30"></td>
                     <td th:text="${r.recipe_name}"></td>
                     <td th:text="${r.recipecategory}"></td>
                     <td><a th:href="@{modify(id=${r.id_recipe})}"><button type="button" class="btn btn-primary bgblue">Modifica</button></a>
