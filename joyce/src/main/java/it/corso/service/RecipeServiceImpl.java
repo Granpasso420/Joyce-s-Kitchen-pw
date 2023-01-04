@@ -1,7 +1,9 @@
 package it.corso.service;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,7 +19,12 @@ public class RecipeServiceImpl implements RecipeService{
 	
 	@Override
 	public List<Recipe> getRecipes() {
-		return (List<Recipe>) recipeDao.findAll();
+		
+		List<Recipe> recipes = (List<Recipe>) recipeDao.findAll();
+		Comparator<Recipe> comparator = Comparator.comparing(Recipe :: getId_recipe).reversed();
+		recipes = recipes.stream().sorted(comparator).collect(Collectors.toList());
+		
+		return recipes;
 	}
 	
 	@Override
@@ -61,7 +68,6 @@ public class RecipeServiceImpl implements RecipeService{
 	@Override
 	public List<Recipe> lastRecipes() {
 		
-		List<Integer> recipes = recipeDao.lastRecipes();
-		return (List<Recipe>) recipeDao.findAllById(recipes);
+		return (List<Recipe>) recipeDao.lastRecipes();
 	}
 }

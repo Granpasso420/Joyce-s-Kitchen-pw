@@ -23,7 +23,7 @@ public class indexController {
 		
 		List<Recipe> last = service.lastRecipes();
 		Recipe ultR= service.getRecipeById(service.getLastId());
-		last.remove(last.size()-1);
+		last.remove(0);
 		
 		model.addAttribute("ultR", ultR);
 		model.addAttribute("lastRecipes", last);
