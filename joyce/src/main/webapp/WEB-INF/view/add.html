@@ -10,7 +10,7 @@
 		    <link type="text/css" rel="stylesheet"  th:href="@{static/css/HomePageNavBar.css}">
 	    <link type="text/css" rel="stylesheet"  th:href="@{static/css/dropdown.css}">
      <link type="text/css" rel="stylesheet"  th:href="@{static/css/riservata.css}">
-  
+<meta charset="UTF-8">
   <style type="text/css" id="operaUserStyle"></style>
 </head>
 <body>
@@ -21,7 +21,7 @@
 		<hr>
 	</div>
     
-     <form name="fadd" id="fadd" method="POST" th:object="${recipe}" enctype="multipart/form-data">
+     <form name="fadd" id="fadd" method="POST" th:object="${recipe}" enctype="multipart/form-data" accept-charset="utf-8">
     <div class="mod">
         <h1 class="h3 mb-3 fw-normal">Aggiungi nuova ricetta</h1>
         <br>
