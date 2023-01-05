@@ -896,6 +896,19 @@ footer.container{
     .navbar3{
         transform: translateX(0);
     }
+
+    .navBarBottoni{
+        margin-top:0px !important;
+    }
+
+    .navBarBottoneRicetta {
+        margin-top:0px !important;
+        height: 100px !important;
+    }
+
+    .navBarBottoneRicetta .innerRicetta {
+        margin-top: -29px !important;}
+
 }
 
 
