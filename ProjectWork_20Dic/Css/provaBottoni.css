@@ -1,194 +1,267 @@
+/* il codice da qui a riga 47 serve per fare un "reset"
+   per prevenire l'user agent stylesheet di rompere le palle
+   e fare un override del css
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
 body {
     background-color: beige;
+    
+}
+
+
+.navBarprovaBottoni{
     display: flex;
-    justify-items: left;
-    align-content: left;
+    height: 180px;
+    
 }
 
-header {
-  
-    display: flex;
-    align-content: right;
- 
-}
-
-
-.ricette {
-   width: 100px;
-   background-color: transparent;
-   border-radius: 20px;
-   clip-path: circle(25% at 50% 30%);
-   padding: 20px 20px 20px 20px;
-}
-
-    .ricette .inner{
-        background-color: beige;
-        border-radius: 10px;
-        width: 100%;
-        margin-top: 40px;
-        margin-bottom: 40px;
-
+    .navBarBottoni {
+    width: 120px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 15px;
+    /* romboDiProva clip-path: polygon(52.1% 0%, 100% 50.2%, 52.1% 100%, 0% 50.2%); */
+    clip-path: circle(35% at 50% 50%);
+    padding: 20px 20px 20px 20px;
+    margin-top: 50px;
+    transition: .3s ease-in-out;
     }
 
-    .ricette .inner h1 {
-        color: black;
-        font-size: 20px;
-        display: grid;
-        justify-items: center;
-        align-content: center;
-        transition: .5s ease-in-out;
-        font-family: candara, sans-serif;
-    }
+        .navBarBottoni .inner{
+            border-radius: 10px;
+            margin-top: 22px;
+            margin-bottom: 0px;
+            transition: .3s ease-in-out;
 
-        .ricette:hover {
-            clip-path: circle(30% at 50% 30%);
-            cursor: pointer;
-            background-color: #95cada;
-            transition: .5s ease-in-out;
-            
-        }
-        .ricette:hover .inner h1 {
-            font-size: 23px;
-            transition: .5s ease-in-out;
-            color: white;
-            letter-spacing: 2px;
-        }
-        .ricette:hover .inner {
-            transition: .5s ease-in-out;
-            background-color: #95cada;
         }
 
-
-
-
-.ricette1 {
-   width: 100px;
-   height: 200px;
-   background-color: transparent;
-   border-radius: 5px;
-   clip-path: circle(25% at 50% 30%);
-   padding: 20px 20px 20px 20px;
-}
-
-    .ricette1 .inner1{
-        background-color: beige;
-        border-radius: 10px;
-        width: 100%;
-        margin-top: 40px;
-        margin-bottom: 40px;
-
-    }
-
-    .ricette1 .inner1 h1 {
-        color: black;
-        font-size: 20px;
-        display: grid;
-        justify-items: center;
-        align-content: center;
-        transition: .7s ease-in-out;
-        font-family: candara, sans-serif;
-
-    }
-
-    .ricette1 .inner1 a {
-        color: beige;
-        font-size: 20px;
-        display: grid;
-        justify-items: center;
-        align-content: center;
-        text-decoration: none;
-        font-family: candara, sans-serif;
-
-    }
-
-        .ricette1:hover {
-            clip-path: circle(100% at 50% 30%);
-            background-color: #95cada;
-            transition: .7s ease-in-out;
-            
-        }
-        .ricette1:hover .inner1 h1 {
-            font-size: 23px;
-            transition: .7s ease-in-out;
-            color: white;
-            letter-spacing: 2px;
-           
-        }
-        .ricette1:hover .inner1 {
-            transition: .7s ease-in-out;
-            background-color: #95cada;
-        }
-
-        .ricette1:hover .inner1 a {
-            background-color: beige;
-            border-radius: 5px;
-            transition: 1s ease-in-out;
+        .navBarBottoni .inner h1 {
             color: black;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            cursor: pointer;
+            font-size: 15px;
+            display: grid;
+            justify-items: center;
+            align-content: center;
+            transition: .3s ease-in-out;
+            font-family: 'candara', sans-serif;
+            margin-top: 22px;
+        }
+
+            .navBarBottoni:hover {
+                clip-path: circle(40% at 50% 50%);
+                cursor: pointer;
+                background-color: #95cada;
+                transition: .3s ease-in-out;
+                
+            }
+
+            .navBarBottoni:hover .inner h1 {
+                font-size: 15px;
+                transition: .3s ease-in-out;
+                color: white;
+                font-style: bold;
+                letter-spacing: 4px;
+
+            }
+            .navBarBottoni:hover .inner {
+                transition: .3s ease-in-out;
+            }
+
+        #FinalmenteHoUsatoUnIdPerLaPrimaVoltaEdEstatoBellissimo:hover .inner h1 {
+            letter-spacing: 1px !important;
         }
 
 
-.ricette2 {
-   width: 120px;
-   background-color: transparent;
-   border-radius: 20px;
-   clip-path: circle(30% at 50% 30%);
-   padding: 20px 20px 20px 20px;
-}
-
-    .ricette2 .inner2{
-        background-color: beige;
-        border-radius: 10px;
-        width: 100%;
-        margin-top: 40px;
-        margin-bottom: 40px;
-
+.navBarBottoneRicetta {
+    width: 120px;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 0px;
+    clip-path: polygon(0% 10%, 100% 10%, 100% 30%, 0% 30%);
+    padding: 20px 20px 20px 20px;
+    margin-top: 50px;
+    transition: .5s ease-in-out;
     }
 
-    .ricette2 .inner2 h1 {
-        color: black;
-        font-size: 20px;
+        .navBarBottoneRicetta .innerRicetta{
+            border-radius: 10px;
+            margin-top: 22px;
+            margin-bottom: 0px;
+            transition: .5s ease-in-out;
+
+        }
+
+        .navBarBottoneRicetta .innerRicetta h1 {
+            color: black;
+            font-size: 15px;
+            display: grid;
+            justify-items: center;
+            align-content: center;
+            transition: .5s ease-in-out;
+            font-family: 'candara', sans-serif;
+            margin-top: 22px;
+            font-style:unset !important;
+        }
+
+            .navBarBottoneRicetta:hover {
+                clip-path: polygon(0% 5%, 100% 5%, 100% 100%, 0% 100%);
+                cursor: pointer;
+                background-color: #95cada;
+                transition: .5s ease-in-out;
+                
+            }
+
+            .navBarBottoneRicetta:hover .innerRicetta h1 {
+                font-size: 15px;
+                transition: .5s ease-in-out;
+                color: white;
+                font-style: bold;
+                letter-spacing: 4px;
+
+            }
+            .navBarBottoneRicetta:hover .innerRicetta {
+                transition: .5s ease-in-out;
+            }
+
+    .dropdownRicette {
+        color: rgb(255, 255, 255);
+        font-size: 20x;
         display: grid;
         justify-items: center;
         align-content: center;
         transition: .5s ease-in-out;
-        font-family: candara, sans-serif;
+        font-family: 'candara', sans-serif;
+        display: grid;
+        justify-items: center;
+        row-gap: 18px;
+        margin-top: 20px;
+    }
+    .dropdownLine {
+        background-color: white;
+        width: 50px;
+        height: 2px;
+    }
+    .dropdownPrimi:hover{
+        text-decoration: underline;
+    }
+    .dropdownSecondi:hover{
+        text-decoration: underline;
+    }
+    .dropdownDolci:hover{
+        text-decoration: underline;
+    }
+
+
+.navBarBottoneAdmin {
+    width: 120px;
+    height: 100px;
+    background-color: #95cada;
+    border-radius: 0px;
+    clip-path: polygon(0% 35%, 20% 35%, 30% 50%, 20% 65%, 0% 65%);
+    padding: 20px 20px 20px 20px;
+    margin-top: 50px;
+    transition: .2s ease-in-out;
+    display: grid; 
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0px;
 
     }
 
-        .ricette2:hover {
-            clip-path: circle(35% at 50% 30%);
-            cursor: pointer;
-            background-color: #95cada;
-            transition: .5s ease-in-out;
-            
-        }
-        .ricette2:hover .inner2 h1 {
-            font-size: 23px;
-            transition: .5s ease-in-out;
-            color: white;
-            letter-spacing: 1px;
-           
-        }
-        .ricette2:hover .inner2 {
-            transition: .5s ease-in-out;
-            background-color: #95cada;
+        .navBarBottoneAdmin .innerAdmin{
+            background-color: transparent;
+            border-radius: 10px;
+            margin-top: 22px;
+            margin-bottom: 0px;
+
         }
 
+        .navBarBottoneAdmin .innerAdmin h1 {
+            color: black;
+            font-size: 15px;
+            display: grid;
+            justify-items: center;
+            align-content: center;
+            transition: .2s ease-in-out;
+            font-family: 'candara', sans-serif;
+            margin-top: -19px;
+            font-style:unset !important;
+            opacity: 0;
+        }
 
-.logo {
-    margin-top: 20px;
-    margin-left: 10px;
-    height: 150px;
-    transition: 0.5s ease-in, 0.5s ease-out;
-}
+            .navBarBottoneAdmin:hover {
+                clip-path: polygon(0% 35%, 90% 35%, 100% 50%, 90% 65%, 0% 65%);
+                cursor: pointer;
+                background-color: #95cada;
+                transition: .5s ease-in-out;
+                
+            }
 
-.logo:hover {
-    height: 170px;
-    transform: rotate(-5deg);
-    transition: 0.5s ease-in, 0.5s ease-out;
-}
+            .navBarBottoneAdmin:hover .innerAdmin h1 {
+                font-size: 15px;
+                transition: .5s ease-in-out;
+                color: white;
+                font-style: bold;
+                letter-spacing: 4px;
+                opacity: 1;
+            }
+            .navBarBottoneAdmin:hover .innerAdmin {
+                transition: .5s ease-in-out;
+            }
+
+            .adminBottoneImmagine {
+                margin-left: -15px;
+                margin-top: -2px;
+                transition: .2s ease-in-out;
+                opacity: 1;
+            }
+            .navBarBottoneAdmin:hover .adminBottoneImmagine {
+                opacity: 0;
+                transition: .2s ease-in-out;
+                transform: scale(0%);
+            }
