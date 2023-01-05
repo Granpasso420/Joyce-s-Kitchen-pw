@@ -8,6 +8,7 @@
 	    <link type="text/css" rel="stylesheet"  th:href="@{static/css/fonts.css}">
 	    <link type="text/css" rel="stylesheet"  th:href="@{static/css/HomePageNavBar.css}">
 	    <link type="text/css" rel="stylesheet"  th:href="@{static/css/dropdown.css}">
+	    <link type="text/css" rel="stylesheet"  th:href="@{static/css/css.css}">
 	    <meta charset="UTF-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height" />
@@ -20,7 +21,7 @@
 		    <a th:href="@{/}"><img th:src="@{static/images/Logo.png}" class="logo"></img></a>
 		    <ul class="navBar navbar2" id="navBar">
 		        <li><a th:href="@{/}" class="homeButton">Home</a></li>
-		        <li><a class="ricetteButton ">Ricette</a>
+		        <li><a class="ricetteButton">Ricette</a>
 		            <ul class="dropdown">
 		                <li><a th:href="@{/primi}">Primi</a></li>
 		                <li><a th:href="@{/secondi}">Secondi</a></li>
@@ -51,86 +52,63 @@
 	        </div>
 	      </form>
 	    <!--------------------------------- FOOTER --------------------------------->
-	    <footer class="footer1 foot" th:fragment="footerFragment">
-	        <div class="footer-top">
-	            <div class="container">
-	                <div class="col2">
-	                    <ul class="menu footlist">
-	                        <li>
-	                            <h4>RICETTE</h4>
-	                        </li>
-	                        <li>
-	                          <a th:href="@{/primi}">Primi</a>
-	                        </li>
-	                        <li>
-	                          <a th:href="@{/secondi}">Secondi</a>
-	                        </li>
-	                        <li>
-	                          <a th:href="@{/dolci}">Dolci</a>
-	                        </li>
-	                        
-	                    </ul>
-	
-	                    <ul class="menu footlist">
-	                      <li>
-	                          <h4>RIVISTA</h4>
-	                      </li>
-	                      <li>
-	                          <a th:href="@{/magazine}">Scopri le nostre riviste!</a>
-	                      </li>
-	                
-	                  </ul>
-	                    <ul class="menu footlist">
-	                      <li>
-	                          <h4>CONTATTI</h4>
-	                      </li>
-	                      <li>
-	                          <p>Telefono: +39 333 123 4567</p>
-	                      </li>
-	                      <li>
-	                          <p>E-mail: Joyces@kitchen.com</p>
-	                      </li>
-	                      <li>
-	                          <p>Indirizzo: Via Joyce, 100</p>
-	                      </li>
-	                     
-	                  </ul>
-	                    
-	                    
-	                </div>
-	                
-	                <div class="col1">
-	                  <ul class="wrapper">
-	                    <li class="icon facebook">
-	                      <span class="tooltip">Facebook</span>
-	                      <img th:src="@{static/images/fb-logo.png}" alt="" width="40px">
-	                      <span><i class="fab fa-facebook-f"></i></span>
-	                    </li>
-	                    <li class="icon twitter">
-	                      <span class="tooltip">Twitter</span>
-	                      <img th:src="@{static/images/twitter-logo.png}" alt="" width="40px">
-	                      <span><i class="fab fa-twitter"></i></span>
-	                    </li>
-	                    <li class="icon instagram">
-	                      <span class="tooltip">Instagram</span>
-	                      <img th:src="@{static/images/instagram-logo.png}" alt="" width="35px">
-	                      <span><i class="fab fa-instagram"></i></span>
-	                    </li>
-	                    <li class="icon youtube">
-	                      <span class="tooltip">Youtube</span>
-	                      <img th:src="@{static/images/youtube-logo.png}" alt="luce" width="40px">
-	                      <span><i class="fab fa-youtube"></i></span>
-	                    </li>
-	                  </ul>
-	                </div>
-	            </div>
-	            <div class="footer-bottom">
-	                <div class="container copyright">
-	                    <p>© 2022 Joyce's kitchen - All rights reserved</p>
-	                    
-	                </div>
-	            </div>
-	        </div>
-	    </footer>
+	    
+	    <footer th:fragment="footerFragment">
+    <div class="contenitorefooter">
+      <div class="footer">
+          <div class="ricette" style="margin-left:8%;">
+              <ul>
+                  <li><h2>ricette</h2></li>
+                  <li><a th:href="@{/primi}">Primi</a></li>
+                  <li><a th:href="@{/secondi}">Secondi</a></li>
+                  <li><a th:href="@{/dolci}">Dolci</a></li>
+              </ul>
+          </div>
+              <div class="rivista">
+                  <h2>Rivista</h2>
+                  <p th:href="@{/magazine}">Scopri le nostre riviste!</p>
+              </div>
+              
+                  <div class="contatti">
+                      <ul>
+                          <li><h2>contatti</h2></li>
+                          <li>Telefono</li>
+                          <li>Email</li>
+                          <li>indirizzo</li>
+                      </ul>
+  
+                  </div>
+                  <div class="col1">
+                      <ul class="wrapper" id="social">
+                        <li class="icon facebook">
+                          <span class="tooltip">Facebook</span>
+                          <img th:src="@{static/images/fb-logo.png}" alt="" width="40px">
+                          <span><i class="fab fa-facebook-f"></i></span>
+                        </li>
+                        <li class="icon twitter">
+                          <span class="tooltip">Twitter</span>
+                          <img th:src="@{static/images/twitter-logo.png}" alt="" width="40px">
+                          <span><i class="fab fa-twitter"></i></span>
+                        </li>
+                        <li class="icon instagram">
+                          <span class="tooltip">Instagram</span>
+                          <img th:src="@{static/images/instagram-logo.png}" alt="" width="35px">
+                          <span><i class="fab fa-instagram"></i></span>
+                        </li>
+                        <li class="icon youtube">
+                          <span class="tooltip">Youtube</span>
+                          <img th:src="@{static/images/youtube-logo.png}" alt="" width="40px">
+                          <span><i class="fab fa-youtube"></i></span>
+                        </li>
+                      </ul>
+                    </div>
+                   
+              </div>
+              <div class="copiright">
+                <p style="margin-left:auto; margin-right:auto;">© 2022 Joyce's kitchen - All rights reserved</p>
+            </div>
+              </div>
+                 
+   </footer> 
 	</body>
 </html>
