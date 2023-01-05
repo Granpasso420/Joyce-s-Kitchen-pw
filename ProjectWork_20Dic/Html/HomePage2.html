@@ -4,9 +4,8 @@
     <link type="text/css" rel="stylesheet"  href="../Css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet"  href="../Css/HomePage2.css">
     <link type="text/css" rel="stylesheet"  href="../Css/fonts.css">
-    <link type="text/css" rel="stylesheet"  href="../Css/HomePageNavBar.css">
     <link type="text/css" rel="stylesheet"  href="../Css/fonts.css">
-    <link type="text/css" rel="stylesheet"  href="../Css/dropdown.css">
+    <link type="text/css" rel="stylesheet"  href="../Css/provaBottoni.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -18,18 +17,50 @@
   <header>
     <img src="../Images/Logo.png" class="logo"></img>
 
-    <ul class="navBar navbar2" id="navBar">
-        <li><a href="#banner" class="homeButton">Home</a></li>
-        <li><a href="#ricette" class="ricetteButton">Ricette</a>
-            <ul class="dropdown">
-                <li>Hello</li>
-                <li>Hello 2</li>
-            </ul>
-        </li>
-        <li><a href="#chiSiamo"class="chiSiamoButton">Chi siamo</a></li>
-        <li><a href="#rivista" class="rivistaButton">Rivista</a></li>
-        <li><a href="#rivista" class="adminButton">Admin</a></li>
-    </ul>
+    <ul class="navBarprovaBottoni navbar2" id="navBar" >
+      <li class="homeButton">
+          <div class="navBarBottoni">
+              <div class="inner">
+                  <a href="#banner"><h1>HOME</h1></a>
+              </div>
+          </div>
+      </li>
+      <li class="ricetteButton" id=""> 
+          <div class="navBarBottoneRicetta">
+              <div class="innerRicetta">
+                  <a href="#banner"><h1>RICETTE</h1></a>
+                      <ul class="dropdownRicette">
+                          <li class="dropdownLine"></li>
+                          <li class="dropdownPrimi">Primi</li>
+                          <li class="dropdownSecondi">Secondi</li>
+                          <li class="dropdownDolci">Dolci</li>
+                      </ul>
+              </div>
+          </div>
+      </li>
+      <li class="chiSiamoButton" id="FinalmenteHoUsatoUnIdPerLaPrimaVoltaEdEstatoBellissimo">
+          <div class="navBarBottoni">
+              <div class="inner">
+                  <a href="#banner"><h1>CHI SIAMO</h1></a>
+              </div>
+          </div>
+      </li>
+      <li class="rivistaButton">
+          <div class="navBarBottoni">
+              <div class="inner">
+                  <a href="#banner"><h1>RIVISTA</h1></a>
+              </div>
+          </div>
+      </li>
+      <li class="adminButton">
+          <div class="navBarBottoneAdmin">
+              <div class="innerAdmin">
+                  <img class="adminBottoneImmagine" src="../Images/immagineAdmin.png" alt="" height="20px" width="20px">
+                  <a href="#banner"><h1>ADMIN</h1></a>
+              </div>
+          </div>
+      </li>
+  </ul>
     <img src="../Images/panino.png" id="panino" class="paninoDopo" onclick="menu()"></img>
     <img src="../Images/X.png" id="X"  onclick="chiudere()"></img>
     
@@ -42,8 +73,7 @@
         <div class="content">
             <h2 class="shadow">Benvenuti!</h2>
             <form class="form1">
-              <input class="searchbar" type="search" placeholder="Search" aria-label="Search">
-              <a href="#" class="mainButton">Cerca</a>
+              <a href="#" class="mainButton">LA NOSTRA RIVISTA ></a>
             </form>
         </div>
     </section>
