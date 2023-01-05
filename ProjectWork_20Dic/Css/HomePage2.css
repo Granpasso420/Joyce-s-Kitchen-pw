@@ -1,7 +1,6 @@
-/* il codice da qui a riga 47 serve per fare un "reset"
+/* il codice da qui a riga 47 servirebbe per fare un "reset"
    per prevenire l'user agent stylesheet di rompere le palle
    e fare un override del css
-*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -47,7 +46,7 @@ table {
 	border-spacing: 0;
 }
 
-
+*/
 
 
 
