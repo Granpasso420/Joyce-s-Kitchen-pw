@@ -1,60 +1,3 @@
-/* il codice da qui a riga 47 serve per fare un "reset"
-   per prevenire l'user agent stylesheet di rompere le palle
-   e fare un override del css
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-
-body {
-    background-color: beige;
-    
-}
-
-
 .navBarprovaBottoni{
     display: flex;
     height: 180px;
@@ -82,7 +25,7 @@ body {
         }
 
         .navBarBottoni .inner h1 {
-            color: black;
+            color: rgb(0, 0, 0);
             font-size: 15px;
             display: grid;
             justify-items: center;
@@ -178,8 +121,7 @@ body {
         font-family: 'candara', sans-serif;
         display: grid;
         justify-items: center;
-        row-gap: 18px;
-        margin-top: 20px;
+        row-gap: 14px;
     }
     .dropdownLine {
         background-color: white;
@@ -229,7 +171,7 @@ body {
             align-content: center;
             transition: .2s ease-in-out;
             font-family: 'candara', sans-serif;
-            margin-top: -19px;
+            margin-top: -24px;
             font-style:unset !important;
             opacity: 0;
         }
@@ -256,7 +198,7 @@ body {
 
             .adminBottoneImmagine {
                 margin-left: -15px;
-                margin-top: -2px;
+                margin-top: -10px;
                 transition: .2s ease-in-out;
                 opacity: 1;
             }

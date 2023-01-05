@@ -833,12 +833,6 @@ footer.container{
         transition: 0.2s;
     }
     
-    .dropdown {
-    
-    left: -25% !important;
-    right:111%;
-    top:12%;
-}
 
 
     #panino:hover{
@@ -873,7 +867,17 @@ footer.container{
 
     }
     
-    
+    .navBarBottoni{
+        margin-top:0px !important;
+    }
+
+    .navBarBottoneRicetta {
+        margin-top:0px !important;
+        height: 100px !important;
+    }
+
+    .navBarBottoneRicetta .innerRicetta {
+        margin-top: -29px !important;}
 
 }
 

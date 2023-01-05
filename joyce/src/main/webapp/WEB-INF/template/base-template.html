@@ -9,6 +9,7 @@
 	    <link type="text/css" rel="stylesheet"  th:href="@{static/css/HomePageNavBar.css}">
 	    <link type="text/css" rel="stylesheet"  th:href="@{static/css/dropdown.css}">
 	    <link type="text/css" rel="stylesheet"  th:href="@{static/css/css.css}">
+		<link type="text/css" rel="stylesheet"  th:href="@{static/css/provaBottoni.css}">
 	    <meta charset="UTF-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height" />
@@ -18,20 +19,51 @@
 	<body>
 		<!-- FRAMMENTO HEADER -->
 		<header th:fragment="headerFragment">
-		    <a th:href="@{/}"><img th:src="@{static/images/Logo.png}" class="logo"></img></a>
-		    <ul class="navBar navbar2" id="navBar">
-		        <li><a th:href="@{/}" class="homeButton">Home</a></li>
-		        <li><a class="ricetteButton">Ricette</a>
-		            <ul class="dropdown">
-		                <li><a th:href="@{/primi}">Primi</a></li>
-		                <li><a th:href="@{/secondi}">Secondi</a></li>
-		                <li><a th:href="@{/dolci}">Dolci</a></li>
-		            </ul>
-		        </li>
-		        <li><a th:href="@{/contatti}" class="chiSiamoButton">Contatti</a></li>
-		        <li><a th:href="@{/magazine}" class="rivistaButton">Rivista</a></li>
-		        <li><a th:href="@{/login}" class="adminButton">Admin</a></li>
-		    </ul>
+		    <a th:href="@{/}"><img th:src="@{static/images/Logo.png}" class="logo"></img></a>			
+			<ul class="navBarprovaBottoni navbar2" id="navBar" >
+				<li class="homeButton">
+					<div class="navBarBottoni">
+						<div class="inner">
+							<a th:href="@{/}"><h1>HOME</h1></a>
+						</div>
+					</div>
+				</li>
+				<li class="ricetteButton" id=""> 
+					<div class="navBarBottoneRicetta">
+						<div class="innerRicetta">
+							<a href="#banner"><h1>RICETTE</h1></a>
+								<ul class="dropdownRicette">
+									<li  class="dropdownLine"></li>
+									<li class="dropdownPrimi"> <a th:href="@{/primi}">Primi</a></li>
+									<li class="dropdownSecondi"><a th:href="@{/secondi}">Secondi</a></li>
+									<li class="dropdownDolci"><a th:href="@{/dolci}">Dolci</a></li>
+								</ul>
+						</div>
+					</div>
+				</li>
+				<li class="chiSiamoButton" id="FinalmenteHoUsatoUnIdPerLaPrimaVoltaEdEstatoBellissimo">
+					<div class="navBarBottoni">
+						<div class="inner">
+							<a th:href="@{/contatti}"><h1>CONTATTI</h1></a>
+						</div>
+					</div>
+				</li>
+				<li class="rivistaButton">
+					<div class="navBarBottoni">
+						<div class="inner">
+							<a th:href="@{/magazine}"><h1>RIVISTA</h1></a>
+						</div>
+					</div>
+				</li>
+				<li class="adminButton">
+					<div class="navBarBottoneAdmin">
+						<div class="innerAdmin">
+							<img class="adminBottoneImmagine" th:src="@{static/images/immagineAdmin.png}" alt="" height="20px" width="20px">
+							<a th:href="@{/login}"><h1>ADMIN</h1></a>
+						</div>
+					</div>
+				</li>
+			</ul>
 		    <img th:src="@{static/images/panino.png}" id="panino" class="paninoDopo" onclick="menu()"></img>
     		<img th:src="@{static/images/X.png}" id="X"  onclick="chiudere()"></img>
 			<!-- <img th:src="@{static/images/panino.png}" id="panino" class="paninoDopo" onclick="menu()" width="50px" height="50px"></img>

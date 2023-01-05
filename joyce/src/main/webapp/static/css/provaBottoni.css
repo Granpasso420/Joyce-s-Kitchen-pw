@@ -1,0 +1,209 @@
+.navBarprovaBottoni{
+    display: flex;
+    height: 180px;
+    
+}
+
+    .navBarBottoni {
+    width: 120px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 15px;
+    /* romboDiProva clip-path: polygon(52.1% 0%, 100% 50.2%, 52.1% 100%, 0% 50.2%); */
+    clip-path: circle(35% at 50% 50%);
+    padding: 20px 20px 20px 20px;
+    margin-top: 50px;
+    transition: .3s ease-in-out;
+    }
+
+        .navBarBottoni .inner{
+            border-radius: 10px;
+            margin-top: 22px;
+            margin-bottom: 0px;
+            transition: .3s ease-in-out;
+
+        }
+
+        .navBarBottoni .inner h1 {
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            display: grid;
+            justify-items: center;
+            align-content: center;
+            transition: .3s ease-in-out;
+            font-family: 'candara', sans-serif;
+            margin-top: 22px;
+        }
+
+            .navBarBottoni:hover {
+                clip-path: circle(40% at 50% 50%);
+                cursor: pointer;
+                background-color: #95cada;
+                transition: .3s ease-in-out;
+                
+            }
+
+            .navBarBottoni:hover .inner h1 {
+                font-size: 15px;
+                transition: .3s ease-in-out;
+                color: white;
+                font-style: bold;
+                letter-spacing: 4px;
+
+            }
+            .navBarBottoni:hover .inner {
+                transition: .3s ease-in-out;
+            }
+
+        #FinalmenteHoUsatoUnIdPerLaPrimaVoltaEdEstatoBellissimo:hover .inner h1 {
+            letter-spacing: 1px !important;
+        }
+
+
+.navBarBottoneRicetta {
+    width: 120px;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 0px;
+    clip-path: polygon(0% 10%, 100% 10%, 100% 30%, 0% 30%);
+    padding: 20px 20px 20px 20px;
+    margin-top: 50px;
+    transition: .5s ease-in-out;
+    }
+
+        .navBarBottoneRicetta .innerRicetta{
+            border-radius: 10px;
+            margin-top: 22px;
+            margin-bottom: 0px;
+            transition: .5s ease-in-out;
+
+        }
+
+        .navBarBottoneRicetta .innerRicetta h1 {
+            color: black;
+            font-size: 15px;
+            display: grid;
+            justify-items: center;
+            align-content: center;
+            transition: .5s ease-in-out;
+            font-family: 'candara', sans-serif;
+            margin-top: 22px;
+            font-style:unset !important;
+        }
+
+            .navBarBottoneRicetta:hover {
+                clip-path: polygon(0% 5%, 100% 5%, 100% 100%, 0% 100%);
+                cursor: pointer;
+                background-color: #95cada;
+                transition: .5s ease-in-out;
+                
+            }
+
+            .navBarBottoneRicetta:hover .innerRicetta h1 {
+                font-size: 15px;
+                transition: .5s ease-in-out;
+                color: white;
+                font-style: bold;
+                letter-spacing: 4px;
+
+            }
+            .navBarBottoneRicetta:hover .innerRicetta {
+                transition: .5s ease-in-out;
+            }
+
+    .dropdownRicette {
+        color: rgb(255, 255, 255);
+        font-size: 20x;
+        display: grid;
+        justify-items: center;
+        align-content: center;
+        transition: .5s ease-in-out;
+        font-family: 'candara', sans-serif;
+        display: grid;
+        justify-items: center;
+        row-gap: 14px;
+    }
+    .dropdownLine {
+        background-color: white;
+        width: 50px;
+        height: 2px;
+    }
+    .dropdownPrimi:hover{
+        text-decoration: underline;
+    }
+    .dropdownSecondi:hover{
+        text-decoration: underline;
+    }
+    .dropdownDolci:hover{
+        text-decoration: underline;
+    }
+
+
+.navBarBottoneAdmin {
+    width: 120px;
+    height: 100px;
+    background-color: #95cada;
+    border-radius: 0px;
+    clip-path: polygon(0% 35%, 20% 35%, 30% 50%, 20% 65%, 0% 65%);
+    padding: 20px 20px 20px 20px;
+    margin-top: 50px;
+    transition: .2s ease-in-out;
+    display: grid; 
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0px;
+
+    }
+
+        .navBarBottoneAdmin .innerAdmin{
+            background-color: transparent;
+            border-radius: 10px;
+            margin-top: 22px;
+            margin-bottom: 0px;
+
+        }
+
+        .navBarBottoneAdmin .innerAdmin h1 {
+            color: black;
+            font-size: 15px;
+            display: grid;
+            justify-items: center;
+            align-content: center;
+            transition: .2s ease-in-out;
+            font-family: 'candara', sans-serif;
+            margin-top: -24px;
+            font-style:unset !important;
+            opacity: 0;
+        }
+
+            .navBarBottoneAdmin:hover {
+                clip-path: polygon(0% 35%, 90% 35%, 100% 50%, 90% 65%, 0% 65%);
+                cursor: pointer;
+                background-color: #95cada;
+                transition: .5s ease-in-out;
+                
+            }
+
+            .navBarBottoneAdmin:hover .innerAdmin h1 {
+                font-size: 15px;
+                transition: .5s ease-in-out;
+                color: white;
+                font-style: bold;
+                letter-spacing: 4px;
+                opacity: 1;
+            }
+            .navBarBottoneAdmin:hover .innerAdmin {
+                transition: .5s ease-in-out;
+            }
+
+            .adminBottoneImmagine {
+                margin-left: -15px;
+                margin-top: -10px;
+                transition: .2s ease-in-out;
+                opacity: 1;
+            }
+            .navBarBottoneAdmin:hover .adminBottoneImmagine {
+                opacity: 0;
+                transition: .2s ease-in-out;
+                transform: scale(0%);
+            }
