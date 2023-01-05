@@ -1,6 +1,6 @@
 .navbar{
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 150px;
+    margin-right: 150px;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
                   Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 20px;
@@ -10,8 +10,6 @@
     outline: none;
     box-shadow: none;
     border-color:transparent;
-    
-    
     
 }
 

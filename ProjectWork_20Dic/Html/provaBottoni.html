@@ -5,43 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet"  href="../Css/provaBottoni.css">
+    <link type="text/css" rel="stylesheet"  href="../Css/HomePage2.css">
+    <link type="text/css" rel="stylesheet"  href="../Css/fonts.css">
+    <link type="text/css" rel="stylesheet"  href="../Css/logo2.css">
+
     <title>Document</title>
 </head>
 
     <header>
-    <img src="../Images/Logo.png" class="logo"></img>
-    <div class="ricette">
-        <div class="inner">
-            <h1>HOME</h1>
-        </div>
-    </div>
-    <div class="ricette1">
-        <div class="inner1">
-            <h1>RICETTE</h1>
-                <a href="#">Primi</a>
-                <a href="#">Secondi</a>
-                <a href="#">Terzi</a>
-        </div>
-    </div>
-    <div class="ricette2">
-        <div class="inner2">
-            <h1>CHI SIAMO</h1>
-        </div>
-    </div>
-    <div class="ricette">
-        <div class="inner">
-            <h1>RIVISTA</h1>
-        </div>
-    </div>
-    <div class="ricette">
-        <div class="inner">
-            <h1>ADMIN</h1>
-        </div>
-    </div>
+
+           
+                <img src="../Images/Logo.png" class="logo"></img>
+            
+                <ul class="navBarprovaBottoni">
+                    <li class="homeButton">
+                        <div class="navBarBottoni">
+                            <div class="inner">
+                                <a href="#banner"><h1>HOME</h1></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ricetteButton" id=""> 
+                        <div class="navBarBottoneRicetta">
+                            <div class="innerRicetta">
+                                <a href="#banner"><h1>RICETTE</h1></a>
+                                    <ul class="dropdownRicette">
+                                        <li class="dropdownLine"></li>
+                                        <li class="dropdownPrimi">Primi</li>
+                                        <li class="dropdownSecondi">Secondi</li>
+                                        <li class="dropdownDolci">Dolci</li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="chiSiamoButton" id="FinalmenteHoUsatoUnIdPerLaPrimaVoltaEdEstatoBellissimo">
+                        <div class="navBarBottoni">
+                            <div class="inner">
+                                <a href="#banner"><h1>CHI SIAMO</h1></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="rivistaButton">
+                        <div class="navBarBottoni">
+                            <div class="inner">
+                                <a href="#banner"><h1>RIVISTA</h1></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="adminButton">
+                        <div class="navBarBottoneAdmin">
+                            <div class="innerAdmin">
+                                <img class="adminBottoneImmagine" src="../Images/immagineAdmin.png" alt="" height="20px" width="20px">
+                                <a href="#banner"><h1>ADMIN</h1></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            
+        
 </header>
 
     <body>
+        <div class="loader"></div>
         
   
     </body>
+
+    <script src="../Javascript/HomePage2.js"></script>
 </html>
