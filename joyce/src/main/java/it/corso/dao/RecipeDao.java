@@ -14,4 +14,13 @@ public interface RecipeDao extends CrudRepository<Recipe, Integer>{
 	
 	@Query(value="SELECT * FROM recipes ORDER BY id_recipe DESC LIMIT 5", nativeQuery = true)
 	List<Recipe> lastRecipes();
+	
+	@Query(value="SELECT * FROM recipes WHERE category='primo' ORDER BY id_recipe DESC", nativeQuery = true)
+	List<Recipe> getPrimi();
+	
+	@Query(value="SELECT * FROM recipes WHERE category='secondo' ORDER BY id_recipe DESC", nativeQuery = true)
+	List<Recipe> getSecondi();
+	
+	@Query(value="SELECT * FROM recipes WHERE category='dolce' ORDER BY id_recipe DESC", nativeQuery = true)
+	List<Recipe> getDolci();
 }

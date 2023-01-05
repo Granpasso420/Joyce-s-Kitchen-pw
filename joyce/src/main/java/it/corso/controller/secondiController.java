@@ -21,7 +21,7 @@ public class secondiController {
 	@GetMapping
 	public String getPage(Model model) {
 		
-		List<Recipe> secondi = service.getList("secondo");
+		List<Recipe> secondi = service.getSecondi();
 		model.addAttribute("title", "Secondi");
 		model.addAttribute("secondi", secondi);
 		

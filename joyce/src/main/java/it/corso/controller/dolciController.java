@@ -21,7 +21,7 @@ public class dolciController {
 	@GetMapping
 	public String getPage(Model model) {
 		
-		List<Recipe> dolci = service.getList("dolce");
+		List<Recipe> dolci = service.getDolci();
 		model.addAttribute("title", "Dolci");
 		model.addAttribute("dolci", dolci);
 		
