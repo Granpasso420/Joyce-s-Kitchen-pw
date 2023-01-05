@@ -15,7 +15,7 @@
 }
 
 .titoloRicetta{
-    position: fixed;
+    position: relative;
     margin-top: -4%;
     margin-left: -2%;
     transition: 0.2s ease-in, 0.2s ease-out;
@@ -23,8 +23,8 @@
 }
 
 .titoloRicettascroll{
-    position: absolute;
-    margin-top: 21%;
+    position: relative;
+    margin-top: 100wh;
     color:cadetblue !important;
     transition: 0.2s ease-in, 0.2s ease-out;
 }
@@ -100,10 +100,6 @@
 
 }
 
-.tretesti{
-
-}
-
 #procedimento{
     margin-top: -47px;
     padding-top: 0px;
@@ -138,7 +134,7 @@
 
 @media (max-width: 1130px){
 .titoloRicettascroll{
-    margin-top: 29%;
+    margin-top: 21%;
 }
 }
 
