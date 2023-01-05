@@ -33,7 +33,7 @@
 	
 	    <section class="chiSiamo" id="chiSiamo">
 	        <div class="video">
-	            <div class="chiSiamo">
+	            <div class="chiSiamo" align="justify">
 	                <h2 class="titleChiSiamo">Chi siamo</h2>
 	                <p>Joyce's Kitchen è una comunità di professionisti appassionati dell'arte culinaria che <br>ha deciso di 
 	                	creare un sito dove condividere le nostre creazione con voi!
@@ -71,7 +71,7 @@
 	              <p th:text="'- ' + ${ultR.time}"></p>
 	              <p th:text="'- ' + ${ultR.difficulty}"></p>
 	              <br>
-	              <p th:text="${ultR.process}"></p>
+	              <p th:text="${ultR.process}" align="justify"></p>
 	                  <div>
 	                    <a th:href="@{recipe(id=${ultR.id_recipe})}" class="mainButton ultime-bottone" id="buttonStrange">Scopri di piu'</a>
 	                  </div>
