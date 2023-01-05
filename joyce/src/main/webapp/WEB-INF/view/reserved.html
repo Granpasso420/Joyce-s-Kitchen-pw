@@ -7,44 +7,49 @@
 	<link type="text/css" rel="stylesheet" th:href="@{static/css/HomePage2.css}">
 		    <link type="text/css" rel="stylesheet"  th:href="@{static/css/HomePageNavBar.css}">
 	    	<link type="text/css" rel="stylesheet"  th:href="@{static/css/dropdown.css}">
-    		<link href="signin.css" rel="stylesheet">
          	<link type="text/css" rel="stylesheet"  th:href="@{static/css/riservata.css}">
     
   <style type="text/css" id="operaUserStyle"></style>
 </head>
 
 <body>
-    <header th:replace="../template/base-template :: headerFragment">
-		<!--  <a th:href="@{/}"><button>Home</button></a>
+   <!--  <header th:replace="../template/base-template :: headerFragment">
+		 <a th:href="@{/}"><button>Home</button></a>
 		<h1 th:text="${title}"></h1>
-		<a th:href="@{add}"><input type="button" th:value="'Aggiungi'"></a>-->
-    </header>
-    <div class="mod">
+		<a th:href="@{add}"><input type="button" th:value="'Aggiungi'"></a>
+    </header>-->
+    
+    <div style="background-color: #ec5051 ;width:100%;height:125px;margin-bottom:5%;margin-top:0px;padding:0px;">
+		<header th:replace="../template/base-template :: headerFragment"></header>
+		<hr>
+	</div>
+	
+    <div class="mod" style="margin-left:15%;margin-right:10%">
         <h1 class="h3 mb-3 fw-normal">Area Riservata</h1>
         <br>
-    <div>  
+    <div>
         <a th:href="@{add}"><button type="button" class="btn btn-primary btn-lg bgblue" th:value="Aggiungi">Aggiungi</button></a>
     </div>
         <br>
         <table class="table">
             <thead>
                 <tr >
+                	<th scope="col"></th>
                     <th scope="col">Nome Ricetta</th>
                     <th scope="col">Categoria Ricetta</th>
                 </tr>
             </thead>
             <tbody>
                  <tr th:each="r : ${recipes}">
+                 	<td><img th:src="@{'static/foto/' + ${r.id_recipe} + '.png'}" width="40" height="40" style="border-radius:5px;"></td>
                     <td th:text="${r.recipe_name}"></td>
                     <td th:text="${r.recipecategory}"></td>
                     <td><a th:href="@{modify(id=${r.id_recipe})}"><button type="button" class="btn btn-primary bgblue">Modifica</button></a>
-                        <a th:href="@{reserved/delete(id=${r.id_recipe})}"><button type="button" class="btn btn-primary bgred">Elimina</button></a></td>
+                        <a th:href="@{reserved/delete(id=${r.id_recipe})}"><button id="butt" type="button" class="btn btn-primary bgred">Elimina</button></a>
           </tr>
         </tbody>
       </table>
     </div>
-    
-    <footer th:replace="../template/base-template :: footerFragment"></footer>
 
 	<script th:src="@{static/javascript/HomePage2.js}"></script>
     

@@ -21,23 +21,23 @@
 	<section class="banner" id="banner">
         <div class="content">
             <h2 class="shadow">Contatti</h2>
-            <a href="#" class="mainButton"> Mandaci una mail ></a>
+            <a href="#mail" class="mainButton"> Mandaci una mail ></a>
         </div>        
     </section>
 
 
     <div class="panegrande">
         <div class="pane"> 
-          <a th:href="@{/}"><img class="iconepane distanzapane"  th:src="@{static/images/pane1.png}"  ></img></a>
-        
+
+          <div>
+            <a th:href="@{/}"><img class="iconepane distanzapane"  th:src="@{static/images/pane1.png}"  ></img></a>
+            <p class="distanzapane">Home</p> 
+          </div> 
         <p id="freccia"> ></p>
-      
+      <div> 
        <img class="iconepane distanzapane" th:src="@{static/images/pane2.png}"  ></img>
-        
-        </div>
-        <div class="pane">
-          <p class="distanzapane">Home</p> 
-          <p class="distanzapane">Contatti</p>
+       <p class="distanzapane">Contatti</p>
+      </div>
         </div>
       </div>
 
@@ -48,20 +48,20 @@
           <div class="contatti"> 
             <div class="distanzaContatti">
               <a href="https://goo.gl/maps/1HnGjzKJsuApTFpB9 " target="_blank"><img class="iconepane  iconeContatti"  th:src="@{static/images/icon4.png}" ></img></a>
-              <h3> Istituto giornali</h3>
+              <h3>Joyce's Kitchen</h3>
               <p> 34121 Trieste TS</p>
               <p> Via del pane</p>
             </div>
             <div class="distanzaContatti">
               <a href="tel:5554280940">  <img class="iconepane iconeContatti" th:src="@{static/images/icon5.png}"  ></img></a>
-              <h3> Istituto giornali</h3>
+              <h3>Telefono</h3>
               <p> 333.956.7685</p>
               <p> 243.567.8900</p>
             </div>
             <div class="distanzaContatti">
-              <a href="mailto:info@panebello.com"> <img class="iconepane  iconeContatti" th:src="@{static/images/icon6.png}" ></img></a>
-              <h3> Informazioni lavorative</h3>
-              <p> info@panebello.com</p>
+              <a href="mailto:info@panebello.com"> <img class="iconepane  iconeContatti" th:src="@{static/images/icon6.png}" id="mail"></img></a>
+              <h3>E-Mail</h3>
+              <p>joyces@kitchen.com</p>
               <p> servizi@joyce.com</p>
             </div>
           </div>
@@ -71,7 +71,7 @@
 
     <section id="container1">
         <div id="iframe"> 
-            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2789.063064378298!2d13.767695715413037!3d45.6495552791036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b6b716344d031%3A0xf22e3c43ef0c1c73!2sVia%20del%20Pane%2C%2034121%20Trieste%20TS!5e0!3m2!1sit!2sit!4v1671789355405!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2789.063064378298!2d13.767695715413037!3d45.6495552791036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b6b716344d031%3A0xf22e3c43ef0c1c73!2sVia%20del%20Pane%2C%2034121%20Trieste%20TS!5e0!3m2!1sit!2sit!4v1671789355405!5m2!1sit!2sit" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div> 
         <div id=ceoContainer style="text-align: center; width: 40%;"> 
             <h3 id="ceotitolo"> Il nostro ceo </h3>

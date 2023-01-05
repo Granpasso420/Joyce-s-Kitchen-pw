@@ -6,11 +6,12 @@
     <link type="text/css" rel="stylesheet" th:href="@{static/css/HomePage2.css}">
     <link type="text/css" rel="stylesheet" th:href="@{static/css/ricetta.css}">
     <link type="text/css" rel="stylesheet" th:href="@{static/css/fonts.css}">
-    <link type="text/css" rel="stylesheet" th:href="@{static/css/promo.css}">
+  
     <link type="text/css" rel="stylesheet"  th:href="@{static/css/HomePageNavBar.css}">
     <link type="text/css" rel="stylesheet"  th:href="@{static/css/dropdown.css}">
-    <link type="text/css" rel="stylesheet" th:href="@{static/css/ricetta.css}">
+    
     <link type="text/css" rel="stylesheet" th:href="@{static/css/ricette.css}">
+    <link type="text/css" rel="stylesheet" th:href="@{static/css/ricetta.css}">
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,30 +30,37 @@
 
 <div class="panegrande">
     <div class="pane"> 
-      <a th:href="@{/}"><img class="iconepane distanzapane"  th:src="@{static/images/pane1.png}" ></img></a>
-    
+
+      <div> 
+        <a th:href="@{/}"><img class="iconepane distanzapane"  th:src="@{static/images/pane1.png}" ></img></a>
+        <p class="distanzapane">Home</p> 
+      </div>
     <p id="freccia"> ></p>
-  
+  <div>
     <a th:href="@{${tipo}}"><img class="iconepane distanzapane"  th:src="@{static/images/pane2.png}" ></img></a>
+    <p class="distanzapane" th:text="${tipo}"></p>
+  </div> 
     <p id="freccia"> ></p>
-    <img class="iconepane distanzapane"  th:src="@{static/images/pane3.png}" ></img>
-    </div>
-    <div class="pane">
-      <p class="distanzapane">Home</p> 
-      <p class="distanzapane" th:text="${tipo}"></p>
+
+    <div>
+      <img class="iconepane distanzapane"  th:src="@{static/images/pane3.png}" ></img>
       <p class="distanzapane">Ricetta</p>
+    </div> 
+   
     </div>
   </div>
 
 
 <section class="ricettaFoto_Descrizione" id="ricettaFoto_Descrizione">
     <img id="fotoprincipale" th:src="@{'static/foto/' + ${recipe.id_recipe} + '.png'}" alt="">
+    
     <div id="ingredienti"> 
-    <div class="contenitore">  <div id="testoIng">
-    <h4 ><img class="icon" th:src="@{static/images/icon1.png}" alt=""> Difficoltà: </h4>
-    <h4> <img class="icon" th:src="@{static/images/icon2.png}" > Categoria: </h4>
-    <h4> <img class="icon" th:src="@{static/images/icon3.png}" alt=""> Tempo: </h4>
-</div>
+    <div class="contenitore">  
+    <div id="testoIng">
+	    <h4 ><img class="icon" th:src="@{static/images/icon1.png}" alt=""> Difficoltà: </h4>
+	    <h4> <img class="icon" th:src="@{static/images/icon2.png}" > Categoria: </h4>
+	    <h4> <img class="icon" th:src="@{static/images/icon3.png}" alt=""> Tempo: </h4>
+	</div>
 <div class="tretesti"> 
   <h4 class="tre" th:text="${recipe.difficulty}"></h4> 
 <h4 class="tre" th:text="${recipe.recipecategory}"></h4> 

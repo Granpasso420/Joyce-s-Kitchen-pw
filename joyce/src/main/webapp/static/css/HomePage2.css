@@ -15,6 +15,7 @@ h1{
 
 h3{
     font-family: Candara,sans-serif;
+    font-weight: bold;
 }
 
 h4{
@@ -303,14 +304,14 @@ p {
 }
 
 .panegrande{
-    padding-top: 27px !important;
-    padding-left: 39px;
+    padding-top: 43px !important;
+    padding-left: 95px;
 }
 
 #freccia{
     margin-top: 7px;
-    margin-right: 4px;
-    margin-left: -14px;
+    margin-right: 9px;
+    margin-left: -10px;
 }
 .pane{
     display: flex;}
@@ -572,24 +573,12 @@ footer.container{
     url(https://static.vecteezy.com/system/resources/previews/000/391/760/original/bacon-pattern-food-wallpaper-illustration-vector.jpg )
     no-repeat center;
     opacity: 80%;
-    background-size: cover;
+    background-size: auto;
     list-style: none;
     padding-top: 50px;
 }
 
-.footer1::before{
-    content: '';
-    background: rgba(0,0,0,0,0.08);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-.footer1.container{
-    position: relative;
-}
+
 
 .footer1 .footer-top .container,
  .footer1 .col2,
@@ -644,7 +633,7 @@ footer.container{
 
   @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -843,6 +832,13 @@ footer.container{
         margin-top: -1%;
         transition: 0.2s;
     }
+    
+    .dropdown {
+    
+    left: -25% !important;
+    right:111%;
+    top:12%;
+}
 
 
     #panino:hover{
@@ -877,6 +873,8 @@ footer.container{
 
     }
     
+    
+
 }
 
 @media screen and (max-width: 1175px){
