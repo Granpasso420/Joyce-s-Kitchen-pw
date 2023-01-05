@@ -6,7 +6,9 @@ import it.corso.model.Recipe;
 
 public interface RecipeService {
 	
-	public List<Recipe> getList(String categoria);
+	public List<Recipe> getPrimi();
+	public List<Recipe> getSecondi();
+	public List<Recipe> getDolci();
 	
 	List<Recipe> getRecipes();
 	

@@ -10,18 +10,18 @@
 		    <link type="text/css" rel="stylesheet"  th:href="@{static/css/HomePageNavBar.css}">
 	    <link type="text/css" rel="stylesheet"  th:href="@{static/css/dropdown.css}">
      <link type="text/css" rel="stylesheet"  th:href="@{static/css/riservata.css}">
-  
+
   <style type="text/css" id="operaUserStyle"></style>
 </head>
 <body>
 <!--  <header th:replace="../template/base-template :: headerFragment"></header>-->
     
-    <div style="background-color: #ec5051 ;width:100%;height:125px;margin-bottom:5%;margin-top:0px;padding:0px;">
+    <div style="background-color: #ec5051 ;width:100%;height:120px;margin-bottom:5%;margin-top:0px;padding:0px;">
 		<header th:replace="../template/base-template :: headerFragment"></header>
 		<hr>
 	</div>
     
-     <form name="fadd" id="fadd" method="POST" th:object="${recipe}" enctype="multipart/form-data">
+     <form name="fadd" id="fadd" method="POST" th:object="${recipe}" enctype="multipart/form-data" accept-charset="utf-8">
     <div class="mod">
         <h1 class="h3 mb-3 fw-normal">Aggiungi nuova ricetta</h1>
         <br>

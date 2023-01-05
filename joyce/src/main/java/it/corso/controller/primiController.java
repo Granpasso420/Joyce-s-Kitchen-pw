@@ -21,7 +21,7 @@ public class primiController {
 	@GetMapping
 	public String getPage(Model model) {
 		
-		List<Recipe> primi = service.getList("primo");
+		List<Recipe> primi = service.getPrimi();
 		model.addAttribute("title", "Primi");
 		model.addAttribute("primi", primi);
 		

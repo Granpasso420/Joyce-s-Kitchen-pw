@@ -1,6 +1,5 @@
 package it.corso.service;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -46,19 +45,26 @@ public class RecipeServiceImpl implements RecipeService{
 	}
 
 	@Override
-	public List<Recipe> getList(String categoria) {
-		
-		List<Recipe> list = new ArrayList<>();
-		List<Recipe> recipes = (List<Recipe>) recipeDao.findAll();
-		for(Recipe r : recipes) {
-			if(r.getRecipecategory().equals(categoria)) {
-				list.add(r);
-			}
-		}
-		
-		return list;
+	public List<Recipe> getPrimi() {
+//		List<Recipe> recipes = (List<Recipe>) recipeDao.findAll();
+//		for(Recipe r : recipes) {
+//			if(r.getRecipecategory().equals(categoria)) {
+//				list.add(r);
+//			}
+//		}
+		return recipeDao.getPrimi();
 	}
-
+	
+	@Override
+	public List<Recipe> getSecondi() {
+		return recipeDao.getSecondi();
+	}
+	
+	@Override
+	public List<Recipe> getDolci() {
+		return recipeDao.getDolci();
+	}
+		
 	@Override
 	public int getLastId() {
 		
