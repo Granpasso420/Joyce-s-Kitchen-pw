@@ -19,8 +19,7 @@
 }
 
 .titoloRicettascroll{
-    position: absolute;
-    margin-top: 21%;
+    transform: translateY(434%);
     color:cadetblue !important;
     transition: 0.2s ease-in, 0.2s ease-out;
 }

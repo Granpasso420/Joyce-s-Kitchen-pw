@@ -1,7 +1,13 @@
 .pappa:hover{
-    
+    transform: translateX(130%);
 }
 
+
+.pappa{
+    color: cadetblue;
+    text-align: center;
+    font-size: 64px;
+}
 
 .banner {
     min-height: 79vh;
@@ -15,7 +21,7 @@
 }
 
 .titoloRicetta{
-    position: relative;
+    position: fixed;
     margin-top: -4%;
     margin-left: -2%;
     transition: 0.2s ease-in, 0.2s ease-out;
@@ -23,8 +29,7 @@
 }
 
 .titoloRicettascroll{
-    position: relative;
-    margin-top: 100wh;
+    transform: translateY(434%);
     color:cadetblue !important;
     transition: 0.2s ease-in, 0.2s ease-out;
 }
