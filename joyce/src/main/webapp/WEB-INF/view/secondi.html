@@ -53,9 +53,9 @@
                 <img th:src="@{'static/foto/' + ${r.id_recipe} + '.png'}" class="card-img-top" alt="Foto Cibo" width="270px" height="190px">
                 <div class="card-body">
                   <h5 class="card-title" th:text="${r.recipe_name}"></h5>
-                  		<p th:text="'- ' + ${r.recipecategory}"></p>
-		           	  <p th:text="'- ' + ${r.time}"></p>
-		              <p th:text="'- ' + ${r.difficulty}"></p>
+                  		<p th:text="'CATEGORIA: ' + ${r.recipecategory}"></p>
+		              	<p th:text="'TEMPO:  ' + ${r.time}"></p>
+		              	<p th:text="'ESECUZIONE:  ' + ${r.difficulty}"></p>
                	</div>
                 <div class="card-footer">
                   <p class="text-muted"><a th:href="@{recipe(id=${r.id_recipe})}">Dettagli</a></p>
