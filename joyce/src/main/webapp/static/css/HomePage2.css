@@ -816,6 +816,10 @@ footer.container{
 
 @media screen and (max-width: 943px){
 
+    .ricetteButton{
+        height: 43px;
+    }
+    
     .logo{
         position: relative;
         left: -89px;

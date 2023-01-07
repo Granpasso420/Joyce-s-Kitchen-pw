@@ -922,6 +922,21 @@ footer.container{
 
 
 @media (max-width: 943px){
+
+    .navBarBottoneRicetta {
+        margin-top: 0px !important;
+        height: 170px !important; 
+        transition: 0.5s ease-in-out;
+    }
+    .ricetteButton:hover {
+        height: 145px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .ricetteButton{
+        height: 43px;
+        transition: 0.5s ease-in-out;
+    }
     .logo{
         position: relative;
         left: -89px;
@@ -975,97 +990,15 @@ footer.container{
     .navBarBottoni{
         margin-top:0px !important;
     }
-
+/*
     .navBarBottoneRicetta {
+        transition: 0.5s ease-in-out;
         margin-top:0px !important;
         height: 100px !important;
     }
-
+*/
     .navBarBottoneRicetta .innerRicetta {
         margin-top: -29px !important;}
-
-
-
-
-    /* inizio bottone */
-        .navBarBottoneRicetta {
-            width: 200px;
-            height: 120px;
-            background-color: transparent;
-            border-radius: 0px;
-            clip-path: polygon(0% 10%, 100% 10%, 100% 30%, 0% 30%);
-            padding: 20px 20px 20px 20px;
-            margin-top: 50px;
-            transition: .5s ease-in-out;
-            }
-        
-                .navBarBottoneRicetta .innerRicetta{
-                    border-radius: 10px;
-                    margin-top: 22px;
-                    margin-bottom: 0px;
-                    transition: .5s ease-in-out;
-        
-                }
-        
-                .navBarBottoneRicetta .innerRicetta h1 {
-                    color: black !important;
-                    font-size: 15px;
-                    display: grid;
-                    justify-items: center;
-                    align-content: center;
-                    transition: .5s ease-in-out;
-                    font-family: 'candara', sans-serif;
-                    margin-top: 22px;
-                    font-style:unset !important;
-                }
-        
-                    .navBarBottoneRicetta:hover {
-                        clip-path: polygon(0% 5%, 100% 5%, 100% 100%, 0% 100%);
-                        cursor: pointer;
-                        background-color: #95cada;
-                        transition: .5s ease-in-out;
-                        
-                    }
-        
-                    .navBarBottoneRicetta:hover .innerRicetta h1 {
-                        font-size: 15px;
-                        transition: .5s ease-in-out;
-                        color: white;
-                        font-style: bold;
-                        letter-spacing: 4px;
-        
-                    }
-                    .navBarBottoneRicetta:hover .innerRicetta {
-                        transition: .5s ease-in-out;
-                    }
-        
-            .dropdownRicette {
-                color: rgb(255, 255, 255);
-                font-size: 20x;
-                display: grid;
-                justify-items: center;
-                align-content: center;
-                transition: .5s ease-in-out;
-                font-family: 'candara', sans-serif;
-                display: grid;
-                justify-items: center;
-                row-gap: 14px;
-            }
-            .dropdownLine {
-                background-color: white;
-                width: 50px;
-                height: 2px;
-            }
-            .dropdownPrimi:hover{
-                text-decoration: underline;
-            }
-            .dropdownSecondi:hover{
-                text-decoration: underline;
-            }
-            .dropdownDolci:hover{
-                text-decoration: underline;
-            }
-        
 
 }
 
