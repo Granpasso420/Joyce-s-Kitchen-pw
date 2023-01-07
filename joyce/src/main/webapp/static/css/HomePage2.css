@@ -814,12 +814,22 @@ footer.container{
     }
 }
 
-@media screen and (max-width: 943px){
+@media (max-width: 943px){
+
+    .navBarBottoneRicetta {
+        margin-top: 0px !important;
+        height: 170px !important; 
+        transition: 0.5s ease-in-out;
+    }
+    .ricetteButton:hover {
+        height: 145px;
+        transition: 0.5s ease-in-out;
+    }
 
     .ricetteButton{
         height: 43px;
+        transition: 0.5s ease-in-out;
     }
-    
     .logo{
         position: relative;
         left: -89px;
@@ -836,7 +846,6 @@ footer.container{
         margin-top: -1%;
         transition: 0.2s;
     }
-    
 
 
     #panino:hover{
@@ -849,10 +858,11 @@ footer.container{
     cursor: pointer;
 }
 
+
     .navbar2{
         padding-right: 66px;
         padding-top: 50px;
-        background: rgba(255, 255, 255, 0.75);
+        background: rgba(255, 255, 255, 0.5);
         top: 0px;
         position: absolute !important;
         flex-direction: column;
@@ -868,22 +878,23 @@ footer.container{
 
     .navbar3{
         transform: translateX(0);
-
     }
-    
+
     .navBarBottoni{
         margin-top:0px !important;
     }
-
+/*
     .navBarBottoneRicetta {
+        transition: 0.5s ease-in-out;
         margin-top:0px !important;
         height: 100px !important;
     }
-
+*/
     .navBarBottoneRicetta .innerRicetta {
         margin-top: -29px !important;}
 
 }
+
 
 @media screen and (max-width: 1175px){
     .cardProva img {
