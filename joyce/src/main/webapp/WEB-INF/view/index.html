@@ -67,9 +67,9 @@
 	              <h2 class="titleChiSiamo shadow scritta" id="titoloVista">Ultima uscita!</h2>
 	              <br>
 	              <h2 th:text="${ultR.recipe_name}"></h2>
-	              <p th:text="'- ' + ${ultR.recipecategory}"></p>
-	              <p th:text="'- ' + ${ultR.time}"></p>
-	              <p th:text="'- ' + ${ultR.difficulty}"></p>
+	              <p th:text="'CATEGORIA: ' + ${ultR.recipecategory}"></p>
+	              <p th:text="'TEMPO: ' + ${ultR.time}"></p>
+	              <p th:text="'ESECUZIONE: ' + ${ultR.difficulty}"></p>
 	              <br>
 	              <p th:text="${ultR.process}" align="justify"></p>
 	                  <div>
@@ -87,9 +87,9 @@
           <div class="cardUltime" th:each="r : ${lastRecipes}">
             <div class="contenuto">
               <h2 th:text="${r.recipe_name}"></h2>
-             <div> <p th:text="'- ' + ${r.recipecategory}"></p>
-              <p th:text="'- ' + ${r.time}"></p>
-              <p th:text="'- ' + ${r.difficulty}"></p> </div>
+             <div> <p th:text="'CATEGORIA: ' + ${r.recipecategory}"></p>
+              <p th:text="'TEMPO: ' + ${r.time}"></p>
+              <p th:text="'ESECUZIONE: ' + ${r.difficulty}"></p> </div>
 			  <a class="mainButton" th:href="@{recipe(id=${r.id_recipe})}">Scopri Ricetta</a>
             </div>
             <img th:src="@{'static/foto/' + ${r.id_recipe} + '.png'}">
