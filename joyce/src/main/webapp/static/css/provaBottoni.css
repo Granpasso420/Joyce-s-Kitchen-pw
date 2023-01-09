@@ -112,30 +112,30 @@
             }
 
     .dropdownRicette {
-        color: rgb(255, 255, 255);
-        font-size: 20x;
-        display: grid;
-        justify-items: center;
-        align-content: center;
-        transition: .5s ease-in-out;
-        font-family: 'candara', sans-serif;
-        display: grid;
-        justify-items: center;
-        row-gap: 14px;
+        color: rgb(255, 255, 255) !important;
+        font-size: 20x !important;
+        display: grid !important;
+        justify-items: center !important;
+        align-content: center !important;
+        transition: .5s ease-in-out !important;
+        font-family: 'candara', sans-serif !important;
+        display: grid !important;
+        justify-items: center !important;
+        row-gap: 14px !important;
     }
     .dropdownLine {
-        background-color: white;
-        width: 50px;
-        height: 2px;
+        background-color: white !important;
+        width: 50px !important;
+        height: 2px !important;
     }
     .dropdownPrimi:hover{
-        text-decoration: underline;
+        text-decoration: underline !important;
     }
     .dropdownSecondi:hover{
-        text-decoration: underline;
+        text-decoration: underline !important;
     }
     .dropdownDolci:hover{
-        text-decoration: underline;
+        text-decoration: underline !important;
     }
 
 
